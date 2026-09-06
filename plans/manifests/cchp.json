@@ -1,0 +1,378 @@
+{
+ "source_page": "https://www.cchealth.org/health-insurance/information-for-providers",
+ "harvested": "2026-09-06",
+ "method": "Selenium headless Chrome (Akamai fingerprints TLS; curl is 403 regardless of UA/cookies). Downloads made in the same session; R manifest fetch then adopts the files.",
+ "documents": [
+  {
+   "policy_number": "",
+   "title": "ccLink Provider Portal Access Agreement",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/7813/639119365572170000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "ccLink Provider Portal Access Agreement - Primary Care Providers",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/31292/639119464229030000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "ccLink Provider Add/Delete Request Form",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/7815/639057184030800000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "cclink Provider Portal Access Agreement \u2013 3rd Party Biller",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/7817/638703028153130000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "ccLink Provider Portal for 3rd Party Billers Instructions",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/7819/639119365980230000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "ccLink Provider Portal Access Agreement - Reporting Access",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/31294/639119464757470000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "ECM Criteria",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/7751",
+   "doc_kind": "policy",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "AUDIT",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/7723/638262373155570000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "AUDIT-C",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/7725/638262373160970000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Contact Information for Noncontracting Hospitals-Post Stabilization Care or Transfer Request",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/7741/639119363793100000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Chronic Pain Management Policy",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/7737",
+   "doc_kind": "policy",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Disclosure of UM Criteria or Guidelines Request Form",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/28974/639119368962970000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Bariatric Surgery Mental Health Assessment",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/7727",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Minor Consent Form Transportation-NEMT",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/1399/639096005586870000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Neurosurgical Referral Guidelines",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/7775",
+   "doc_kind": "policy",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Physician Certification Statement (PCS) for NEMT",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30042/639119312480400000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Prior Authorization Request/Referral (PA) Form",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/1397/639095979216970000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Prior Authorization Request/Referral (PA) Form \u2013 Bariatric Bypass",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/513/638238210810170000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Synagis Prior Authorization Request form",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/7789/639119365029400000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Maternal. Child, and Adolescent Health and Tuberculosis Programs MOU",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30597/639119395660030000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Regional Center of East Bay MOU",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30599/639119396374270000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Behavioral Health Services and Alcohol and Other Drugs MOU",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30595/638822241885230000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Women, Infants, and Children Program MOU",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30601/639119404937500000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "2026 MOU Annual Reporting",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/31576/639119469726270000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "View the CCHP Provider Manual",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/32143/639160745379570000",
+   "doc_kind": "manual",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Child Abuse Form & Instructions",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30016/638490304336170000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Domestic Violence Legal Requirements for Reporting",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/1329/639063181551330000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Elder Abuse Report Form",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/1331/639063181538070000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Advanced Health Care Directive",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/1333/639063181523770000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Corrected Claim Submission Guide & Cover Sheet",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30018/639122952894470000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Provider Appeal and Dispute Form",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30020/639141719098330000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Confidential Morbidity Report",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30022/638490304351470000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Fraud/Waste and Abuse Training for Providers",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30024/639122953380630000",
+   "doc_kind": "policy",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Medication - Prior Authorization Request",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30026/639122953785700000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Request for Formulary Review",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30028/639126330387870000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Member Grievance and Appeal Form",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30034/639119370867500000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Member Grievance and Appeal Form (Spanish)",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30036/639119371361830000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Member Consent for Provider to File an Appeal",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30030/639126330786070000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Member Consent for Provider to File an Appeal (Spanish)",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30032/639126331118970000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Member Consent for Provider to File an Appeal (Chinese)",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/31548/639126338068430000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Disclosure of UM Criteria or Guidelines Request Form",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30040/639051990340770000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Provider and Member Call Centers",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30012",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Provider Complaint Form",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/1403/639222273270970000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Seniors and Persons with Disabilities Cultural Sensitivity Training",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30046/638490304420070000",
+   "doc_kind": "policy",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "CPN PCP Orientation",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30054/639136725548270000",
+   "doc_kind": "policy",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "CPN Specialist Orientation",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30058/639136727295730000",
+   "doc_kind": "policy",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "CPN Urgent Care Orientation",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30056/639136726403470000",
+   "doc_kind": "policy",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "CPN Organizational Provider Orientation",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30052/639136724659830000",
+   "doc_kind": "policy",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "CCRMC Orientation",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30050/639136723845800000",
+   "doc_kind": "policy",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Community Health Worker Provider Training",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/30060/639136728516370000",
+   "doc_kind": "policy",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Skilled Nursing ICF DD Sub Acute Final",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/28690/639136722776730000",
+   "doc_kind": "policy",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Face to Face Interpreter Request Form",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/31451/639119467966500000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  },
+  {
+   "policy_number": "",
+   "title": "Video Virtual Interpreter or ASL Request Form",
+   "source_url": "https://www.cchealth.org/home/showpublisheddocument/31449/639135731766270000",
+   "doc_kind": "form",
+   "department": "Provider Resources"
+  }
+ ]
+}

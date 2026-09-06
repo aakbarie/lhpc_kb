@@ -1,0 +1,199 @@
+{
+ "source_page": "https://secure.compliance360.com/ext/4xE-04lwJLg=",
+ "harvested": "2026-09-06",
+ "method": "Chapter list read from IEHP's public SAI360 provider-manual catalog (654-row Kendo grid, no login); PDFs verified 200 on the open AEM DAM at .../provider-manual/2026/medi-cal/. Medicare D-SNP and CCA manual chapters have no public DAM shelf (SAI360 viewer only) \u2014 known gap.",
+ "documents": [
+  {
+   "policy_number": "MC-00",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 00. Introduction",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/00 - Introduction.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-01",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 01. Organizational Structure",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/01 - Organizational Structure.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-02",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 02. Committee Overview",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/02 - Committee Overview.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-03",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 03. Enrollment and Assignment",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/03 - Enrollment and Assignment.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-04",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 04. Eligibility Verification",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/04 - Eligibility Verification.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-05",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 05. Credentialing and Recredentialing",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/05 - Credentialing and Recredentialing.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-06",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 06. Facility Site Review",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/06 - Facility Site Review.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-07",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 07. Medical Records Requirements",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/07 - Medical Records Requirements.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-08",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 08. Infection Control",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/08 - Infection Control.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-09",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 09. Access Standards",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/09 - Access Standards.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-10",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 10. Medical Care Standards",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/10 - Medical Care Standards.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-11",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 11. Pharmacy",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/11 - Pharmacy.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-12",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 12. Coordination of Care",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/12 - Coordination of Care.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-13",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 13. Quality Management",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/13 - Quality Management.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-14",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 14. Utilization Management",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/14 - Utilization Management.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-15",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 15. Health Education",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/15 - Health Education.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-17",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 17. Member Transfers and Disenrollment",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/17 - Member Transfers and Disenrollment.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-18",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 18. Provider Network",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/18 - Provider Network.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-19",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 19. Finance and Reimbursement",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/19 - Finance and Reimbursement.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-20",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 20. Claims Processing",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/20 - Claims Processing.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-21",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 21. Encounter Data Reporting",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/21 - Encounter Data Reporting.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-23",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 23. Compliance",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/23 - Compliance.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-24",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 24. Program Descriptions",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/24 - Program Descriptions.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  },
+  {
+   "policy_number": "MC-26",
+   "title": "Provider Manual (Medi-Cal 2026) \u2014 26. Quick Reference",
+   "source_url": "https://www.providerservices.iehp.org/content/dam/provider-services-rd/en/documents/providers/provider-manual/2026/medi-cal/26 - Quick Reference.pdf",
+   "doc_kind": "manual",
+   "department": "Provider Manual",
+   "line_of_business": "medi-cal"
+  }
+ ]
+}

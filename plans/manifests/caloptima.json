@@ -1,0 +1,4165 @@
+{
+ "source_page": "https://www.caloptima.org/en/policy-documents",
+ "harvested": "2026-09-06",
+ "method": "Sitecore Search discover API (public key from the site's own JS bundle); CHDOC universe filtered to policy-numbered docs, manuals, OILs, and PA criteria/lists. CDN is unprotected.",
+ "documents": [
+  {
+   "policy_number": "G",
+   "title": "GG.1611 Potential Quality Issue Review Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/004a359f340a4105b69e8d4fd576e3a2?v=9f05403b",
+   "doc_kind": "policy",
+   "department": "Quality Improvement",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "8"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1550 Palliative Care Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/01e871baf0a744fda3d01d78db67b47b?v=2f97d009",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.1006 Financial Risk Arrangements",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/01fb61cef9834890b59ef69afdb559c7?v=e7313753",
+   "doc_kind": "policy",
+   "department": "Finance",
+   "line_of_business": "Medi-Cal",
+   "date_published": "8"
+  },
+  {
+   "policy_number": "",
+   "title": "2025 07 01 Prior Authorization  List OneCare",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/03393cc8827d4233965ecb97b38b09f9?v=46daecc8",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1202 Diabetes Prevention Program",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/037859961c3740a299650c2e5445e9e1?v=7e5d5538",
+   "doc_kind": "policy",
+   "department": "Clinical Operations",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.1005 Hospital Acquired Conditions \u2013 Reimbursement",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/0446ff7606884d33a447b6177726612e?v=12774f00",
+   "doc_kind": "policy",
+   "department": "Claims Administration",
+   "line_of_business": "OneCare",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "",
+   "title": "Press Release - California State Audit of CalOptima Health Closed; All Recommendations Successfully Implemented  (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/04e3de02f78f4d929cbcdec5c23345f6?v=89cd4af5",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.2002 Care Planning",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/05c59a92adc14b23b053bc3c725d0617?v=7a213a69",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "",
+   "title": "2026 OneCare Prior Authorization List",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/05f74f5bd41a435a8a6a3ece883d344f?v=b267e16b",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.9006 Contracted Provider Complaint Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/0779c841d4f04e93a23e69f21c60d7a3?v=d610ac98",
+   "doc_kind": "policy",
+   "department": "Grievance and Appeals Resolution Services",
+   "line_of_business": "OneCare,OneCare Connect",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6009 Care Management and Coordination Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/080c312b237a4998b3d6ea144600034f?v=62dd86ae",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "OneCare",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.2003 PACE Palliative Care",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/08abea199b504bdfae01a39b08400a93?v=aa69cd4f",
+   "doc_kind": "policy",
+   "department": "Unspecified",
+   "line_of_business": "PACE",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "A",
+   "title": "AA.1208 Non-Monetary Member Incentives",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/09425500cb704dca8b00d412c583047e?v=cc461d1f",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.2030 Personal/Individual Marketing Appointments",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/09e6e9e6b8e144fba16ad8b2ff00856c?v=6de24b24",
+   "doc_kind": "policy",
+   "department": "OneCare Sales and Marketing",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3023 Information Sharing",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/0a11d842da6e4990bcb89d0a484d2999?v=5551031b",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "2"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1206 Readability and Suitability of Member Materials",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/0a31a8744eb74f95851370cd1dd8ee98?v=35219db5",
+   "doc_kind": "policy",
+   "department": "Equity and Community Health",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "Provider Notice Update No 158 (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/0a3add8496794d95afe492c5c10e4ff9?v=baa107dc",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.2020 Conducting Compliance Investigations",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/0a4185a4d8434061ac509266bc6fda99?v=3457da91",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "A",
+   "title": "AA.1000 Medi-Cal Glossary of Terms",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/0ab41c3a77da40f19fd4df1b5868bece?v=45b83df6",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.5001 Use of Physical and Chemical Restraints",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/0b091239b964493d85f2343d3d50deed?v=5b1e18bd",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "",
+   "title": "Provider Notice Update No 156 (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/0be24741a6c94573b89ec73377f0434b?v=94aed361",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.4008 Member Handbook Requirements",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/0cd6a3da572d443fb80325217e480322?v=2a8bd387",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "Provider Notice Update No 154 (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/0d0180a57f794674a7f0f809b7398056?v=c49e7faf",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1548 Authorization and Monitoring of Behavioral Health Treatment (BHT) Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/0d314641f2bb498ab36e9cfa9edb2d03?v=b5a3e682",
+   "doc_kind": "policy",
+   "department": "Behavioral Health Integration",
+   "line_of_business": "Medi-Cal",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6045 Special Supplemental Benefits for the Chronically Ill (SSBCI)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/0db193431c504465bb14d59f34de198c?v=a581c9e1",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.7007 Access and Availability",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/0dc2ff86865143acb86e2a924fa813bc?v=5524e03f",
+   "doc_kind": "policy",
+   "department": "Quality Analytics",
+   "line_of_business": "OneCare",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1109 CalOptima Health and Health Network Newborn and Prenatal Genetic Screening Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/0e9d0b8dedb2448ba76f0ef740304b0f?v=31ec12a7",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.1003 PACE Center Space and Physical Requirements",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/0ea2b9bb3b664f9e983ad171459a0f7f?v=b6cfae04",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1600 Access and Availability Standards",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/0ed1b1a068c84280903da23534948a7e?v=f02de2bf",
+   "doc_kind": "policy",
+   "department": "Quality Analytics",
+   "line_of_business": "Medi-Cal",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.1105 Fraud, Waste, and Abuse Detection",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/0edb9c6b5b5c44eb96fe2147d8f7d811?v=b1b78e1b",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Covered California,Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "Board Certification Requirements for Physicians",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/0f6a2b60ae774bc683aeeffd77f99390?v=d9ba1284",
+   "doc_kind": "policy",
+   "department": "Quality Improvement",
+   "line_of_business": "Covered California,Medi-Cal,OneCare,PACE",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6040 First Tier, Downstream, or Related Entities (FDR) Model of Care \u2013 Roles and Responsibilities with Specific Personal Care Coordinator (PCC) Requirements",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/10e86a771fa0494ebdf24123816f4963?v=522fc6f2",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "OneCare",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.4001 Delegation Oversight Committee",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/1146992c806d4548ba36db2ce5477640?v=a364f483",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1547 Maintenance and Transportation",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/115596a1a1f744399c664a993033574d?v=86ce15d7",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1656 Quality Improvement and Utilization Management Conflicts of Interest and Non-Discrimination",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/1217b788ae0742ea8759e40f5b9a3c63?v=61c8c23d",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Administrative,Medi-Cal,OneCare,PACE",
+   "date_published": "8"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1324 Seniors and Persons with Disabilities (SPD) Comprehensive Case Management",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/13692669436b48ee8427669e33394ed8?v=67ee9a18",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "",
+   "title": "2025-January-February13-PriorAuthorizationMediCal_Sec",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/13970d77901c4969a7dac0865e57f8c1?v=4399e02b",
+   "doc_kind": "policy",
+   "department": "Unspecified",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.5050 Nutrition",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/13ab52deff52401ca81b47aa901ef045?v=a982be7d",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "4"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.5000 Provider Overpayment Investigation and Determination",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/13eede1814fe40878e6b7728478d4913?v=8f275f49",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Covered California,Medi-Cal,OneCare,PACE",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.3001 Financial Reporting",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/141a3a297e734c218f7db901f8d13f5d?v=ab848089",
+   "doc_kind": "policy",
+   "department": "Finance",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "2"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1704 Breastfeeding Promotion",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/147311ce3dd04d72949f1838013c6d14?v=daef31fb",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.2002 Sanctions",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/14b2170102c84804a5f80c5cae175988?v=a12b45f8",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1121 Early and Periodic Screening, Diagnosis and Treatment (EPSDT) Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/14dc828dc3d848409b96ae36da5df4e3?v=017d9cce",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1118 Family Planning Services, Out-of-Network",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/159bdb373fa646c8b9d8a7b00fb28cc0?v=415be97b",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1822 Process for Transitioning CalOptima Health Members between Levels of Care",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/15cae18269784d9bb313f05fa1946070?v=9a610490",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1613 Initial Health Appointment",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/162dcb44117043858f4b3764a61a143e?v=6d21deac",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.9002 Enrollee Grievance Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/1663d7b6a9ea45cd8d501583fcc39eb1?v=dc266ad7",
+   "doc_kind": "policy",
+   "department": "Grievance and Appeals Resolution Services",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "E",
+   "title": "EE.1112 Health Network Eligible Member Assignment to Primary Care Provider",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/16bec80722af48d3b11b68b304e7958a?v=65ffc287",
+   "doc_kind": "policy",
+   "department": "Network Operations",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.9001 Medicare Part D Benefit Information Tracking and Reporting",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/1742d6b32074488ba6d3d557175b258d?v=41543495",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6021a Continuity of Care for New n Members",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/17747e14960e473390e1713c3ac897ae?v=3725f792",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.7001 Grievance Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/185d5be55451444db6cce8e1e812c140?v=7524d34f",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1655 Reporting Provider Preventable Conditions (PPC)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/18bc21c94a214a58a96648d06d618e3d?v=d4c62c92",
+   "doc_kind": "policy",
+   "department": "Quality Improvement",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1503 CalOptima Health Hospice Coverage, Notification and Validation Requirements",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/18d672df10d545d19e7e53e055e2dcd2?v=49782f3d",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "",
+   "title": "2026 Medi-Cal Prior Authorization List: 01/01/2026-03/31/2026",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/1a0034ff558244a3a0a58691d045f306?v=652102d5",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "D",
+   "title": "DD.2001 Member Rights and Responsibilities",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/1a4859c61b284f89a9da398960e52804?v=f3cc724a",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "Medi-Cal",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "",
+   "title": "January-March 2024 Prior Authorization Medi-Cal (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/1a9b58cf00c54ff6ac214695f892ddbc?v=37e50103",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1634 Quality Improvement and Health Equity Activities",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/1ab20b6ca8b74c7982b7593aa96f4e07?v=00956447",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.5110 Emergency Care",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/1ba32eb0b725439c8eb008420b13fd6d?v=71dd06ba",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1201 Health Education Programs",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/1c8d41108a4448c2b76f819198809427?v=54e6b0ce",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1112 Standing Referral to Specialty Care Provider or Specialty Care Center",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/1d2aec6ca84d4e6483e6d2282762367b?v=43bde423",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1515 Criteria for Medically Necessary Automobile Orthopedic Positioning Devices",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/1ef39b7c8d57452e9478af66484ecc96?v=b306d393",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1132 Medi-Cal Annual Wellness Visit",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/1ef527f99257492da9ef8054fed0fb61?v=c4274047",
+   "doc_kind": "policy",
+   "department": "Quality Analytics",
+   "line_of_business": "Medi-Cal",
+   "date_published": "8"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.2003 Coordination of Benefits",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/1f65a631b1544079a42b51b9d60d59c3?v=8e5ca465",
+   "doc_kind": "policy",
+   "department": "Claims Administration",
+   "line_of_business": "Medi-Cal",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3003 Verification of Identity for Disclosure of Protected Health Information",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/1fa27e1a2c80430eb18573b13da0c702?v=6a38f910",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3002 Minimum Necessary Uses and Disclosure of Protected Health Information and Document Controls",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/206e5ee801494362b11e1167a7ba4848?v=3e815b79",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "C",
+   "title": "CMC.9003 Standard Appeal",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/236368aae7f24fa782208cdc76f04022?v=b5d81dce",
+   "doc_kind": "policy",
+   "department": "Grievance and Appeals Resolution Services",
+   "line_of_business": "OneCare Connect",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "A",
+   "title": "AA.1270 Certification of Document and Data Submissions",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/2404d6a37b9c4875b0fcd19c5835771b?v=bb9b4d29",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6103 Pharmacy and Therapeutics Committee and Formulary Management",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/243fe47a2508488c8d072844fe945262?v=487e740e",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.5202 Labeling and Clinic Storage of Medications",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/24b08bc4c04f48b89cd4e6c2df16d885?v=22902507",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "G",
+   "title": "GA.4010 Service Animals",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/272f1f816a354da2853f6c84c2cdfa05?v=addd6e04",
+   "doc_kind": "policy",
+   "department": "Facilities",
+   "line_of_business": "Administrative",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.3003 Minimum Medical Loss Ratio",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/27453e6db89e4699bc8b83d01904b7b5?v=bd7016ea",
+   "doc_kind": "policy",
+   "department": "Finance",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "",
+   "title": "2025 OneCare Prior Authorization List",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/2751db4ffa3d4cc78b39a73ae25c5c3d?v=90f48297",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.4003 Annual Risk Assessment (Internal)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/28eeca52564b493fbe37e5ff9761f352?v=e074c40b",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Administrative",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "D",
+   "title": "DD.2014 Collection of Race, Ethnicity, Language, Sexual Orientation and Gender Identity Data Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/2985abacb7024855bdc10c492984bef3?v=6b0ac0f2",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GA.8058 Salary Schedule",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/29999baf5bbb4bb9808447e1a5c3e138?v=1035f1af",
+   "doc_kind": "policy",
+   "department": "Human Resources",
+   "line_of_business": "Administrative",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.1000 CalOptima Health PACE Glossary of Terms",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/29c9cde006274b72a7dbaecde140bdac?v=bc96b0f6",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "A",
+   "title": "AA.1219b Provider Advisory Committee",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/2b04d07738d7494e839212ac3cc97c23?v=6f0e36fe",
+   "doc_kind": "policy",
+   "department": "Executive Office",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1323 Seniors and Persons with Disabilities and Health Risk Assessment",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/2b0573e7843b44e8a7702553518d22c2?v=25ab23fa",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "4"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.1106 Pay and Educate Criteria\u2014Provider Complaints",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/2b9e3b725d8f4ce3978f4332358bfc3e?v=d5557d52",
+   "doc_kind": "policy",
+   "department": "Grievance and Appeals Resolution Services",
+   "line_of_business": "Medi-Cal,OneCare,OneCare Connect",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.2003 Health Network and Delegated Entity Reporting",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/2bbd9ca345104be1bf98f66d4476d30d?v=a9d4a076",
+   "doc_kind": "policy",
+   "department": "Network Operations",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.2028 Code of Conduct",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/2bf902ae43fe499c8fae933c1d39b9b5?v=4c95b09b",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.2014 Compliance Program",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/2f002e80a9bf43209f3c7aead3a52a16?v=55bd1b26",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Administrative,Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.9110 Auditing and Monitoring of Hierarchical Condition Categories (HCC) Coding",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/30ce3d69c7bd4636a71fcb1ad8ab919c?v=2f1e24c3",
+   "doc_kind": "policy",
+   "department": "Finance",
+   "line_of_business": "OneCare,PACE",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "D",
+   "title": "DD.2012 Member Notification of Change in Location or Availability of Providers or Covered Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/32307863b57943b38f1ae71432d938fc?v=43f9a037",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "Medi-Cal",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1116 Pediatric Preventive Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/327b28b92df74a8cbaa9a713a55fdde7?v=1c2d14d7",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1607 Monitoring Adverse Actions",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/331843e9cf1c418a9bcd23f32e3e7951?v=4e2c2a09",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Covered California,Medi-Cal,OneCare,PACE",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1800 Authorization Process and Criteria for Admission to, Continued Stay in, and Discharge from a Nursing Facility Level A (NF-A) and Level B (NF-B)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/331caec4094c4a808c81e05dc3348f58?v=4e13b14b",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "2025 07 01 Prior Authorization List Medi-Cal",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/33c9b1b811e04ce7a7d4349440f60f65?v=a9150b8b",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.2025 Health Network Subdelegation and Subcontracting",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/33d9fab3874b47d6a3574322da1f65b3?v=c673cf62",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GA.7110 Street Medicine",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/347c6b8418db45c9929d4c90be10a5d5?v=5e44fa93",
+   "doc_kind": "policy",
+   "department": "Medi-Cal And CalAIM",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "4"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1811 Leave of Absence, Long-Term Care",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/34b613dbd09242eeaa85097269c6d635?v=cc0f7ade",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3001 Member Access to Designated Record Set",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/34c421d8b24f4abd8c567d08cd4bbf5f?v=1e851163",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.1010 Shared Risk Pool",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/357cc787afb840709e5cdbcb2b9c2003?v=89c87e07",
+   "doc_kind": "policy",
+   "department": "Finance",
+   "line_of_business": "Medi-Cal",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1532 Over and Under Utilization Monitoring",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/35d2f4b1a5c84db8ac43e0d4fdd5acf1?v=fddb28f7",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "E",
+   "title": "EE.1119 Health Network Notification of Administrative and Operational Changes",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/36117b803582474d979151e9e52cdc35?v=b8e0dd1c",
+   "doc_kind": "policy",
+   "department": "Network Operations",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.7020 Behavioral Health Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/361ca6c271d94c00aefd88394d24ec9d?v=d7813d6e",
+   "doc_kind": "policy",
+   "department": "Behavioral Health Integration",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.2007 Compliance Committee",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/383c698d46294f57bb61df0a0a2ab30b?v=a83609d6",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.2027 Annual Risk Assessment (FDR)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/395126ae048f402c845e768b7e178272?v=bc96f541",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1501 Inpatient Length of Stay (LOS) Assignment",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/3967f84a06da46c9b8405d254da99825?v=5ca2dbc9",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "",
+   "title": "Provider Notice Update No 165 (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/3a1ac1ca127b42418133e0ff565e8ea3?v=b05fe3b5",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1125 Clinical Trials",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/3a652c368e49412387e539b04c5043a8?v=8523839f",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "October-December 2023 Physician-Administered Drug Prior Authorization Required List (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/3b27cfa180f0428b9fffc7ea3dfd2733?v=02e4deb8",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1312 Responsibility for a Member in a State Hospital",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/3b5f5ac7131043ba9f3721094cb48b30?v=882ed81b",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "E",
+   "title": "EE.1146 Provider Directory",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/3ba121d905654878acf4e991b7d66833?v=3180a1dc",
+   "doc_kind": "policy",
+   "department": "Provider Data Operations",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "",
+   "title": "April-June 2024 Physician-Administered Drug Prior Authorization Required List (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/3be9aa4b2cdb4706af9915b709ca15a2?v=c1ccb6fe",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "January-March 2024 Prior Authorization OneCare (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/3c6f8b31db134b3585bddc64a9a8e1fc?v=9cf9aa3a",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.2001 Interdisciplinary Team (IDT) & Participant Assessments",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/3c87beb7991c44d5af788e6b5e8531ed?v=4b7e28ab",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "",
+   "title": "2026 Medi-Cal Prior Authorization List",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/3de68edc18d9441781336cbd54cbcde0?v=115cc7dc",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1804 Admission to, Continued Stay in, and Discharge from Out-of-Network Subacute Facility, Nursing Facility Level A (NF-A) and Level B (NF-B)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/3f94af56e3dc45fdb28c6a75c6b4fa7a?v=5ef85e97",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1204 Clinical Practice Guidelines",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/40712d96827040cd8d37de20331b2740?v=b022abdf",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "E",
+   "title": "EE.1101 Additions, Changes, and Terminations to CalOptima Health Provider Information",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/415a6a3cb98445e1a43f663777ebf527?v=9fb42f20",
+   "doc_kind": "policy",
+   "department": "Provider Data Operations",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "E",
+   "title": "EE.1103 Provider Network Training",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/41b475fccc7a4a2da5015077ae7ba342?v=8515b794",
+   "doc_kind": "policy",
+   "department": "Network Operations",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "8"
+  },
+  {
+   "policy_number": "",
+   "title": "2026 July-September Physician-Administered Drug Prior Authorization Required List",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/4249f2c60d3b43fb9e640a190df19a5e?v=74b44533",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3012 Non-Retaliation for Reporting Violations",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/42504227301a423c8ed501bc3c726556?v=8c660dae",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.4002 CalOptima Health Internal Oversight",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/4268aa24a54f4773acad507d3c32a7ee?v=409b1c2a",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Administrative",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.1001 Capitation Payments",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/429d53a03585450db6067eaa716e5a82?v=05e597ae",
+   "doc_kind": "policy",
+   "department": "Finance",
+   "line_of_business": "Medi-Cal",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "E",
+   "title": "EE.1116 Contracted Provider Notification to CalOptima Health of Changes Affecting the Legal Status of the Contract",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/4350db2c2c104a15807e26f0f71bd934?v=beeaa46c",
+   "doc_kind": "policy",
+   "department": "Contracting",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1603 Medical Records Maintenance",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/4376e69dc0594d2495edf8dc0c2537ec?v=7d66a696",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "2025 July September PA Prior Authorization List",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/44b79ead90a744409674824c3b48ae30?v=312d84b3",
+   "doc_kind": "policy",
+   "department": "Unspecified",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.1102 Member Grievance",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/45b01691ecb049f0abf517f90bed0e58?v=9ef1ad0c",
+   "doc_kind": "policy",
+   "department": "Grievance and Appeals Resolution Services",
+   "line_of_business": "Medi-Cal",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "",
+   "title": "February 2023 Medi-Cal Prior Authorization List (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/463ac8f7e3b64bb5b041a1f3634c9e4b?v=fbd7686d",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3008 Member Right to Request Confidential Communications",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/46821187fdee439080ff39bd99a9c05d?v=ea5219e7",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6032 Model of Care",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/47374c9b3ca34e7d914eb514ed7e83eb?v=5acd9bc1",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "OneCare",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1830 In-Home Supportive Services (IHSS) Referral Coordination Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/47926850b2074de99dd7673cc244679b?v=3bd5f0c0",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "2026 June OneCare Prior Authorization List 508",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/47c7137796e249ccae738b748236febc?v=5cf609a8",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.2022 Service Determination Request (SDR)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/483858e32b4146a0aa7c12685f9966e9?v=6fec4ffd",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "E",
+   "title": "EE.1111 Health Network Encounter Reporting Requirements",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/48e424a8dd964248957e57c1ff883a86?v=f83b0a4b",
+   "doc_kind": "policy",
+   "department": "Finance",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "A",
+   "title": "AA.1400 Grant Management",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/49ad4841217345d9bb8f5a45b5b820f9?v=a9d1b316",
+   "doc_kind": "policy",
+   "department": "Medi-Cal And CalAIM",
+   "line_of_business": "Administrative",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "",
+   "title": "October-December 2023 Prior Authorization Medi-Cal (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/49dc342adfaf4500a01732e78fcffd8c?v=3867eef5",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "D",
+   "title": "DD.2002 Cultural and Linguistic Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/4a54249947bf4511a3c8d6e24351ee98?v=ee430d1d",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "2"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.4010 Provider Selection, Assignment, and Notification",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/4a6e5c6fcd5d47ffa044abb1b08e8aa4?v=20e1d228",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "A",
+   "title": "AA.1204 Gifts, Honoraria, and Travel Payments",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/4aacc61d5933468e9275b7bc2df3b156?v=fbc590bb",
+   "doc_kind": "policy",
+   "department": "CalOptima Health Administrative",
+   "line_of_business": "Administrative",
+   "date_published": "8"
+  },
+  {
+   "policy_number": "",
+   "title": "Provider Notice Update 150 (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/4b1f1d1025a340838a334c45a342c848?v=666ad0c2",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1516 Hospital Acute Administrative Days",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/4b6b37deb8bd4235908b18f46d876889?v=e525f8e8",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6104 Opioid Medication Utilization Management",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/4ba5f9e1feb44b5d9ff3aac27bdc311f?v=a07b154c",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.1001 Equipment Maintenance and Storage",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/4c65116519fd456c880af3de95f6a7e8?v=59d99dda",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.5203 Return and Disposal of Medications",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/4c9346f707ba40609b883590a107b30e?v=3b248da3",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "2"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1130 Community Based Adult Services (CBAS) Eligibility, Authorization, Availability, and Care Coordination Processes",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/4cc02a4394cb4fc9aceb6f00ee48a52b?v=eb5bff78",
+   "doc_kind": "policy",
+   "department": "Long Term Services and Supports",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.9008 Termination of SNF, Home Health, or CORF Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/4d20114dfd78467390691b9710e734b2?v=58d023fd",
+   "doc_kind": "policy",
+   "department": "Grievance and Appeals Resolution Services",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1539 Authorization for Out-of- Network and Out-of-Area Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/4f411a4f28d44b7e95321d9532caa3d1?v=d741d114",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "D",
+   "title": "DD.2003 Member Identification and Eligibility Verification",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/5003e21881fb40e290e8cbc0eff759ab?v=c0de2d1c",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "Medi-Cal",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1502 Criteria and Authorization Process for Durable Medical Equipment (DME), Excluding Wheelchairs",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/50f33fbd9ded43a494ee20de7f215c9b?v=7a17c6ea",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1304 Continuity of Care During Health Network or Provider Termination",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/536523ebe11a4ab49e526014c4419f5a?v=5514d573",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3007 Member Rights to Request Restrictions on Use and Disclosure of Protected Health Information",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/53a8966fda294f04a96696ca78cf81d7?v=937cd77e",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "March 17, 2023 Provider Update No. 152 (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/55e54a64182a4d80834abd0a5f5c96ac?v=197b2329",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.2001 Claims Processing for Covered Services for which CalOptima Health is Financially Responsible",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/56a82bfcd0334ba9987aadadf7606440?v=4c256634",
+   "doc_kind": "policy",
+   "department": "Claims Administration",
+   "line_of_business": "Medi-Cal",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1325 Continuity of Care for Members Transitioning into CalOptima Health Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/56b56fdd48f046c6a178736d3f52c098?v=b20cc51e",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.8001 Reporting of Events Involving Participant Health and Safety Occurring at the PACE Center",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/586366b3032d4fa6bb5d9df8933dde1a?v=16797d2d",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6101 Medicare Part D Coverage Determination",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/586a4a213e89423b9394530b86514d4a?v=cd758101",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.1002 CalOptima Health Medi-Cal Fee Schedule",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/58aafdd642104e469292b4a51b9acae6?v=a3382506",
+   "doc_kind": "policy",
+   "department": "Coding Initiatives",
+   "line_of_business": "Medi-Cal,PACE",
+   "date_published": "2"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.4005 OneCare Election Periods and Effective Dates",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/59483ab9db794416949ceda31c82a32b?v=bc6688f3",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3024 Information Act Compliance",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/5adc10f459cf45b384e2500dc2e4b100?v=737e2be4",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Covered California,Medi-Cal,OneCare,PACE",
+   "date_published": "2"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1119 Direct Access to OB/GYN Practitioner Service",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/5af2c672a3f04a26aee93c4eca3c2c3f?v=354ad55c",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "",
+   "title": "Provider Notice Update No 162 (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/5b410d51fed546bd87e1987d44441288?v=58e48af4",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1616 Fair Hearing Plan for Practitioners",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/5b6b8d8706204d4a84ee222e55a3da70?v=4ee74a94",
+   "doc_kind": "policy",
+   "department": "Quality Improvement",
+   "line_of_business": "Covered California,Medi-Cal,OneCare,PACE",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "",
+   "title": "2025 MediCal Prior Authorization List",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/5c06fdf1908340e281e6d8ee0bf1d83a?v=80c57562",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1103 Specialty Mental Health Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/5c1d5aab94734569b895d5bd3e50a26d?v=540c725b",
+   "doc_kind": "policy",
+   "department": "Behavioral Health Integration",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1615 Corrective Action Plan for Practitioners and Organizational Providers",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/5c35541b76764af9bacfc59b85a74101?v=fc42fe11",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1110 Primary Care Practitioner Definition, Role, and Responsibilities",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/5c46a80bd7884bafb9830e75999b2151?v=c6123f8e",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "8"
+  },
+  {
+   "policy_number": "",
+   "title": "2026 June Medi-Cal Prior Authorization List",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/5e36d79e0685462fa8938578a056a278?v=45d01cfc",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.7100 Premium and Share of Cost Collection",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/5f41734f76ce4a41bc12ccf978ba4535?v=39dbdc14",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1602 Advanced Practice Professional (APP) Scope of Practice",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/5fa253775eec4e7f95431776fa300849?v=6a5d0da5",
+   "doc_kind": "policy",
+   "department": "Quality Improvement",
+   "line_of_business": "Covered California,Medi-Cal,OneCare,PACE",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "A",
+   "title": "AA.1275 Department of Health Care Services (DHCS) File and Use Submission Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/60384abef8ae49368dc8902a70a3ef6a?v=4122063b",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.3105 Medicare Secondary Payer",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/60eb588cc1654e2f87febd9f00bf5d2a?v=85607d72",
+   "doc_kind": "policy",
+   "department": "Claims Administration",
+   "line_of_business": "OneCare",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1508 Authorization and Processing of Referrals",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/6102f24d2f094d278a87d17c4ebdc61b?v=e7b97069",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1802 Authorization Process and Criteria for Admission to, Continued Stay in, and Discharge from an ICF/DD, ICF/DD-H, and ICF/DD-N",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/610799a531594fe0acbfa45b141ae31c?v=585af052",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1318 Hemophilia Members Transitioning into CalOptima Health Direct from External Health Network",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/6252e23b9594431db910920a4b6b1894?v=3d7116ed",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1409 Physician Administered Drug Prior Authorization Required List Development and Management",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/62a69d334c1741b096936d87052f93fb?v=4ec1ad46",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "8"
+  },
+  {
+   "policy_number": "",
+   "title": "2026 OneCare Prior Authorization List: 01/01/2026-03/31/2026",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/648af0e2004647fd976d08bd7fbb9c4a?v=5a742fbd",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1317 Response to Disruptive and Threatening Behavior by Members",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/64a1a2ff7bfc434a861faacca8f44fe3?v=c9befbc1",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "D",
+   "title": "DD.2013 Customer Service Grievance Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/66be702c939242019a9ea4f740f8d90e?v=175b17e3",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.9007 Discharge from Inpatient Facility Grievance and Appeals Resolution",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/684447dc213b43f1b87fb9164dbe5b03?v=b97cb7e6",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "A",
+   "title": "AA.1216 Solicitation and Receipt of Gifts to CalOptima Health",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/68a3878b3347415ea7ecb83eb248759b?v=9542624b",
+   "doc_kind": "policy",
+   "department": "CalOptima Health Administrative",
+   "line_of_business": "Administrative",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.2015 Health Networks Claims Processing",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/69391bb435e44349a63f285210e50e7a?v=735138e7",
+   "doc_kind": "policy",
+   "department": "Claims Administration",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.1109 Complaints Decision Matrix",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/698ee80747ff49868a3d328e2d946269?v=4fd213af",
+   "doc_kind": "policy",
+   "department": "Grievance and Appeals Resolution Services",
+   "line_of_business": "Medi-Cal,OneCare,OneCare Connect",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.2007 Reporting of Potential Third Party Tort Liability",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/6a1a5415bd2e40e1bfe294f52c89ff04?v=b9ca0825",
+   "doc_kind": "policy",
+   "department": "Claims Administration",
+   "line_of_business": "Medi-Cal",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1407 Nutrition Products",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/6a869d0c0a264835a7ee1ef6cf5656c6?v=fe74a8dd",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "8"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.9004 Expedited Pre-Service Integrated Appeal",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/6a92ba01240c4f11993b24fbd3742ee8?v=ec450783",
+   "doc_kind": "policy",
+   "department": "Grievance and Appeals Resolution Services",
+   "line_of_business": "OneCare",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "",
+   "title": "January-March 2024 Physician-Administered Drug Prior Authorization Required List (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/6a964768bbc64913a70e4e3cbf6c5059?v=9a25d9f5",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "D",
+   "title": "DD.2006b Member Primary Care Provider Selection/Assignment",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/6ac278f8629147ab98d55c5a309f1bd0?v=be6e14ed",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "Medi-Cal",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1650 Credentialing and Recredentialing of Practitioners",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/6aec27fe3824441995fa09087eda27ab?v=665cec10",
+   "doc_kind": "policy",
+   "department": "Quality Improvement",
+   "line_of_business": "Covered California,Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.2101 Non-Monetary Member Incentive",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/6b919b90075749978bb753f25dcf9f7e?v=f268f0d4",
+   "doc_kind": "policy",
+   "department": "Quality Analytics",
+   "line_of_business": "OneCare",
+   "date_published": "8"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1531 Criteria and Authorization Process for Wheelchair and Seating Equipment",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/6ba9435809dd45b1824bded5f6ddb72d?v=a2c5e896",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6026 Coordination of Care, Medi-Cal Covered Services for OneCare",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/6dba15988e544698862d5a6df345b813?v=4feef612",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1302a Coordination of Care for Regional Center of Orange County (RCOC) Members",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/6dbc8c8b387e40828c9084250530b2b5?v=0c02aeb4",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6042 Integrated Organization Determinations",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/6f5220be580c438db8ccb5e8b8ee72c0?v=80ed7bba",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.2022 Sales and Marketing Ethics Procedure",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/6fd2d71ab5674880bb3822b3fff7712d?v=6f039d99",
+   "doc_kind": "policy",
+   "department": "OneCare Sales and Marketing",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.1001 OneCare Glossary of Terms",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/702d837c5de84e39abfaa20cb7b881b7?v=d98178bc",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "OneCare",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6112 Access to Part D Vaccines",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/710d1c754e9c439f923a54d586a2da1d?v=045d0dd7",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.3002 Financial Oversight",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/73476f64db72474b99fed420dad9af62?v=31b58739",
+   "doc_kind": "policy",
+   "department": "Finance",
+   "line_of_business": "Covered California,Medi-Cal",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.1104 Discrimination and TGI-Related Grievances",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/739defb7c9ac4e44bde0bd180a54b8a6?v=80e9a4af",
+   "doc_kind": "policy",
+   "department": "Grievance and Appeals Resolution Services",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "2"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3015 Member Authorization for the Use and Disclosure of Protected Health Information",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/73a3cf4b926d495aa39471f5cb63fbe2?v=a1253a37",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6106 Medication Therapy Management",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/7402385b27e0474eaf993eb9771a77b9?v=4bf01288",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.9124 Self-Disclosure of Non-Compliance Issues",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/74174d73b10341448011421371dae8a2?v=c73c2e17",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.2021 Involuntary Disenrollment",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/7497a4c8f747424785dbabd15ac4470c?v=739e168b",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "8"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1639 Post-Hospital Discharge Medication Supply",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/77356e67cd4b4c9692777bf14d5e6a44?v=3987969e",
+   "doc_kind": "policy",
+   "department": "Quality Improvement",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "D",
+   "title": "DD.2006 Enrollment In/Eligibility with CalOptima Health Direct",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/783d838248764c1993976d593a66b06f?v=2fe1b3b2",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "A",
+   "title": "AA.1220 Member Billing",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/792050bc87ae499c884e187e22c78166?v=aa25b0fa",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "Medi-Cal",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.1004 Maintenance and Housekeeping Standards",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/792c249724c24682b47b0c8a0391cb1f?v=96e2f5d0",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "",
+   "title": "Provider Notice Update No 157 (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/79a3fa7c55bb4d86bbf76cea55f1acee?v=75272d19",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6024 Notification of Inpatient Facility Discharge Appeal Rights",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/79f7fd28bc1f4b95aebf0e41f4ece1b8?v=5f9ba4ca",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.5013 Pharmacy Audits and Reviews",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/7aa2ee4f8a314fbb82f6f96a0bbda7db?v=310e43d2",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare,PACE",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1356 CalAIM Enhanced Care Management Administration",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/7ab0f230c9934292ac84136b0e2996b2?v=d13dac7b",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1507 Notification Requirements for Covered Services Requiring Prior Authorization",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/7aca4b031b414df7ac7948a0774824d9?v=e5a08f56",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1628 Confidentiality of Quality Improvement Activities",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/7ba5a9af746442d1a3ed5f189e9566ec?v=1b6b31c3",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "8"
+  },
+  {
+   "policy_number": "E",
+   "title": "EE.1104 Skilled Nursing Facility (SNF) Workforce and Quality Incentive Program (WQIP)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/7ca9c562d68b49a498aa2e784c3e7807?v=901dbe9a",
+   "doc_kind": "policy",
+   "department": "Network Operations",
+   "line_of_business": "Medi-Cal",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.5004 False Claims Act Education",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/7d6cf60cbdde4005a07a201ea719f6ee?v=4d516799",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Covered California,Medi-Cal,OneCare,PACE",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1834 Multipurpose Senior Services Program (MSSP) Appeals, Grievances and Complaints Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/7ebc5e080cdc490fa1ff5bcde821ae6b?v=f161cf07",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.3103 Claims Coordination of Benefits",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/7ebfab1447f0471698232913ca44ea49?v=3909be1f",
+   "doc_kind": "policy",
+   "department": "Claims Administration",
+   "line_of_business": "OneCare",
+   "date_published": "2"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1805 Distinct Part Nursing Facility",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/7f1f6603171a4fd78b952474c80d9569?v=b93ca085",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6110 Transition Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/7f5d05914c3642c991092edc8e19667b?v=087d4c63",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3014 Use of Electronic Mail with Protected Health Information (PHI) and Personally Identifiable Information (PII)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/7f60e41c2d8748d08f125852ddd12713?v=061f8d8c",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "July - September 2023 Prior Authorization Medi-Cal (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/7f9c230114ef4c1eaba8a5799d5824d0?v=1c22e5a7",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1213 Community Health Worker Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/8100f6200a7a486c8bc9c84aa873d80f?v=5f32198f",
+   "doc_kind": "policy",
+   "department": "Medi-Cal And CalAIM",
+   "line_of_business": "Medi-Cal",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1120 Obstetrical Delivery",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/81861ffa185640b7909517d4c9396b44?v=8e158cc8",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1620 Quality Improvement Health Equity Committee (QIHEC)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/81f2ce5c6974466fb2b11160fd4447cc?v=c7026b73",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "July-September 2023 Prior Authorization OneCare (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/822b15a62f704406ae783818cbcdbb62?v=c637a27b",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Provider Notice Update No 164 (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/826c88ef65ea4ecf8107107decf6af6e?v=fde992e5",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.2005 Marketing and Outreach",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/830ae2a80a384764876d88a880a1c5b8?v=266c156a",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "",
+   "title": "July-September 2024 Physician-Administered Drug Prior Authorization Required List (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/831cd1c2af9744528c4288b2086e27ea?v=fed67435",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1401 Physician Administered Drug (PAD) Prior Authorization Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/844b1d683d624754a253d18eb74b9559?v=74c28635",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.2009 Mailing of Provider Checks",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/84903f2525b649f0adb9df130e58da58?v=8e162ab8",
+   "doc_kind": "policy",
+   "department": "Finance",
+   "line_of_business": "Administrative",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1510 Member Appeal Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/849b634bdfd64eea9cf473103d7bf666?v=1c42ec22",
+   "doc_kind": "policy",
+   "department": "Grievance and Appeals Resolution Services",
+   "line_of_business": "Medi-Cal",
+   "date_published": "2"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1605 Delegation and Oversight of Credentialing and Recredentialing Activities",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/84f1550a164546c3b64991ede2f42565?v=70064b09",
+   "doc_kind": "policy",
+   "department": "Delegation Oversight",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.2002 Marketing Activity Standards",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/85a4cf4d0f33461297f09ff11ccf6b22?v=2373263b",
+   "doc_kind": "policy",
+   "department": "OneCare Sales and Marketing",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.2023 Compliance Training",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/8693b9965d1641e9b08f81c8b069ab1c?v=95f6282b",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1809 Retroactive Authorization Request for Long Term Care Facility",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/8752facb7a534e43a49d6eec9ec57890?v=0daffbc4",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1665 Telehealth and Other Technology-Enabled Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/878289b6a7f145e68e4248d9270b03f8?v=02300665",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1313 Coordination of Care for Transplant Members",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/890205fd63a04608af1660bc690f96f1?v=af405e7c",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "8"
+  },
+  {
+   "policy_number": "C",
+   "title": "CMC.3001 Payment Arrangements to Health Networks \u2013 Capitation Payments",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/89d25f2949ed4a1a8bbb95284acdd6cd?v=8a279754",
+   "doc_kind": "policy",
+   "department": "Finance",
+   "line_of_business": "OneCare Connect",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3010 Protected Health Information Disclosures Permitted and Required by Law",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/8a7db6f8d0524f1c8063eb21736c7b1c?v=203e1264",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.4003 Member Enrollment",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/8abea830ffe34e8eb898ba5836019447?v=10cce64b",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "2023-01 CalOptima Health Prior Authorization Procedure Codes List (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/8b097e791f184fca947961cbe888989c?v=cc7aeed0",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1806 Preadmission Screening and Resident Review (PASRR)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/8b7647f13a2442b0ad14404efd7054c6?v=49717d19",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.1009 Health-based Risk Adjusted Capitation Payment System",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/8bb73022b9c64707814e70dbe0651051?v=a5250fd7",
+   "doc_kind": "policy",
+   "department": "Finance",
+   "line_of_business": "Medi-Cal",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.4016 Direct Member Reimbursement for Covered Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/8c0c794c382b436b853e9dcb88825b58?v=cfc1e5a1",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1637 Assessing Member Experience",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/8d1904aad2a949e288dda7b71471ec49?v=505acf3c",
+   "doc_kind": "policy",
+   "department": "Quality Analytics",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1357 Population Health Management Transitional Care Services (TCS)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/8d8c0df62b2a4e858e80c8fed0849bea?v=bb998251",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1633 Board Certification Requirements for Physicians",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/8e351d71f8f245bdb52ad12e367212d4?v=cb48c236",
+   "doc_kind": "policy",
+   "department": "Quality Improvement",
+   "line_of_business": "Covered California,Medi-Cal,OneCare,PACE",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.2017 Training and Oversight of Field Marketing Organization /Broker Agency and Subcontracted Independent Agents",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/9178225f6f344be691244b44ff57e876?v=2c36e690",
+   "doc_kind": "policy",
+   "department": "OneCare Sales and Marketing",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1829 Community Based Adult Services (CBAS) Discharge Notification Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/91a4f33e21d4480096866fc7b6f12d28?v=2011353e",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "A",
+   "title": "AA.1223 Participation in Community Events by External Entities",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/928fe8af81f44a2e9c06577f50cfd19c?v=d99111c1",
+   "doc_kind": "policy",
+   "department": "Communications",
+   "line_of_business": "Administrative",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.1002 Mandatory Medical Equipment and Supply Requirements",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/9393b63dfbb643ffb11102473039b8e4?v=e5d4247f",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1659 Credentialing Information Integrity",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/93c7be0f7ec54b4e8c2eaad0873cb472?v=13807955",
+   "doc_kind": "policy",
+   "department": "Quality Improvement",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.2100 Telehealth and Other Technology- Enabled Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/9404a0104885447bae76418f74d19ed9?v=6ce4cd9b",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.9005 Payment Appeal",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/94c482ecd1dd4263b63e0967b99742c6?v=4da94fca",
+   "doc_kind": "policy",
+   "department": "Grievance and Appeals Resolution Services",
+   "line_of_business": "OneCare",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6030 Transition of Care",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/94d58a6ba8f94b58b22d97f722935492?v=ffd035fb",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.5053 Food Storage",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/964010a29cef4595a1371c2ba4291c97?v=6ba40440",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "2"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1538 Referral for Second Opinion",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/96aa6a7aac02479daca8532ceaf4fe43?v=b9e86b14",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "Provider Notice Update No 171 (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/9821239f827742588bf080a2e3a2c6da?v=9cf378cf",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1535 Utilization Review Criteria and Guidelines",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/9822dceced304310aa63321846a2fa57?v=843be2f1",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "4"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1701 CalOptima Health Perinatal Support Services (PSS) Program",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/98b26f719c2a4d70baafaf6c3be424f5?v=692c4517",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1211 Health Appraisals and Self- Management Tools",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/99991ddeb20748e9b38cf061ad3459f9?v=718fb571",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3006 Tracking and Reporting Disclosures of Protected Health Information",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/99b1ad0eacb4402b8e9cf07375011b80?v=b960e267",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1500 Authorization Instructions for CalOptima Health Direct and CalOptima Health Community Network Providers",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/9abffe3c0250410098b1850976ce1ed6?v=67dd1793",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1301 Comprehensive Care Management Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/9b75cd62ed7f458fb56ef9dbe4c23f0d?v=a1f240a2",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6107 Pharmacy Claims Processing",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/9be7ca07819b42b4ad28fded24714a7b?v=0918d8e5",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1107 Coverage for Members Transitioning between CalOptima Health and a Health Network or between Health Networks, including CalOptima Health Community Network",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/9c363879700b4579b9b6602665454f29?v=3aaeaac1",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "April-June 2024 Prior Authorization OneCare (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/9cb0aaea1e6d4db79b70f2f134553c7f?v=4a87df8e",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.4000 Whole-Child Model \u2013 Financial Reimbursement for Capitated Health Networks",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/9ce09bce387a424c8c389d30517502cd?v=4e259602",
+   "doc_kind": "policy",
+   "department": "Finance",
+   "line_of_business": "Medi-Cal",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1717 Blood Lead Screening of Young Children",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/9d18f0d67bfa43eeaebea1f6143eb95e?v=50405562",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.4007 Member Disclosures",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/9d2fced9a12a45e1b9cc52fa9d0cec92?v=c9cca716",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.5044 Infection and Exposure Control Plan",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/9e8a391b59204d0fa4bb1f505ca94553?v=33839a34",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "8"
+  },
+  {
+   "policy_number": "",
+   "title": "2024-July-SeptemberPriorAuthList_Medi-Cal_Sec",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/9ec958232aa64662b9bacf6de24e13ac?v=a891a734",
+   "doc_kind": "policy",
+   "department": "Unspecified",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.1101 CalOptima Health Provider Complaint",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/9ed30035a4624190b8d24f9c2c57ca0d?v=3601ce9a",
+   "doc_kind": "policy",
+   "department": "Grievance and Appeals Resolution Services",
+   "line_of_business": "Medi-Cal",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1101 California Children\u2019s Services (CCS)/Whole-Child Model \u2013 Coordination with County CCS Program",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/a095342ba02448c8aec0d8aa286ec8fc?v=b444aa6e",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1658 Summary Suspension or Restriction of Practitioner Participation in CalOptima Health\u2019s Network",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/a0de9506a9474d988827e70f28fd4c9b?v=528baf38",
+   "doc_kind": "policy",
+   "department": "Quality Improvement",
+   "line_of_business": "Covered California,Medi-Cal,OneCare,PACE",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1814 Appeals Process for Long Term Care Facility",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/a106ba110df34bcb81e6b6da159a6e75?v=184161e4",
+   "doc_kind": "policy",
+   "department": "Grievance and Appeals Resolution Services",
+   "line_of_business": "Medi-Cal,OneCare,OneCare Connect",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6109 True Out-of-Pocket (TrOOP) Expenditures",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/a1584cf8853d4c18b10959ba7d526584?v=c5fbe8fd",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1505 Transportation: Emergency, Non- Emergency, and Non-Medical",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/a1bc3adc6e6b4840b683c109c3b97b75?v=e0d067e3",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "8"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3000 Notice of Privacy Practices",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/a1bddbf27f0b4ad8bda5569f46834832?v=7f674bb2",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1617 Infection Control Plan",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/a2d9d226843147bcb1ff44603b0765df?v=f579e74c",
+   "doc_kind": "policy",
+   "department": "Quality Improvement",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6044 Coverage of Solid Organ and Stem Cell Transplants",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/a37d71a9dd1347c387be1ef1403aec2a?v=239dc669",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1826 MSSP Emergency Preparedness",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/a3eaca95eb00403d80f760a927da04d4?v=013e0292",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.3101 Claims Processing",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/a511159b383e41eebf1776eb33af717b?v=9b9deca7",
+   "doc_kind": "policy",
+   "department": "Claims Administration",
+   "line_of_business": "OneCare,PACE",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1670 Utilization Management (UM) Decision Information Integrity",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/a61eaa3576f84b73a212638f912449c2?v=f3ea5d5a",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Covered California,Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GA.8048 Restrictions on Smoking and Unregulated Nicotine Products",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/a630bf958c504330a7c57ea9fdf62698?v=0a59fce0",
+   "doc_kind": "policy",
+   "department": "Facilities",
+   "line_of_business": "Administrative",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.4015 Medicare Secondary Payer (MSP)/Part D Coordination of Benefits (COB)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/a63cf9a0f2764a2e982537f44b481464?v=b86eb8f4",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "October-December 2023 Prior Authorization OneCare (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/a68c48ca2faa47f098b60676b49aa987?v=0b673b45",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1808 Plan of Care, Long-Term Care",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/a75161fb9ab5437182ab85123d985086?v=b25b9158",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "2025-February14-March-PriorAuthorizationMediCal_Sec",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/a7754f29d33c4743a4ff8dd8d814d45c?v=81e75576",
+   "doc_kind": "policy",
+   "department": "Unspecified",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6115 Medicare Part B Organization Determination (OD)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/a7f111c66e8e4933bf8d386489fe754b?v=f3929346",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "OneCare",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.3001 Data Collection and Analysis",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/a9f4c45d58514defbd8f946862eceb8d?v=a0b9b61e",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "D",
+   "title": "DD.2008 Health Network and CalOptima Health Community Network Selection Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/aa035af9cf3046c78d7c23387604f075?v=90fe4a3f",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "Medi-Cal",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.5052 Utensil Cleaning Guidelines for Nutritional Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/aa51fd3ed97a44c9986875df8e91d7c0?v=4d279651",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "2"
+  },
+  {
+   "policy_number": "E",
+   "title": "EE.1145 Prospective Health Network",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/ad1b8eb9e7e9419aa0a5dae22ac904d2?v=ea1d76ff",
+   "doc_kind": "policy",
+   "department": "Network Operations",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1504 Dental Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/ae78c9a6f8974d9aa73a6a97af254d30?v=4c727cb8",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "4"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1803 Authorization Process and Criteria for Admission to, Continued Stay in, and Discharge from a Subacute Facility-Adult/Pediatric",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/ae9d97a4b158490f92a019096c901937?v=58a99d0c",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1621 Community-Based Adult Services (CBAS) Quality Assurance and Site Visits",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/af9fef846cb6458eb50f4b1079a2023f?v=b0d30f22",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6114 Medicare Part D Redeterminations",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/afda2dea68b34af3bb1198ab2852b3e8?v=d89ab7e0",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.2005 Corrective Action Plan",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/b00abb3471434caa86eefd305261fbad?v=908fd609",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1546 Home Health Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/b0c71f301a3b4c32b999ccd2f7946423?v=d03c43de",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "A",
+   "title": "AA.1217 Legal Claims and Judicial Review",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/b11fc6e3ef4a47209f1bca79f432a31c?v=b3fe4c44",
+   "doc_kind": "policy",
+   "department": "CalOptima Health Administrative",
+   "line_of_business": "Administrative",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1122 Follow-Up for Emergency Department Care",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/b14a1a9e2ace49f6a0ec8bb3186ca923?v=a5c4ab22",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.4011 OneCare Member Notification of Change in Location or Availability of Providers or Covered Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/b1b4aa73947e4841b2872fec971bece6?v=2d932c35",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1668 Inpatient Interfacility Transfers",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/b2075dd6d0d64b05bd76764bdf6caf74?v=b90b751f",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1428 Pharmacy Management Medi-Cal Rx Responsibilities",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/b23847ea06ff433bab1ab8bf51bccd86?v=c3456e0b",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "Provider Notice Update No 166 (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/b2c2a2797c0b47e5830bafcd514bb324?v=da430528",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1517 Transgender Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/b40530b2e64a4be49734db781d4c4c36?v=3df8a13d",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.2005 Conlan, Member Reimbursement",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/b4f917fb7df8405cba267645e0aed058?v=acc6259f",
+   "doc_kind": "policy",
+   "department": "Claims Administration",
+   "line_of_business": "Medi-Cal",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1128 Tuberculosis Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/b4fdaf9fabc04b9ab39f4f63a18669c9?v=ebfdacdf",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "2"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3005 Member Request for Accounting of Disclosures",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/b51a39c39b8a426c929f448160add3cd?v=b898767a",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.2010 Enrollment and Intake",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/b678467933d84cbab0f89daad2eb87e4?v=39b78371",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "D",
+   "title": "DD.2004 CalOptima Health Member Orientation",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/b68adfda5ca848db801ab5de58267238?v=3bad3295",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3004 Member Request to Amend Records",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/b733577c31784f56ad13b256f719af54?v=e403edbb",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1102 Experimental and Investigational Service Coverage",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/b78a856a9d8043e28b777386209938b4?v=39dce425",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3020 Reporting and Providing Notice of Security Incidents, Breaches of Unsecured PHI/PII or other Unauthorized Use or Disclosure of PHI/PII",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/b83b9954cd9c4876a2345f12a9c48d78?v=f8c3ec6e",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1706 Child Abuse Report",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/b83e3d6e71414b56a124a8413400b28f?v=a59420c5",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1828 Community Based Adult Services f (CBAS) Reauthorization Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/b88088246d754415854b5eeda774d243?v=0a3a8ddb",
+   "doc_kind": "policy",
+   "department": "Long Term Services and Supports",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.2021 Exclusion and Preclusion Monitoring",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/ba08eff283484bbfa9eccc2d70d52aaf?v=469ab685",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.5204 Emergency Medication",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/ba7bb401f4b042deac86a1b3498c2feb?v=f6c74095",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1810 Bed Hold, Long-Term Care",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/bb293f2dc555462da9361ce84be8a5e4?v=73f137b1",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "Provider Notice Update No 170 (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/bba3d6a51ae64bd9ac186572dc53a6b7?v=3477f37e",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "E",
+   "title": "EE.1106 Health Network and CalOptima Health Community Network Minimum and Maximum Member Enrollment",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/bbb24e6123c24134aa2c5a2626888d98?v=6e7ca629",
+   "doc_kind": "policy",
+   "department": "Network Operations",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6108 Medication Coordination of Benefits (COB)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/bbe671d68e6845d2a7fa31b1d76487a4?v=959d701f",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.5054 Provision of Food Service and Menu Preparation",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/bc719a0d66c843e88b85a8a17fa99e16?v=91d741e7",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "2"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.5012 Pharmacy Network: Credentialing and Access",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/bc7ffd01bb3e422a9cf8a405200910e8?v=47252ca0",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1660 Federally Qualified Health Center (FQHC) and Rural Health Clinic (RHC) Financial Incentives and Pay for Performance Payments",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/bcf65db668684d0fa11d89e54f101ad2?v=96497e58",
+   "doc_kind": "policy",
+   "department": "Quality Analytics",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.2019 Reporting Suspected or Actual Fraud, Waste, or Abuse (FWA), Violations of Applicable Laws and Regulations, and/or CalOptima Health Policies",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/bd2f647ac33d4e10aeabe668d9ff49e9?v=1780e9c8",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.1014 Payment for Covered Services Rendered to a Member Enrolled in a Health Network",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/bd8b9c71896f48cea30dcfdf60a78fed?v=cdc04c19",
+   "doc_kind": "policy",
+   "department": "Claims Administration",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.5201 Medication Administration and Packaging",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/bd924f7a67be48cfbefb8cc72e38a459?v=e63b92e2",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "A",
+   "title": "AA.1215 Public Records Requests and Subpoenas",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/be9945cc0dbd4162a9fdca7ca8b60362?v=0e92a3e9",
+   "doc_kind": "policy",
+   "department": "CalOptima Health Administrative",
+   "line_of_business": "Administrative",
+   "date_published": "8"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.2018 Compliance and Ethics Hotline",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/bea60330148a4bffa10390e6b8dcbfa1?v=edeb000f",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Administrative,Covered California,Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1111 Vision Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/bf1ef443c7764641bf6d72820b774898?v=93c2213a",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3011 Use and Disclosure of PHI for Treatment, Payment, and Health Care Operations",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/bf809aaba6db4dec9e300435487e94d5?v=dfb632e7",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1113 Specialty Practitioner Responsibilities",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/bffc2faecd0e410e841581eae4b69ff3?v=cf3c17b5",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.5007 Health Network Encounter Data Performance Standards",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/c01fa84f7dc744eda42ca2e40d4eb2c6?v=9b2349c2",
+   "doc_kind": "policy",
+   "department": "Finance",
+   "line_of_business": "OneCare",
+   "date_published": "8"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1114 Authorization for Disposable Incontinence Supplies",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/c02af687b2074522aaf3e8c8d6d3e579?v=e7e41c2a",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.9002 Pharmacy Claims Processing",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/c097bf436f604589a2305c9f887e84db?v=46d41c2a",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1661 External Quality Review (EQR) Requirements",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/c0be7a8a54124764a24ad897b0114fde?v=7b047476",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.4009 Member Orientation",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/c270fbeaa17b4f08af4f0968e5b477d9?v=46b90d40",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.1005 Collection, Storage, and Removal of Waste",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/c2d815c9c9844fd4adec147b053b77ea?v=9fef8e41",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "",
+   "title": "Provider Notice Update No 159 (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/c424beeb0c804b8bbc110cd613daaf5a?v=5a98fed8",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.2001 Marketing Material Standards",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/c4599994a9224d47b70a02afe2ad5d19?v=9edb10ac",
+   "doc_kind": "policy",
+   "department": "OneCare Sales and Marketing",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1705 Community Reinvestment",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/c48a86de44814a8094cb4bda2b94dffe?v=3d73635d",
+   "doc_kind": "policy",
+   "department": "Medi-Cal And CalAIM",
+   "line_of_business": "Medi-Cal",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "A",
+   "title": "AA.1251 Health Outcomes Training Program",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/c49b8e2e86dd47389925296751f376da?v=5fd5b15e",
+   "doc_kind": "policy",
+   "department": "Equity and Community Health",
+   "line_of_business": "Administrative,Medi-Cal,OneCare,PACE",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "",
+   "title": "April 17, 2023 Provider Notice Update Number 153 (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/c4c48e534cdf4704acd3f83fbe5c1f70?v=9806c90d",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.1004 Payment for Hospitals Contracted to Serve a CalOptima Health Direct Member, CalOptima Health Community Network Member, or a Member Enrolled in a Shared Risk Group",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/c554833692d34dfd960ad87e09973a0e?v=688a362f",
+   "doc_kind": "policy",
+   "department": "Claims Administration",
+   "line_of_business": "Medi-Cal",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.2022 Record Retention and Access",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/c5cf39bbd83441dbadb5a3429adde360?v=7b92255f",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1354 CalAIM Enhanced Care Management - Eligibility and Outreach",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/c749f675c73d4727b90a5dad0aa87619?v=41c911d2",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "2"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6105 Medication Quality Assurance",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/c904e8da81b54f838ddc58ea3ed13fe9?v=6848173b",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "A",
+   "title": "AA.1271 Whole-Child Model Family Advisory Committee",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/c9527b81e004435b9fa2c8c02a161d45?v=d97fde8a",
+   "doc_kind": "policy",
+   "department": "Executive Office",
+   "line_of_business": "Administrative,Medi-Cal",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "G",
+   "title": "GA.7111 Health Network Certification Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/ca0ca9a7f1dd4299b673d4131f597b2c?v=590ac9cf",
+   "doc_kind": "policy",
+   "department": "Provider Network Operations",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "Provider Notice Update 151 (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/cae456f69b754dbfa752ff85e55b9356?v=a4553762",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.5042 Safe Environment for Participants at the PACE Center",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/ccef1898ab1a4e49a354184633d03e5d?v=17d74016",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1900 Behavioral Health Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/cda821a967024dfeb46c0bd5b07943c0?v=4641a974",
+   "doc_kind": "policy",
+   "department": "Behavioral Health Integration",
+   "line_of_business": "Medi-Cal",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6113 Hospice and Part D Coordination of Benefits",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/cdf564b56b634583bd9b06286364c5d6?v=53446187",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "",
+   "title": "Provider Notice Update No 160 (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/d09f73af621549df8631580743566c2f?v=f67665dd",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1321 Coordination of Care for Local Education Agency Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/d1b692fb71b146dea7eba160f89e4cee?v=e0952d44",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "A",
+   "title": "AA.1219a Member Advisory Committee",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/d1f0849c90cb491c92a61e6f425da046?v=4a54e109",
+   "doc_kind": "policy",
+   "department": "Executive Office",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.4002 Special Payments: Enhanced Care Management Supplemental Payment",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/d20a32ff58674359a7e8df4aab0ea3d3?v=c7f5ce01",
+   "doc_kind": "policy",
+   "department": "Finance",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.4001 Member Rights and Responsibilities",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/d29f8a0a5de641dea9e96bda41020c3b?v=f3f62c02",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "A",
+   "title": "AA.1207a CalOptima Health Auto-Assignment",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/d2c1c0ab9da74540a2789d3edd0c2aad?v=3505d12b",
+   "doc_kind": "policy",
+   "department": "Provider Network Operations",
+   "line_of_business": "Medi-Cal",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "E",
+   "title": "EE.1124 Health Network Encounter Data Performance Standards",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/d2d5e4feb599472f9cba79a095f2ab71?v=f188d11f",
+   "doc_kind": "policy",
+   "department": "Finance",
+   "line_of_business": "Medi-Cal",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.7025 Primary Care Engagement and Clinical Documentation Integrity Program for CalOptima Health Community Network (CHCN) Contracted Providers",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/d32cd52b65db47669ba587e5aadb1efe?v=4756a38e",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.3003 Medicare Shared Risk Pool",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/d3d09ef363cb4a5b8876dd86dcd1d572?v=f657b925",
+   "doc_kind": "policy",
+   "department": "Finance",
+   "line_of_business": "OneCare,OneCare Connect",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1100 Substance Use Disorder (SUD) Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/d548dceaef634b16be4e33a1dd6545b3?v=3f0b1eb4",
+   "doc_kind": "policy",
+   "department": "Behavioral Health Integration",
+   "line_of_business": "Medi-Cal",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.2004 Financial Responsibility for Newborn Coverage",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/d54af86cfc8a4519b74b2cd23ea0ea76?v=8f07779d",
+   "doc_kind": "policy",
+   "department": "Claims Administration",
+   "line_of_business": "Medi-Cal",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.3001 Payment Arrangements to Health Networks \u2013 Capitation Payments",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/d60f9e01c396416eb871218dc9978182?v=ff2e49db",
+   "doc_kind": "policy",
+   "department": "Finance",
+   "line_of_business": "OneCare",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.5040 Participant Rights",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/d6dd57793067464881736900397c60da?v=4d5c9c41",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "2"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.1108 State Hearing Process and Procedures",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/d779fafd155a42d780586b877e1c3bba?v=fdae009e",
+   "doc_kind": "policy",
+   "department": "Grievance and Appeals Resolution Services",
+   "line_of_business": "Medi-Cal",
+   "date_published": "2"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.1107 Fraud, Waste, and Abuse Investigation and Reporting",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/d7c8a29f349940198f204c47427cbdb4?v=c8c662df",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Covered California,Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.6001 Medical Records Maintenance",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/d97b2ca182fb4d4dbc1415fa14f79401?v=80e5f935",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.1005a Special Payments \u2013 Bone Marrow Transplant and Major Organ Transplant",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/d9caa149420a48119d9046f8fa8d1976?v=f7ef237a",
+   "doc_kind": "policy",
+   "department": "Claims Administration",
+   "line_of_business": "Medi-Cal",
+   "date_published": "2"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1422 Notification Regarding Medication Recalls",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/d9d6296c9bf944589f0f4e952af9da53?v=356535d0",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "8"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1816 Quality Improvement Activities, Long-Term Services and Supports",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/d9e93586f40e40e4a242390cf66c41d4?v=c67f8719",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6022 Initial and Annual Health Risk Assessment",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/db69e9d183484ee3a85371d5c001cc2e?v=eb282386",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "OneCare",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1618 Member Request for Medical Records",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/dc1946e5d8864b3d851acd70b683d51f?v=47385bbf",
+   "doc_kind": "policy",
+   "department": "Quality Improvement",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "2"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.7002 Appeal Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/dc590bdcdf45400b9814ddfc6ea5a1e1?v=51d0a021",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "",
+   "title": "April - June 2023 Prior Authorization Medi-Cal (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/dcd056abd12549a59a6e202b42e9d68a?v=d74857fb",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "A",
+   "title": "AA.1207b Performance-based Health Network and CalOptima Health Community Network Auto-Assignment Allocation Methodology",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/dd2b9226d03a4808adbb5773916751f1?v=303919d3",
+   "doc_kind": "policy",
+   "department": "Provider Network Operations",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "E",
+   "title": "EE.1135 Long-Term Care Facilities (LTCF) Contracting Requirements",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/dd529280e1d34646a315e3b50bde35cb?v=11c9ec31",
+   "doc_kind": "policy",
+   "department": "Contracting",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.1005c Special Payments: High-Cost Exclusion Items",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/dd7b2d0659394d4ea7e16a2465a1f177?v=e49e72c1",
+   "doc_kind": "policy",
+   "department": "Claims Administration",
+   "line_of_business": "Medi-Cal",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3009 Access by Member\u2019s Personal Representative",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/de0118097314409abb9517f17f4c7611?v=a9d8922a",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "4"
+  },
+  {
+   "policy_number": "",
+   "title": "July 2023 Physician-Administered Drug Prior Authorization Required List (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/de59c7a14a28473d934740f50c1e9cfe?v=217e865f",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.3002 Financial Security Requirements",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/df4af9a6612046ef836ff9624d8ee22f?v=5070673e",
+   "doc_kind": "policy",
+   "department": "Finance",
+   "line_of_business": "OneCare",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "",
+   "title": "2026 August Provider Manual",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/dfb55018403942c29e96ed08aaae05d3?v=6f8d1320",
+   "doc_kind": "manual",
+   "department": "Provider Relations",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1707 Doula Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/dff9d670d808493b91e7a683786bdb32?v=f929b14e",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1330 Case Management - California Children\u2019s Services Program/Whole- Child Model",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e00f68a78bed46e9b882a181819d4156?v=806243f9",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1630 Reporting Communicable Diseases",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e041e73cd3294699af3e71218174f24f?v=243e29c9",
+   "doc_kind": "policy",
+   "department": "Quality Improvement",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "",
+   "title": "2026 Medi-Cal Authorization List",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e1243591095e4921ba3ccf5c618a10f2?v=1625380c",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6021 Continuity of Care for Members Involuntarily Transitioning Between Providers or Practitioners",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e130a84b345e4ce394239788563ad6b6?v=3e3c7da8",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3016 Guidelines for Handling Protected Health Information Off-site",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e131fd1025f649bf897d8d8a9e16e7f1?v=cd2e3c47",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.2020 Voluntary Disenrollment",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e1391a604d504a94b4de563ca7d3cf4d?v=887e668f",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "4"
+  },
+  {
+   "policy_number": "",
+   "title": "Provider Notice Update No 161 (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e16c09c8d2454fe780bfed53aa8f7177?v=c7ec6235",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.4004 Grant Audits/Reviews",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e185c936ff8249fab08826e8cbdeb635?v=c062f319",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Administrative",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1608 Site Reviews",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e1aee139bf3742ef81869c5a75dbb603?v=fcd3bd7e",
+   "doc_kind": "policy",
+   "department": "Quality Improvement",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.2012 Directed Payments for Qualifying Services Rendered to CalOptima Health Direct Members or to Shared Risk Group Members When CalOptima Health is Financially Responsible for the Qualifying Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e228aafe8ec941a08e5c0e2472f2e5b5?v=5e670fd9",
+   "doc_kind": "policy",
+   "department": "Claims Administration",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1506 Guidelines for Advance Directives for CalOptima Health Members",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e285171f390340c19e72a0fc0b7562d1?v=15b28539",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3019 De-identification of Protected Health Information",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e38c29ebbf6d47c686bd838d18cd5a4d?v=36248cd2",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "D",
+   "title": "DD.2005 Member Informing Materials Requirements",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e39a71a3ec7c4c4d8f472e05268a3b06?v=9a958102",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1831 Multipurpose Senior Services Program (MSSP)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e39e77f6fb284238aec80a64e602b980?v=e6ea003a",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "A",
+   "title": "AA.1214 Guidelines for Endorsements by CalOptima Health, for Letters of Support and Use of CalOptima Health Name or Logo",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e5047c48ee1d46a09f71ae6dc85af59e?v=506593a7",
+   "doc_kind": "policy",
+   "department": "Communications",
+   "line_of_business": "Administrative",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1657 State Licensing Board and the National Practitioner Data Bank (NPDB) Reporting",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e571e22e13114d4fa1e577581baee779?v=836cec46",
+   "doc_kind": "policy",
+   "department": "Quality Improvement",
+   "line_of_business": "Covered California,Medi-Cal,OneCare,PACE",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.9015 Standard Integrated Appeals",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e631ee24f7cc4158ae65666e92534e27?v=4d2e758f",
+   "doc_kind": "policy",
+   "department": "Grievance and Appeals Resolution Services",
+   "line_of_business": "OneCare",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1651 Assessment and Reassessment of Organizational Providers",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e6e0dc00d4d54b7391df734c138b8a7a?v=f5640dd7",
+   "doc_kind": "policy",
+   "department": "Quality Improvement",
+   "line_of_business": "Covered California,Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "H",
+   "title": "HH.3022 Business Associate Agreements",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e87292313d3440d2a14b965eb9df8bbc?v=a98ac847",
+   "doc_kind": "policy",
+   "department": "Office Of Compliance",
+   "line_of_business": "Administrative,Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.9009 Non-Contracted Provider Complaint Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/e8730aa861d24c7aaf92404a74fe6440?v=d2ae0536",
+   "doc_kind": "policy",
+   "department": "Grievance and Appeals Resolution Services",
+   "line_of_business": "OneCare,OneCare Connect",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1669 Complex Cancer Care",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/ea0836646810474c92f1a17e07bd5ee2?v=480644ac",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GA.7107 Mail Collection and Delivery",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/ea5702f8c8ec4257ac3adb391ecb1fa4?v=7fdc9861",
+   "doc_kind": "policy",
+   "department": "Facilities",
+   "line_of_business": "Administrative",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1815 Long Term Services and Support Quality of Care Reporting",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/ea6abb8ac2694081b1cb8b313bd36f0a?v=8ad4664b",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1353 CalAIM Enhanced Care Management Service Delivery +*",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/ea73106d88e443db8989a1ce8fe5b9b8?v=4cf866b1",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1652 DHCS Notification of Change in the Availability or Location of Covered Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/ec2af282c3ff4c2d8f2435c5a866bb2a?v=fc002b6f",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.5030 Wander Risk and Missing Participants",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/ed6a1af3f6b843849c1aefe60fc8dd7a?v=6cdf2d84",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "8"
+  },
+  {
+   "policy_number": "A",
+   "title": "AA.1207c Performance-based Community Health Center Auto-Assignment Allocation Methodology",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/edd7c769007f4cdaa6b03bd6adf0ba81?v=9f8e1d93",
+   "doc_kind": "policy",
+   "department": "Provider Network Operations",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1832 Multipurpose Senior Services Program (MSSP) \u2013 MSSP Identification, Referral, and Coordination of Care Process",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/eddb561f1ee444e79a6e7a016de7c322?v=bec58946",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1619 Delegation Oversight",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/ee7211ba45484573a0629b81fdcdc400?v=017086ed",
+   "doc_kind": "policy",
+   "department": "Delegation Oversight",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1513 Health Network Utilization Management Reporting and Monitoring Requirements",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/eeb1c8a686714bfa8338c2e6570c97ed?v=e001fd24",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.2012 Training and Oversight of CalOptima Health-Employed Community Partners",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/eecbbb5a8d694d30bdd6169b157847b1?v=119669e8",
+   "doc_kind": "policy",
+   "department": "OneCare Sales and Marketing",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "Provider Notice Update No 155 (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/eeefceddea4c4f0ea15e69eb51a56552?v=12228560",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "April-June 2024 Prior Authorization Medi-Cal (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/f03e732a36544e48b991bccd626ebc13?v=86c20ea2",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1645 Assessing Primary Care Provider (PCP) Experience",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/f111603475354795bad202ae1036b7e4?v=5edc48ea",
+   "doc_kind": "policy",
+   "department": "Provider Network Operations",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.5111 After Hours Care",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/f118c615d10f40b0b26bffe1dcfc8f56?v=e06ebe39",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "E",
+   "title": "EE.1141 CalOptima Health Provider Contracts",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/f1b405ebda404b95aeffbb453da5c1ba?v=a161ab7d",
+   "doc_kind": "policy",
+   "department": "Contracting",
+   "line_of_business": "Covered California,Medi-Cal,OneCare,PACE",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1541 Utilization Management Delegation",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/f1c86147183d406fa48c162f781fa6ed?v=6ebd18b4",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.2011 Directed Payments for Qualifying Services Rendered to CalOptima Health, Health Network Members When Health Networks are Financially Responsible for the Qualifying Services",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/f2b2b09c953c47b984593c41d148d150?v=77ae4252",
+   "doc_kind": "policy",
+   "department": "Claims Administration",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.4004 Member Disenrollment",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/f38a1aa53e6b4b00a54f842196749c98?v=ac1f85b3",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.1003 Payment for Covered Services Rendered to a Member for which CalOptima Health is Financially Responsible",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/f403e6582d4c4f769b390208c95b36ba?v=479a29c8",
+   "doc_kind": "policy",
+   "department": "Claims Administration",
+   "line_of_business": "Medi-Cal",
+   "date_published": "9"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1643 Minimum Provider Credentialing Standards",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/f4d64ad3475d4d31948660b57ac04e03?v=9f83cd3d",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "F",
+   "title": "FF.1007 Health Network Reinsurance Coverage",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/f5ea89d175234034abd24ddda624526c?v=0ada2059",
+   "doc_kind": "policy",
+   "department": "Finance",
+   "line_of_business": "Medi-Cal",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "P",
+   "title": "PA.5051 Quality of Food",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/f69d5121d2ff497a8a15e047f2e64ef1?v=4b60a5a2",
+   "doc_kind": "policy",
+   "department": "CalOptima Health PACE",
+   "line_of_business": "PACE",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "",
+   "title": "2023-04 Medi-Cal - OneCare Prior Authorization List (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/f8200f6a506a40968a249993c0ff9dba?v=50a3decf",
+   "doc_kind": "policy",
+   "department": "Claims",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1320 Elder or Dependent Adult Abuse Reporting",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/f826a241be0345dc8aafd2f152d8e8f2?v=4423ad7b",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "Housing and Homelessness Incentive Program Progress Report - November 2024 (PDF)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/f84f245bc61c4b3bbb44e4453f44de6f?v=d85b907d",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1355 CalAIM Community Supports",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/f88dffb0d4474b93ab0d091d3511687b?v=3262f61e",
+   "doc_kind": "policy",
+   "department": "Long Term Services and Supports",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "7"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1713 Certified Nurse-Midwife Practice Guidelines",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/f8fcc35bc4be4b779a5390ccf18b1d45?v=d410ba12",
+   "doc_kind": "policy",
+   "department": "Quality Improvement",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1205 HEDIS\u00ae Data Collection and Reporting",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/f9321eaff5dc4b7686d0a3ba64041143?v=30c0d6e6",
+   "doc_kind": "policy",
+   "department": "Quality Analytics",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "5"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6023 Notice of Medicare Non-Coverage and Notice of a Detailed Explanation of Non-Coverage",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/fa8bf779a09f41daabb83c0e9f133f3e?v=54cf8229",
+   "doc_kind": "policy",
+   "department": "Medical Management",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1105 Coverage of Organ and Tissue Transplants",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/faad889a60d048dfb28055c6c62c7bdf?v=2d303607",
+   "doc_kind": "policy",
+   "department": "Utilization Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "3"
+  },
+  {
+   "policy_number": "G",
+   "title": "GA.8042 Supplemental Compensation",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/fac500a288c84367bc050fd45415f9ab?v=d8427417",
+   "doc_kind": "policy",
+   "department": "Human Resources",
+   "line_of_business": "Administrative",
+   "date_published": "6"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1667 CalAIM Population Health Management Program",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/fb48d316794a43c6818fe420f5d41164?v=d4db953d",
+   "doc_kind": "policy",
+   "department": "Unspecified",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1352 Private Duty Nursing Care Management",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/fd897ecf46184775afe5abce0b96127c?v=f9537efa",
+   "doc_kind": "policy",
+   "department": "Case Management",
+   "line_of_business": "Medi-Cal",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1629 Quality Improvement and Health Equity Transformation Program (QIHETP)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/fe2bed1de25340d2a3bcc5c62bd8f42c?v=b7d16a0c",
+   "doc_kind": "policy",
+   "department": "Quality Improvement",
+   "line_of_business": "Covered California,Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.6116 Medicare Prescription Payment Plan (M3P)",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/fe2d122fe04b4e189aa24f7a3a3508ba?v=764ea404",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "E",
+   "title": "EE.1144 Memorandum of Understanding (MOU) Requirements for CalOptima Health and Third-Party Entities",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/fe53eafeb20e4dad934fcd5bd9793756?v=1b9c1a85",
+   "doc_kind": "policy",
+   "department": "Contracting",
+   "line_of_business": "Medi-Cal,OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "G",
+   "title": "GG.1666 CalOptima Health Texting Program",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/fe6eb4604a0a4fd79affa2cda0c26d74?v=a0113506",
+   "doc_kind": "policy",
+   "department": "Communications",
+   "line_of_business": "Medi-Cal,OneCare,PACE",
+   "date_published": "2"
+  },
+  {
+   "policy_number": "M",
+   "title": "MA.1004 Low Income Subsidy Cost-Sharing Data Corrections Based on Best Available Evidence",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/ff7ce64db7be49c1a42bb56d2f054ae1?v=ac828c7c",
+   "doc_kind": "policy",
+   "department": "Customer Service",
+   "line_of_business": "OneCare",
+   "date_published": "1"
+  },
+  {
+   "policy_number": "",
+   "title": "cantharidin (Ycanth)\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-Cantharidn-Ycanth-en?v=3dcc79d2",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Corticosteroid Intravitreal Implants\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-Corticosteroids-Ophthalmic-Implants-en?v=ec0fe88a",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Immune Globulin\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-Immune-globulin-en?v=1f262937",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Inclisiran (Leqvio)\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-Inclisiran-en?v=63c22d75",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Intravitreal Vascular Endothelial Growth Factor Antagonist\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-Intravitreal-vascular-endothelial-growth-factor-antagonist-en?v=34df06c0",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Nusinersen (Spinraza)\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-Nusinersen-en?v=fd96050d",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Botulinum Toxins\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-botulinum-toxins-en?v=8ebd4fe9",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Delandistrogene Moxeparvovec\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-delandistrogene-moxeparvovec-en?v=4783faa5",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Denosumab\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-denosumab-en?v=39a520ee",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Efgartigimod Alfa Fcab\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-efgartigimod-alfa-fcab-en?v=fd2c57c7",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Eptinezumab Jjmr\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-eptinezumab-jjmr-en?v=2010b6da",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Esketamine (Spravato)\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-esketamine-spravato-en?v=05d4be67",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Etranacogene Dezaparvovec\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-etranacogene-dezaparvovec-en?v=1662efae",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "exagamglogene autotemecl (Casgevy)\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-exagamglogene-autotemecl-en?v=929020b3",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Gonadotropin Releasing Hormone Analog\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-gonadotropin-releasing-hormone-analog-en?v=2cbe4d50",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Hyaluronic Acid\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-hyaluronic-acid-en?v=d2ca2dc4",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Intra-Dialytic Parenteral Nutrition\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-intra-dialytic-parenteral-nutrition-en?v=6b4361e0",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Lovotibeglogene autotemcel (Lyfgenia)\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-lovotibeglogene-autotemcel-en?v=8d6dc6ae",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Onasemnogene (Itvisma, Zolgensma)\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-onasemnogene-en?v=ef566d36",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Pegloticase Krystexxa\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-pegloticase-krystexxa-en?v=87286de6",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Revakinagene taroretcel-lwey (Encelto)\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-revakinagene-taroretcel-lwey-en?v=36a0a2ad",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Romiplostim\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-romiplostim-en?v=72296658",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Romosozumab Evenity\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-romosozumab-evenity-en?v=b8288838",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Teprotumumab Tepezza\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-teprotumumab-tepezza-en?v=d948682f",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  },
+  {
+   "policy_number": "",
+   "title": "Triamcinolone Extended Release\u2014PAD PA Criteria",
+   "source_url": "https://cop-p-001.sitecorecontenthub.cloud/api/public/content/physician-administered-drug-prior-authorization-criteria-triamcinolone-extended-release-en?v=2f234bdc",
+   "doc_kind": "policy",
+   "department": "Pharmacy Management",
+   "line_of_business": "",
+   "date_published": ""
+  }
+ ]
+}

@@ -1,0 +1,2851 @@
+{
+ "source_page": "https://www.dhcs.ca.gov/forms-laws-publications/managed-care-all-plan-letters-1998-to-current/",
+ "harvested": "2026-09-06",
+ "method": "browser session (Incapsula challenge passed in-browser); page fetched with session cookie; robots.txt fully permissive",
+ "documents": [
+  {
+   "policy_number": "APL 26-001",
+   "title": "APL 26-001: Initial Health Appointment (Supersedes APL 22-030)",
+   "source_url": "https://www.dhcs.ca.gov/file/file-193990-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 26-002",
+   "title": "APL 26-002: Medi-Cal Managed Care Plan Responsibilities for Non-Specialty Mental Health Services (Supersedes APL 22-006)    Attachment A: DHCS-Approved",
+   "source_url": "https://www.dhcs.ca.gov/file/apl26-002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 26-003",
+   "title": "APL 26-003: Quality Measures For Encounter Data Update: Quality Measures For Encounter Data 2.0 (Supersedes APL 14-020)   Quality Measures for Encounter",
+   "source_url": "https://www.dhcs.ca.gov/file/file-193996-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 26-004",
+   "title": "APL 26-004: Medi-Cal Managed Care Plan Responsibilities For Behavioral Health Data-Sharing",
+   "source_url": "https://www.dhcs.ca.gov/file/file-193980-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 26-005",
+   "title": "APL 26-005: Maternity Services for Pregnant and Postpartum Medi-Cal Members (Supersedes APLs 00-012, 18-022, and Policy Letters 98-006, 98-010, and 12-0",
+   "source_url": "https://www.dhcs.ca.gov/file/apl26-005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 26-006",
+   "title": "APL 26-006: Skilled Nursing Facility Workforce Quality Incentive Program (Supersedes APL 25-002)   SNF WQIP Contracted Bed Day and Payment Totals Templa",
+   "source_url": "https://www.dhcs.ca.gov/file/apl-26-006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 26-007",
+   "title": "APL 26-007: Medi-Cal Managed Care Plan Guidance on Network Provider Agreements (Supersedes APL 19-001)   Attachment A: Network Provider Agreement Templa",
+   "source_url": "https://www.dhcs.ca.gov/file/file-189185-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 26-008",
+   "title": "APL 26-008: Interoperability Final Rules, Including Prior Authorization Requirements (Supersedes APL 22-026)   Prior Authorization Metrics Report",
+   "source_url": "https://www.dhcs.ca.gov/file/apl-26-008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 26-009",
+   "title": "APL 26-009: Private Duty Nursing Case Management Responsibilities For Medi-Cal Eligible Members Under The Age of 21 (Supersedes APL 20-012)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl-26-009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 26-010",
+   "title": "APL 26-010: Skilled Nursing Facilities \u2014 Long Term Care Benefit Under Managed Care (Supersedes APL 24-009)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl-26-010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 26-011",
+   "title": "APL 26-011: Subacute Care Facilities \u2013 Long-Term Care Benefit Under Managed Care (Supersedes APL 24-010)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl-26-011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 26-012",
+   "title": "APL 26-012: Intermediate Care Facilities For Individuals With Developmental Disabilities \u2013 Long-Term Care Benefit Under Managed Care (Supersedes APL 24-",
+   "source_url": "https://www.dhcs.ca.gov/file/apl-26-012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 26-013",
+   "title": "APL 26-013: H.R. 1 \u2013 Federal Payment to Prohibited Entities \u2013 Important Update: End of One\u2013Year Restriction on Federal Payments",
+   "source_url": "https://www.dhcs.ca.gov/file/apl-26-013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 26-014",
+   "title": "APL 26-014: Responsibilities for Annual Cognitive Health Assessment for Eligible Members 65 Years of Age or Older (Supersedes APL 22-025)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl-26-014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 26-015",
+   "title": "APL 26-015: Immunization Requirements (Supersedes APL 24-008)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl-26-015/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 25-001",
+   "title": "APL 25-001: 2024-2025 Medi-Cal Managed Care Health Plan Meds/834 Cutoff and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/apl25-001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 25-002",
+   "title": "APL 25-002: Skilled Nursing Facility Workforce Quality Incentive Program (Superseded by APL 26-006)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl25-002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 25-003",
+   "title": "APL 25-003: Establishing Dual Eligible Special Needs Plans by 2026",
+   "source_url": "https://www.dhcs.ca.gov/file/apl25-003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 25-004",
+   "title": "APL 25-004: Community Reinvestment Requirements   Appendix A    Appendix B: Community Reinvestment Plan     Instructions     EXHIBIT 1: Attestation of S",
+   "source_url": "https://www.dhcs.ca.gov/file/apl25-004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 25-005",
+   "title": "APL 25-005: Standards For Determining Threshold Languages, Nondiscrimination Requirements, Language Assistance Services, And Alternative Formats (Supers",
+   "source_url": "https://www.dhcs.ca.gov/file/apl25-005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 25-006",
+   "title": "APL 25-006: Timely Access Requirements",
+   "source_url": "https://www.dhcs.ca.gov/file/apl25-006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 25-007",
+   "title": "APL 25-007: Enforcement Actions: Corrective Action Plans, Administrative and Monetary Sanctions (Supersedes APL 23-012)    Attachment A- Network Adequac",
+   "source_url": "https://www.dhcs.ca.gov/file/apl25-007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 25-008",
+   "title": "APL 25-008: Hospice Services and Medi-Cal Managed Care",
+   "source_url": "https://www.dhcs.ca.gov/file/apl25-008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 25-009",
+   "title": "APL 25-009: Community Advisory Committee",
+   "source_url": "https://www.dhcs.ca.gov/file/apl25-009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 25-010",
+   "title": "APL 25-010: Adult and Youth Screening and Transition of Care Tools for Medi-Cal Mental Health Services (Supersedes APL 22-028)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl25-010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 25-011",
+   "title": "APL 25-011: H.R. 1 \u2013 Federal Payments to Prohibited Entities",
+   "source_url": "https://www.dhcs.ca.gov/file/apl-hr-1-revised-9-17-25-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 25-012",
+   "title": "APL 25-012: Targeted Provider Rate Increases",
+   "source_url": "https://www.dhcs.ca.gov/file/apl25-012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 25-013",
+   "title": "APL 25-013: Medi-Cal Rx Pharmacy Benefits, And Cell and Gene Therapy Coverage (Supersedes APL 22-012)    Appendix A \u2013 Medi-Cal Rx Transition and NCQA Re",
+   "source_url": "https://www.dhcs.ca.gov/file/apl25-013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 25-014",
+   "title": "APL 25-014: Update to Provider Directory Requirements",
+   "source_url": "https://www.dhcs.ca.gov/file/apl25-014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 25-015",
+   "title": "APL 25-015: Data Sharing and Quality Rate Production for Directed Payment Initiatives and Alternative Payment Methodology Programs",
+   "source_url": "https://www.dhcs.ca.gov/file/apl25-015-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 25-016",
+   "title": "APL 25-016: Alternative Format Selection For Members With Visual Impairments (Supersedes APL 22-002)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl25-016-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 25-017",
+   "title": "APL 25-017: 2025-2027 Medi-Cal Managed Care Health Plan MEDS/834 Cutoff and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/file-193916-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 24-001",
+   "title": "APL 24-001: Street Medicine Provider: Definitions and Participation in Managed Care\u00a0(Supersedes APL 22-023)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl24-001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 24-002",
+   "title": "APL 24-002: Medi-Cal Managed Care Plan Responsibilities for Indian Health Care Providers and American Indian Members (Supersedes APL 09-009)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl24-002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 24-003",
+   "title": "APL 24-003: Abortion And Directly Related Medical Services And Supplies",
+   "source_url": "https://www.dhcs.ca.gov/file/apl24-003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 24-004",
+   "title": "APL 24-004: Quality Improvement and Health Equity Transformation Requirements\u00a0(Supersedes APL 19-017)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl24-004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 24-005",
+   "title": "APL 24-005: California Housing And Homelessness Incentive (Supersedes APL 22-007)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl24-005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 24-006",
+   "title": "APL 24-006: Community Health Worker Services Benefit (Supersedes APL 22-016)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl24-006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 24-007",
+   "title": "APL 24-007: Targeted Provider Rate Increases",
+   "source_url": "https://www.dhcs.ca.gov/file/apl24-007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 24-008",
+   "title": "APL 24-008: Immunization Requirements (Supersedes APLs 18-004 and 16-009) (Superseded by APL 26-015)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl24-008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 24-009",
+   "title": "APL 24-009: Skilled Nursing Facilities \u2013 Long Term Care Benefit Standardization and Transition of Members to Managed Care Superseded by APL 26-010",
+   "source_url": "https://www.dhcs.ca.gov/file/apl24-009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 24-010",
+   "title": "APL 24-010: Subacute Care Facilities \u2013 Long Term Care Benefit Standardization and Transition of Members to Managed Care Superseded by APL 26-011",
+   "source_url": "https://www.dhcs.ca.gov/file/apl24-010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 24-011",
+   "title": "APL 24-011: Intermediate Care Facilities for Individuals with Developmental Disabilities \u2013 Long Term Care Benefit Standardization and Transition of Memb",
+   "source_url": "https://www.dhcs.ca.gov/file/apl24-011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 24-012",
+   "title": "APL 24-012: Non-Specialty Mental Health Services: Member Outreach, Education, and Experience Requirements",
+   "source_url": "https://www.dhcs.ca.gov/file/apl24-012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 24-013",
+   "title": "APL 24-013: Managed Care Plan Child Welfare Liaison",
+   "source_url": "https://www.dhcs.ca.gov/file/apl24-013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 24-014",
+   "title": "APL 24-014: Continuity Of Care For Medi-Cal Members Who Are Foster Youth And Former Youth In Single Plan Counties",
+   "source_url": "https://www.dhcs.ca.gov/file/apl24-014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 24-015",
+   "title": "APL 24-015: California Children\u2019s Services Whole Child Model Program (Supersedes APL 23-034)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl24-015-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 24-016",
+   "title": "APL 24-016: Diversity, Equity, And Inclusion Training ProgramRequirements (Supersedes APL 23-025)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl24-016-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 24-017",
+   "title": "APL 24-017: Transgender, Gender Diverse or Intersex Cultural Competency Training Program and Provider Directory Requirements",
+   "source_url": "https://www.dhcs.ca.gov/file/apl24-017-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 24-018",
+   "title": "APL 24-018: Medical Loss Ratio Requirements For Subcontractors And Downstream Subcontractors",
+   "source_url": "https://www.dhcs.ca.gov/file/apl24-018-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 24-019",
+   "title": "APL 24-019: Minor Consent to Outpatient Mental Health Treatment or Counseling",
+   "source_url": "https://www.dhcs.ca.gov/file/apl24-019-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-001",
+   "title": "APL 23-001: Network Certification Requirements\u00a0(Supersedes APL 21-006)  Attachment A:  Network Adequacy Standards (PDF)   Attachment B:  Annual Network",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-002",
+   "title": "APL 23-002: 2023-2024 Medi-Cal Managed Care Health Plan MEDS/834 Cutoff and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-003",
+   "title": "APL 23-003: California Advancing and Innovating Medi-Cal Incentive Payment Program (Supersedes APL 21-016)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-004",
+   "title": "APL 23-004: Skilled Nursing Facilities \u2014 Long Term Care Benefit Standardization and Transition of Members to Managed Care (Supersedes APL 22-018)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-005",
+   "title": "APL 23-005: Requirements For Coverage of Early and Periodic Screening, Diagnostic, and Treatment Services for Medi-Cal Members Under the Age of 21 (Supe",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-006",
+   "title": "APL 23-006: Delegation and Subcontractor Network Certification (Supersedes APL 17-004)  Attachment A:  Subcontractor Network Certification Instruction M",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-007",
+   "title": "APL 23-007: Telehealth Services Policy (Supersedes APL 19-009)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-008",
+   "title": "APL 23-008: Proposition 56 Directed Payments for Family Planning Services (Supersedes APL 22-011)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-009",
+   "title": "APL 23-009: Authorizations for Post-Stabilization Care Services",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-010",
+   "title": "APL 23-010: Responsibilities for Behavioral Health Treatment Coverage for Members Under the Age of 21 (Supersedes APL 19-014)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-011",
+   "title": "APL 23-011: Treatment of Recoveries Made by the Managed Care Health Plan of Overpayments to Providers (Supersedes APL 17-003)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-012",
+   "title": "APL 23-012: Enforcement Actions: Administrative and Monetary Sanctions (Supersedes APL 22-015)(Superseded by 25-007)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-013",
+   "title": "APL 23-013: Mandatory Signatories to the California Health and Human Services Agency Data Exchange Framework",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-014",
+   "title": "APL 23-014: Proposition 56 Value-Based Payment Program Directed Payments (Supersedes APL 22-019)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-015",
+   "title": "APL 23-015: Proposition 56 Directed Payments For Private Services (Supersedes APL 19-013)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-015-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-016",
+   "title": "APL 23-016: Directed Payments for Developmental Screening Services (Supersedes APL 19-016)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-016-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-017",
+   "title": "APL 23-017: Directed Payments for Adverse Childhood Experiences Screening Services (Supersedes APL 19-018)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-017-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-018",
+   "title": "APL 23-018: Managed Care Health Plan Transition Policy Guide",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-018-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-019",
+   "title": "APL 23-019: Proposition 56 Directed Payments for Physician Services (Supersedes APL 19-015)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-019-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-020",
+   "title": "APL 23-020: Requirements for Timely Payment of Claims",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-020-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-021",
+   "title": "APL 23-021: Population Needs Assessment and Population Health Management Strategy (Supersedes APL 19-011)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-021-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-022",
+   "title": "APL 23-022: Continuity of Care for Medi-Cal Beneficiaries Who Newly Enroll in Medi-Cal Managed Care from Medi-Cal Fee-For-Service, on or After January 1",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-022-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-023",
+   "title": "APL 23-023: Intermediate Care Facilities for Individuals with Developmental Disabilities \u2014 Long Term Care Benefit Standardization and Transition of Memb",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-023-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-024",
+   "title": "APL 23-024: Doula Services (Supersedes APL 22-031)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-024-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-025",
+   "title": "APL 23-025: Diversity, Equity, and Inclusion Training Program Requirements (Supersedes APL 99-005) (Superseded by APL 24-016)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-025-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-026",
+   "title": "APL 23-026: Federal Drug Utilization Review Requirements Designed to Reduce Opioid Related Fraud, Misuse and Abuse (Supersedes APL 19-012)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-026-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-027",
+   "title": "APL 23-027: Subacute Care Facilities \u2014 Long Term Care Benefit Standardization and Transition of Members to Managed Care",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-027-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-028",
+   "title": "APL 23-028: Dental Services \u2013 Intravenous Moderate Sedation and Deep Sedation/General Anesthesia Coverage Attachment A:  Policy for Intravenous Moderate",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-028-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-029",
+   "title": "APL 23-029: Memorandum of Understanding Requirements for Medi-Cal Managed Care Plans and Third-Party Entities    Base Memorandum of Understanding Templa",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-029-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-030",
+   "title": "APL 23-030: Medi-Cal Justice-Involved Reentry Initiative-Related State Guidance",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-030-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-031",
+   "title": "APL 23-031: Medi-Cal Managed Care Plan Implementation of Primary Care Provider Assignment for the Age 26-49 Adult Expansion Transition",
+   "source_url": "https://www.dhcs.ca.gov/file/apl-23-031-adult-expansion-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-032",
+   "title": "APL 23-032: Enhanced Care Management Requirements (Supersedes APL 21-012)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-032-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-033",
+   "title": "APL 23-033: 2024-2025 Medi-Cal Managed Care Health Plan MEDS/834 Cutoff and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-033-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-034",
+   "title": "APL 23-034: California Children\u2019s Services Whole Child Model Program (Supersedes APL 21-005) (Superseded by APL 24-015)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-034-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 23-035",
+   "title": "APL 23-035: Student Behavioral Health Incentive Program",
+   "source_url": "https://www.dhcs.ca.gov/file/apl23-035-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-001",
+   "title": "APL 22-001: 2022-2023 Medi-Cal Managed Care Health Plan Meds/834 Cutoff and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-002",
+   "title": "APL 22-002: Alternative Format Selection for Members with Visual Impairments     Alternative Format Selection Technical Guidance for Medi-Cal Managed Ca",
+   "source_url": "https://www.dhcs.ca.gov/file/apl-22-002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-003",
+   "title": "APL 22-003: Medi-Cal Managed Care Health Plan Responsibility to Provide Services to Members with Eating Disorders",
+   "source_url": "https://www.dhcs.ca.gov/file/apl-22-003-2-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-004",
+   "title": "APL 22-004: Strategic Approaches for Use By Managed Care Plans to Maximize Continuity of Coverage as Normal Eligibility and Enrollment Operations Resume",
+   "source_url": "https://www.dhcs.ca.gov/file/apl-22-004-2-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-005",
+   "title": "APL 22-005: No Wrong Door for Mental Health Services Policy",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-006",
+   "title": "APL 22-006: Medi-Cal Managed Care Health Plan Responsibilities for Non-Specialty Mental Health Services (Supersedes APL 17-018)  Superseded by APL 26-00",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-007",
+   "title": "APL 22-007: California Housing and Homelessness Incentive Program",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-008",
+   "title": "APL 22-008: Non-Emergency Medical and Non-Medical Transportation Services and Related Travel Expenses (Supersedes APL 17-010)    Non-Emergency Medical a",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-009",
+   "title": "APL 22-009: COVID-19 Guidance for Medi-Cal Managed Care Health Plans-  RETIRED",
+   "source_url": "https://www.dhcs.ca.gov/file/apl-22-009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-010",
+   "title": "APL 22-010: Cancer Biomarker Testing",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-011",
+   "title": "APL 22-011: Proposition 56 Directed Payments for Family Planning Services (Supersedes APL 20-013)   Superseded by 23-008",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-012",
+   "title": "APL 22-012: Governor\u2019s Executive Order N-01-19, Regarding Transitioning Medi-Cal Pharmacy Benefits from Managed Care to Medi-Cal RX (Supersedes APL 20-0",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-013",
+   "title": "APL 22-013: Provider Credentialing/Re-Credentialing and Screening/Enrollment (Supersedes APL 19-004)     APL 22-013 Frequently Asked Questions",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-014",
+   "title": "APL 22-014: Electronic Visit Verification Implementation Requirements",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-015",
+   "title": "APL 22-015: Enforcement Actions: Administrative and Monetary Sanctions (Supersedes APL 18-003)   Superseded by 23-012",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-015-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-016",
+   "title": "APL 22-016: Community Health Worker Services Benefit",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-016-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-017",
+   "title": "APL 22-017: Primary Care Provider Site Reviews: Facility Site Review and Medical Record Review (Supersedes APL 20-006)    Facility Site Review Standards",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-017-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-018",
+   "title": "APL 22-018: Skilled Nursing Facilities \u2014 Long Term Care Benefit Standardization and Transition of Members to Managed Care   Superseded by 23-004",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-018-snf-carve-in-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-019",
+   "title": "APL 22-019: Proposition 56 Value-Based Payment Program Directed Payments (Supersedes APL 20-014)   Superseded by 23-014",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-019-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-020",
+   "title": "APL 22-020: Community-Based Adult Services Emergency Remote Services (Supersedes APL 20-007)  Reporting Template",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-020-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-021",
+   "title": "APL 22-021: Proposition 56 Behavioral Health Integration Incentive Program",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-021-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-022",
+   "title": "APL 22-022: Abortion Services (Supersedes APL 15-020)   Superseded by 24-003",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-022-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-023",
+   "title": "APL 22-023: Street Medicine Provider: Definitions and Participation in Managed Care   Superseded by 24-001",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-023-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-024",
+   "title": "APL 22-024: Population Health Management Program Guide (Supersedes APLs 17-012 and 17-013)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-024-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-025",
+   "title": "APL 22-025: Responsibilities for Annual Cognitive Health Assessment for Eligible Members 65 Years of Age or Older  (Superseded by APL 26-014)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-025-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-026",
+   "title": "APL 22-026: Interoperability and Patient Access Final Rule Superseded by APL 26-008",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-026-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-027",
+   "title": "APL 22-027: Cost Avoidance and Post-Payment Recovery for Other Health Coverage (Supersedes APL 21-002)   Appendix A     Appendix B     FAQs",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-027-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-028",
+   "title": "APL 22-028: Adult and Youth Screening and Transition of Care Tools for Medi-Cal Mental Health Services   Superseded by 25-010",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-028-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-029",
+   "title": "APL 22-029: Dyadic Services and Family Therapy Benefit",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-029-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-030",
+   "title": "APL 22-030: Initial Health Appointment (Supersedes APL 13-017\u00a0 and Policy Letters 13-001 and 08-003)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-030-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-031",
+   "title": "APL 22-031: Doula Services   Superseded by 23-024",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-031-doula-services-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 22-032",
+   "title": "APL 22-032: Continuity of care for Medi-Cal Beneficiaries who newly enroll in Medi-Cal Managed Care from Medi-Cal Fee-for-Service, and for Medi-Cal memb",
+   "source_url": "https://www.dhcs.ca.gov/file/apl22-032-continuity-of-care-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 21-001",
+   "title": "APL 21-001: 2021-2022 Medi-Cal Managed Care Health Plan Meds/834 Cutoff and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/apl21-001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 21-002",
+   "title": "APL 21-002: Cost Avoidance and Post-Payment Recovery for Other Health Coverage (Supersedes Policy Letter 08-011)    Appendix A      Appendix B      FAQs",
+   "source_url": "https://www.dhcs.ca.gov/file/apl21-002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 21-003",
+   "title": "APL 21-003: Medi-Cal Network Provider and Subcontractor Terminations (Supersedes APL 16-001)   Attachment A:  Exclusionary Databases and Lists     Attac",
+   "source_url": "https://www.dhcs.ca.gov/file/apl21-003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 21-004",
+   "title": "APL 21-004: Standards for Determining Threshold Languages, Nondiscrimination Requirements, and Language Assistance Services (Supersedes APL 17-011 and P",
+   "source_url": "https://www.dhcs.ca.gov/file/apl21-004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 21-005",
+   "title": "APL 21-005: California Children\u2019s Services Whole Child Model Program (Supersedes APL 18-023)   Superseded by 23-034",
+   "source_url": "https://www.dhcs.ca.gov/file/apl21-005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 21-006",
+   "title": "APL 21-006: Network Certification Requirements\u00a0(Supersedes APL 20-003)   Attachment A:\u00a0 Network Adequacy Standards (PDF)     Attachment B:\u00a0 Annual Netwo",
+   "source_url": "https://www.dhcs.ca.gov/file/apl21-006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 21-007",
+   "title": "APL 21-007: Third Party Tort Liability Reporting Requirements  (Supersedes APLs 01-002, 11-012 AND 17-021) AP 21-007 Attachments:    Attachment A:  DHCS",
+   "source_url": "https://www.dhcs.ca.gov/file/apl21-007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 21-008",
+   "title": "APL 21-008: Tribal Federally Qualified Health Center Providers APL 21-008 Attachments: Attachment 1:  Rates for Tribal Federally Qualified Health Center",
+   "source_url": "https://www.dhcs.ca.gov/file/apl-21-008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 21-009",
+   "title": "APL 21-009: Collecting Social Determinants of Health Data",
+   "source_url": "https://www.dhcs.ca.gov/file/apl21-009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 21-010",
+   "title": "APL 21-010: Medi-Cal COVID-19 Vaccination Incentive Program APL 21-010 Attachments: Attachment A:  Vaccination Incentive Program \u2013 Health Plan\u00a0Outcome M",
+   "source_url": "https://www.dhcs.ca.gov/file/apl-21-010-vaccine-incentive-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 21-011",
+   "title": "APL 21-011: Grievance and Appeals Requirements, Notice and \u201cYour Rights\u201d Templates (Supersedes APL 17-006)   Supplement to APL 21-011: Emergency State F",
+   "source_url": "https://www.dhcs.ca.gov/file/apl21-011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 21-012",
+   "title": "APL 21-012: Enhanced Care Management Requirements   Attachment 1:  Enhanced Care Management Population of Focus Eligibility Criteria    Superseded by 23",
+   "source_url": "https://www.dhcs.ca.gov/file/apl21-012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 21-013",
+   "title": "APL 21-013: Dispute Resolution Process Between Mental Health Plans and Medi-Cal Managed Care Health Plans (Supersedes APL 15-007)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl21-013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 21-014",
+   "title": "APL 21-014: Alcohol and Drug Screening, Assessment, Brief Interventions and Referral to Treatment (Supersedes APL 18-014)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl21-014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 21-015",
+   "title": "APL 21-015: Benefit Standardization and Mandatory Managed Care Enrollment Provisions of the California Advancing and Innovating Medi-Cal Initiative   At",
+   "source_url": "https://www.dhcs.ca.gov/file/apl21-015-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 21-016",
+   "title": "APL 21-016: California Advancing and Innovating Medi-Cal Incentive Payment Program   Attachment 1:  Measures Reporting Template    Superseded by 23-003",
+   "source_url": "https://www.dhcs.ca.gov/file/apl21-016-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 21-017",
+   "title": "APL 21-017: Community Supports Requirements",
+   "source_url": "https://www.dhcs.ca.gov/file/apl21-017-community-supports-requirements-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 21-018",
+   "title": "APL 21-018: Public and Private Hospital Directed Payment Programs for State Fiscal Years 2017-18 and 2018-19, the Bridge Period, and Calendar Year 2021",
+   "source_url": "https://www.dhcs.ca.gov/file/apl21-018-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-001",
+   "title": "APL 20-001: 2020-2021 Medi-Cal Managed Care Health Plan Meds/834 Cutoff And Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/apl20-001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-002",
+   "title": "APL 20-002: Non-Contract Ground Emergency Medical Transport Payment Obligations",
+   "source_url": "https://www.dhcs.ca.gov/file/apl20-002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-003",
+   "title": "APL 20-003: Network Certification Requirements\u00a0 (Supersedes APL 19-002) APL 20-003 Attachments:    Attachment A:  Network Adequacy Standards       Attac",
+   "source_url": "https://www.dhcs.ca.gov/file/apl20-003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-004",
+   "title": "APL 20-004: Emergency Guidance for Medi-Cal Managed Care Health Plans in Response to COVID-19 \u2013\u00a0 RETIRED",
+   "source_url": "https://www.dhcs.ca.gov/file/apl20-004-revised-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-005",
+   "title": "APL 20-005: Extension of the Adult Expansion Risk Corridor for State Fiscal Year 2017-18",
+   "source_url": "https://www.dhcs.ca.gov/file/apl20-005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-006",
+   "title": "APL 20-006: Site\u00a0Reviews: Facility Site Review and Medical Record Review (Supersedes PLs 14-004 and 03-002, and APL 03-007)   Attachment A:\u00a0 Application",
+   "source_url": "https://www.dhcs.ca.gov/file/apl20-006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-007",
+   "title": "APL 20-007: Policy Guidance for Community-Based Adult Services in Response to COVID-19 Public Health Emergency    Superseded by 22-020",
+   "source_url": "https://www.dhcs.ca.gov/file/apl20-007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-008",
+   "title": "APL 20-008: Mitigating Health Impacts of Secondary Stress Due to the COVID-19 Emergency    Attachment A:\u00a0   Sources of Reference for Negative Outcomes a",
+   "source_url": "https://www.dhcs.ca.gov/file/apl20-008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-009",
+   "title": "APL 20-009: Preventing Isolation of and Supporting Older and Other At-Risk Individuals to Stay Home and Stay Healthy During COVID-19 Efforts",
+   "source_url": "https://www.dhcs.ca.gov/file/apl20-009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-011",
+   "title": "APL 20-011: Governor\u2019s Executive Order N-55-20 in Response to COVID-19",
+   "source_url": "https://www.dhcs.ca.gov/file/apl-20-011-eo-revision-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-012",
+   "title": "APL 20-012: Private Duty Nursing Case Management Responsibilities tor Medi-Cal Eligible Members Under the Age of 21  Superseded by APL 26-009",
+   "source_url": "https://www.dhcs.ca.gov/file/apl20-012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-013",
+   "title": "APL 20-013: Proposition 56 Directed Payments for Family Planning Services   Superseded by 22-011",
+   "source_url": "https://www.dhcs.ca.gov/file/apl20-013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-014",
+   "title": "APL 20-014: Proposition 56 Value-Based Payment Program Directed Payments   Superseded by 22-019",
+   "source_url": "https://www.dhcs.ca.gov/file/apl20-014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-015",
+   "title": "APL 20-015: State Non-Discrimination and Language Assistance Requirements",
+   "source_url": "https://www.dhcs.ca.gov/file/apl20-015-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-016",
+   "title": "APL 20-016: Blood Lead Screening of Young Children (Supersedes APL18-017)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl-20-016-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-017",
+   "title": "APL 20-017: Requirements for Reporting Managed Care Program Data (Supersedes APLs 14-013 (Revised) and 14-012)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl20-017-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-018",
+   "title": "APL 20-018: Ensuring Access to Transgender Services\u00a0(Supersedes APL16-013)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl20-018-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-020",
+   "title": "APL 20-020: Governor\u2019s Executive Order N-01-19, Regarding Transitioning Medi-Cal Pharmacy Benefits from Managed Care to Medi-Cal Rx    Superseded by 22-",
+   "source_url": "https://www.dhcs.ca.gov/file/apl20-020-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-021",
+   "title": "APL 20-021: Acute Hospital Care at Home \u2013   RETIRED",
+   "source_url": "https://www.dhcs.ca.gov/file/apl20-021-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 20-022",
+   "title": "APL 20-022: COVID-19 Vaccine Administration \u2013\u00a0  RETIRED",
+   "source_url": "https://www.dhcs.ca.gov/file/apl20-022-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 19-001",
+   "title": "APL 19-001: Medi-Cal Managed Care Health Plan Guidance on Network Provider Status (Superseded by APL 26-007)    APL 19-001 Attachment A: Network Provide",
+   "source_url": "https://www.dhcs.ca.gov/file/apl19-001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 19-002",
+   "title": "APL 19-002: Network Certification Requirements (Supersedes APL 18-005)   AP  L 19-002 Attachments:     Attachment A:  Network Adequacy Standards       A",
+   "source_url": "https://www.dhcs.ca.gov/file/apl19-002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 19-003",
+   "title": "APL 19-003: Providing Informing Materials to Medi-Cal Beneficiaries in an Electronic Format",
+   "source_url": "https://www.dhcs.ca.gov/file/apl19-003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 19-004",
+   "title": "APL 19-004: Provider Credentialing / Recredentialing and Screening / Enrollment (Supersedes APL 17-019)  Medi-Cal Provider Enrollment Frequently Asked Q",
+   "source_url": "https://www.dhcs.ca.gov/file/apl19-004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 19-005",
+   "title": "APL 19-005: Federally Qualified Health Centers and Rural Health Clinics Financial Incentive and Pay For Performance Payment Policy",
+   "source_url": "https://www.dhcs.ca.gov/file/apl19-005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 19-006",
+   "title": "APL 19-006: Proposition 56 Physicians Directed Payments for Specified Services for State Fiscal Years 2017-18 & 2018-19 (Supersedes APL 18-010)   Supers",
+   "source_url": "https://www.dhcs.ca.gov/file/apl19-006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 19-007",
+   "title": "APL 19-007: Non-Contract Ground Emergency Medical Transport Payment Obligations for State Fiscal Year 2018-19",
+   "source_url": "https://www.dhcs.ca.gov/file/apl19-007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 19-008",
+   "title": "APL 19-008: Rate Changed for Emergency and Post-Stabilization Services Provided by Out-of-Network Border Hospitals Under the Diagnosis Related Group Pay",
+   "source_url": "https://www.dhcs.ca.gov/file/apl19-008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 19-009",
+   "title": "APL 19-009\u00a0(Revised)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl19-009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 19-010",
+   "title": "APL 19-010: Requirements for Coverage of Early and Periodic Screening, Diagnostic, and Treatment Services for\u00a0 Medi-Cal Members Under the Age of 21 (Sup",
+   "source_url": "https://www.dhcs.ca.gov/file/apl19-010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 19-011",
+   "title": "APL 19-011: Health Education and Cultural and Linguistic Population Needs Assessment (Supersedes APL 17-002)   Superseded by 23-021",
+   "source_url": "https://www.dhcs.ca.gov/file/apl19-011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 19-012",
+   "title": "APL 19-012: Federal Drug Utilization Review Requirements Designed to Reduce Opioid Related Fraud, Misuse and Abuse   Superseded by 23-026",
+   "source_url": "https://www.dhcs.ca.gov/file/apl19-012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 19-013",
+   "title": "APL 19-013: Proposition 56 Hyde Reimbursement Requirements for Specified Services\u00a0   Superseded by 23-015",
+   "source_url": "https://www.dhcs.ca.gov/file/apl19-013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 19-014",
+   "title": "APL 19-014: Responsibilities for Behavioral Health Treatment Coverage for Members Under the Age of 21 (Supersedes APL 18-006)   Superseded by 23-010",
+   "source_url": "https://www.dhcs.ca.gov/file/apl19-014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 19-015",
+   "title": "APL 19-015: Proposition 56 Directed Payments for Physician Services (Supersedes APL 19-006)   Superseded by 23-019",
+   "source_url": "https://www.dhcs.ca.gov/file/apl19-015-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 19-016",
+   "title": "APL 19-016: Proposition 56 Directed Payments for Developmental Screening Services   Superseded by 23-016",
+   "source_url": "https://www.dhcs.ca.gov/file/apl19-016-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 19-017",
+   "title": "APL 19-017: Quality and Performance Improvement Requirements (Supersedes APL 17-014)    Supplement to APL 19-017: Quality and Performance Improvement Ad",
+   "source_url": "https://www.dhcs.ca.gov/file/apl19-017-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 19-018",
+   "title": "APL 19-018: Proposition 56 Directed Payments for Adverse Childhood Experiences Screening Services   Superseded by 23-017",
+   "source_url": "https://www.dhcs.ca.gov/file/apl19-018-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-001",
+   "title": "APL 18-001: Voluntary Inpatient Detoxification (Supersedes APL 14-005)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-002",
+   "title": "APL 18-002: 2018-2019 Medi-Cal Managed Care Health Plan MEDS/834 Cutoff and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-003",
+   "title": "APL 18-003: Administrative and Financial Sanctions (Supersedes APL 15-014)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-004",
+   "title": "APL 18-004: Immunization Requirements (Supersedes PL 96-013 and APL 07-015)   Superseded by 24-008",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-006",
+   "title": "APL 18-006: Responsibilities for Behavioral Health Treatment Coverage for Members Under the Age of 21 (Supersedes APL 15-025)   Superseded by 19-014",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-007",
+   "title": "APL 18-007: Requirements for Coverage of Early and Periodic Screening, Diagnostic, and Treatment Services for Medi-Cal Members Under the Age of 21 (Supe",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-008",
+   "title": "APL 18-008 (Revised)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-008revised-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-009",
+   "title": "APL 18-009: Memorandum of Understanding Requirements for Medi-Cal Managed Care Health Plans and Regional Centers (Supersedes APL 15-022)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-010",
+   "title": "APL 18-010: Proposition 56 Directed Payment Expenditures for Specified Services for State Fiscal Year 2017-18   Superseded by 19-006",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-011",
+   "title": "APL 18-011: California Children\u2019s Services Whole Child Model Program   Superseded by 18-023",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-012",
+   "title": "APL 18-012: Health Homes Program Requirements",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-013",
+   "title": "APL 18-013: Hepatitis C Virus Treatment Policy Update (Supersedes APL 15-016) \u2013    RETIRED",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-014",
+   "title": "APL 18-014: Alcohol Misuse: Screening and Behavioral Counseling Interventions in Primary Care (Supersedes APL 17-016)   Superseded by 21-014",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-015",
+   "title": "APL 18-015: Memorandum of Understanding Requirements for Medi-Cal Managed Care Plans  APL 18-015 Attachments:    Attachment 1:  Title 9 \u2013 Rehabilitative",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-015-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-016",
+   "title": "APL 18-016: Readability and Suitability of Written Health Education Materials (Supersedes APL 11-018)  APL 18-016 Attachments:      Document A: Definiti",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-016-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-017",
+   "title": "APL 18-017: Blood Lead Screening of Young Children (Supersedes PL 02-01)   Superseded by 20-016",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-017-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-018",
+   "title": "APL 18-018: Diabetes Prevention Program",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-018-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-019",
+   "title": "APL 18-019: Family Planning Services Policy for Self-Administered Hormonal Contraceptives   (Supersedes APL 16-003)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-019-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-020",
+   "title": "APL 18-020: Palliative Care (Supersedes APL 17-015)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-020-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-021",
+   "title": "APL 18-021: 2019-2020 Medi-Cal Managed Care Health Plan Meds/834 Cutoff and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-021-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-022",
+   "title": "APL 18-022: Access Requirements for Freestanding Birth Centers and the Provision of Midwife Services (Supersedes APL 16-017)  Superseded by APL 26-005",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-022-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 18-023",
+   "title": "APL 18-023: California Children\u2019s Services Whole Child Model Program (Supersedes APL 18-011)   Superseded by 21-005",
+   "source_url": "https://www.dhcs.ca.gov/file/apl18-023-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-001",
+   "title": "APL 17-001: 2017-2018 Medi-Cal Managed Care Health Plan MEDS/834 Cutoff And Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-002",
+   "title": "APL 17-002: Health Education and Cultural and Linguistic Group Needs Assessment (Supersedes PL10-012)   Superseded by 19-011",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-003",
+   "title": "APL 17-003: Treatment of Recoveries Made by the Managed Care Health Plan of Overpayments to Providers   Superseded by 23-011",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-004",
+   "title": "APL 17-004: Subcontractual Relationships and Delegation   Superseded by 23-006",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-005",
+   "title": "APL 17-005: Certification of Document and Data Submissions",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-006",
+   "title": "APL 17-006: Grievance and Appeal Requirements and Revised Notice Templates and \u201cYour Rights\u201d Attachments (Supersedes All Plan Letters 04-006 and 05-005",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-007",
+   "title": "APL 17-007: Continuity of Care for New Enrollees Transitioned to Managed Care After Requesting a Medical Exemption and Implementation of Monthly Medical",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-008",
+   "title": "APL 17-008: Requirement to Participate in the Medi-Cal Drug Utilization Review Program",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-009",
+   "title": "APL 17-009: Reporting Requirements Related To Provider Preventable Conditions (Supersedes All Plan Letter 16-011)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-010",
+   "title": "APL 17-010 (Revised)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-011",
+   "title": "APL 17-011: Standards for Determining Threshold Languages and Requirements for Section 1557 of the Affordable Care Act (Supersedes APL 14-008)   Superse",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-012",
+   "title": "APL 17-012: Care Coordination Requirements for Managed Long \u2013 Term Services and Supports    Superseded by 22-024",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-013",
+   "title": "APL 17-013: Requirements for Health Risk Assessment of Medi-Cal Seniors and Persons with Disabilities  Superseded by 22-024",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-014",
+   "title": "APL 17-014: Quality and Performance Improvement Requirements (Supersedes APL 16-018)   Superseded by 19-017",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-015",
+   "title": "APL 17-015: Palliative Care and Medi-Cal Managed Care   Superseded by 18-020",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-015-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-016",
+   "title": "APL 17-016: Alcohol Misuse: Screening and Behavioral Counseling Interventions in Primary Care (Supersedes APL 14-004)   Superseded by 18-014",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-016-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-017",
+   "title": "APL 17-017: Long Term Care Coordination and Disenrollment (Supersedes APL 03-003)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-017-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-018",
+   "title": "APL 17-018: Medi-Cal Managed Care Health Plan Responsibilities for Outpatient Mental Health Services (Supersedes APL 13-021)   Superseded by 22-006",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-018-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-019",
+   "title": "APL 17-019: Provider Credentialing / Recredentialing and Screening / Enrollment (Supersedes APL 16-012)   Medi-Cal Managed Care Provider Enrollment Freq",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-019-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-020",
+   "title": "APL 17-020: American Indian Health Programs  APL 17-020 Attachment #1:  List of American Indian Health Program Providers     Attachment #2:  Rates for A",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-020-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 17-021",
+   "title": "APL 17-021: Workers\u2019 Compensation \u2013 Notice of Change to Workers\u2019 Compensation Recovery Program; Reporting and Other Requirements (Supersedes APL 04-004)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl17-021-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 16-001",
+   "title": "APL 16-001: Medi-Cal Provider and Subcontract Suspensions, Terminations, and Decertifications\u00a0(Supersedes APL\u00a006-007)\u00a0 Superseded by 21-003",
+   "source_url": "https://www.dhcs.ca.gov/file/apl16-001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 16-002",
+   "title": "APL 16-002: 2016-2017 Medi-Cal Managed Care Health Plan MEDS/834 Cutoff and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/apl16-002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 16-003",
+   "title": "APL 16-003: Family Planning Services Policy for Contraceptive Supplies",
+   "source_url": "https://www.dhcs.ca.gov/file/apl16-003r-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 16-004",
+   "title": "APL 16-004: Medi-Cal Managed Care Health Plans Carved-Out Drugs (Supersedes APL 03-004)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl16-004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 16-005",
+   "title": "APL 16-005: Requirements for Use of Non-Monetary Member Incentives for Incentive Programs, Focus Groups, and Member Surveys (Supersedes Policy Letters 0",
+   "source_url": "https://www.dhcs.ca.gov/file/apl16-005rev-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 16-006",
+   "title": "APL 16-006: End of Life Option Act",
+   "source_url": "https://www.dhcs.ca.gov/file/apl16-006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 16-007",
+   "title": "APL 16-007: Designated Public Hospitals: Billing for Beneficiaries with California Children\u2019s Services Eligible Conditions and/or Medi-Cal Managed Care",
+   "source_url": "https://www.dhcs.ca.gov/file/apl16-007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 16-008",
+   "title": "APL 16-008: Diagnosis Related Groups: Billing for Beneficiaries with California Children\u2019s Services Eligible Conditions and/or Medi-Cal Managed Care (Su",
+   "source_url": "https://www.dhcs.ca.gov/file/apl16-008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 16-009",
+   "title": "APL 16-009: Adult Immunizations as\u00a0a Pharmacy Benefit\u00a0   Superseded by\u00a024-008",
+   "source_url": "https://www.dhcs.ca.gov/file/apl16-009r-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 16-010",
+   "title": "APL 16-010: Medi-Cal Managed Care Health Plan Pharmaceutical Formulary Comparability Requirement\u00a0\u2013\u00a0  RETIRED",
+   "source_url": "https://www.dhcs.ca.gov/file/apl16-010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 16-011",
+   "title": "APL 16-011: Reporting Requirements Related to Provider Preventable Conditions (Supersedes APL 15-006)   Superseded by 17-009",
+   "source_url": "https://www.dhcs.ca.gov/file/apl16-011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 16-012",
+   "title": "APL 16-012: Provider Credentialing and Recredentialing (Supersedes PL 02-003)   Superseded by 17-019",
+   "source_url": "https://www.dhcs.ca.gov/file/apl16-012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 16-013",
+   "title": "APL 16-013)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl16-013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 16-014",
+   "title": "APL 16-014: Comprehensive Tobacco Prevention and Cessation Services for Medi-Cal Beneficiaries (Supersedes PL 14-006)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl16-014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 16-015",
+   "title": "APL 16-015: Acupuncture Services",
+   "source_url": "https://www.dhcs.ca.gov/file/apl16-015-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 16-016",
+   "title": "APL 16-016: Rate Changes for Emergency and Post-Stabilization Services Provided by Out-of-Network \u201cBorder\u201d Hospitals Under the Diagnosis Related Group P",
+   "source_url": "https://www.dhcs.ca.gov/file/apl16-016-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 16-017",
+   "title": "APL 16-017: Provision of Certified Nurse Midwife and Alternative Birth Center Facility Services (Supersedes APL 15-017)   Superseded by 18-022",
+   "source_url": "https://www.dhcs.ca.gov/file/apl16-017-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 16-018",
+   "title": "APL 16-018: Quality and Performance Improvement Requirements (Supersedes APL 15-024)   Superseded by 17-014",
+   "source_url": "https://www.dhcs.ca.gov/file/apl16-018-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 16-019",
+   "title": "APL 16-019: Managed Care Provider Data Reporting Requirements (Supersedes APL 14-006)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl16-019-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-001",
+   "title": "APL 15-001: Continuity of Care for New Enrollees Transitioned to Managed Care After Requesting a Medical Exemption   APL 15-001 Attachment C: Report Tem",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-002",
+   "title": "APL 15-002: Multipurpose Senior Services Program Complaint, Grievance, Appeal, and State Hearing Responsibilities in Coordinated Care Initiative Countie",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-003",
+   "title": "APL 15-003: Podiatric and Chiropractic Services at Federally Qualified Health Centers and Rural Health Clinics",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-004",
+   "title": "APL 15-004: Medi-Cal Managed Care Health Plan Requirements for Nursing Facility Services in Coordinated Care Initiative Counties For Beneficiaries not E",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-005",
+   "title": "APL 15-005: Data Request Requirements for Child Health Disability Prevention Report Contained in Policy Letter 10-013 (Supersedes PL 10-013)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-006",
+   "title": "APL 15-006: Reporting Requirements Related to Provider Preventable Conditions  (Supersedes APL 13-007)   Superseded by 16-011",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-007",
+   "title": "APL 15-007: Dispute Resolution Process for Mental Health Services   Superseded by 21-013",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-008",
+   "title": "APL 15-008: Professional Fees for Office Visits Associated with Alcohol and Substances Use Disorder Treatment Services",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-009",
+   "title": "APL 15-009: Proper Use and Billing for Makena (Supersedes APL 13-016) \u2013  RETIRED",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-010",
+   "title": "APL 15-010: Affordable Care Act Section 1202 Increased Payments for Medi-Cal Primary Care Services \u2013 Revised Guidance and Contractual Requirements",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-011",
+   "title": "APL 15-011: Designated Public Hospitals: Billing for Beneficiaries with California Children\u2019s Services Eligible Conditions and/or Medi-Cal Managed Care",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-012",
+   "title": "APL 15-012: Dental Services \u2013 Intravenous Sedation and General Anesthesia Coverage  (Supersedes Policy Letter 13-002)   Superseded by 23-028",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-013",
+   "title": "APL 15-013: Requirements for Medi-Cal Managed Care Health Plans and Qualified Agency Contract",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-014",
+   "title": "APL 15-014: Administrative and Financial Sanctions   Superseded by 18-003",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-015",
+   "title": "APL 15-015: Physical Health Care Covered Services Provided for Members Who Are Admitted to Inpatient Psychiatric Facilities",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-015-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-016",
+   "title": "APL 15-016: Hepatitis C Virus Treatment Policy Update   Superseded by 18-013",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-016-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-017",
+   "title": "APL 15-017: Provision of Certified Nurse Midwife and Alternative Birth Center Facility Services   Superseded by 16-017",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-017-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-018",
+   "title": "APL 15-018: Criteria for Coverage of Wheelchairs and Applicable Seating and Positioning Components",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-018-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-019",
+   "title": "APL 15-019: Continuity of Care for Medi-Cal Beneficiaries who Transition into Medi-Cal Managed Care (Supersedes APL 14-021)  Superseded by 18-008",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-019-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-020",
+   "title": "APL 15-020: Abortion Services (Supersedes PL 99-08)   Superseded by 22-022",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-020-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-021",
+   "title": "APL 15-021: General Acute Care Inpatient Services:\u00a0 Claiming for Beneficiaries Covered by Medi-Cal Managed Care and Medi-Cal Diagnosis Related Group Fee",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-021-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-022",
+   "title": "APL 15-022: Memorandum of Understanding Requirements for Medi-Cal Managed Care Health Plans and Regional Centers   Superseded by 18-009",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-022-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-023",
+   "title": "APL 15-023: Facility Site Review Tools for Ancillary Service and Community-Based Adult Services Providers",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-023-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-024",
+   "title": "APL 15-024: Quality and Performance Improvement Requirements (Supersedes APL 14-003)   Superseded by 16-018",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-024r2-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-025",
+   "title": "APL 15-025: Responsibilities for Behavioral Health Treatment Coverage for Children Diagnosed with Autism Spectrum Disorder (Supersedes APL 14-011)   Sup",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-025-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 15-026",
+   "title": "APL 15-026: Actions Required Following Notice of a Credible Allegation of Fraud",
+   "source_url": "https://www.dhcs.ca.gov/file/apl15-026-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-001",
+   "title": "APL 14-001: 2014-2015 Medi-Cal Managed Care Health Plan MEDS/834 Cutoff and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-002",
+   "title": "APL 14-002: Summary of 2013 Chaptered Legislation Impacting or of Interest to Medi-Cal Managed Care Health Plans",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-003",
+   "title": "APL 14-003: Quality and Performance Improvement Program Requirements for 2014   Superseded by 15-024",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-004",
+   "title": "APL 14-004: Screening, Brief Intervention, and Referral to Treatment for Misuse of Alcohol   Superseded by 17-016",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-005",
+   "title": "APL 14-005: New Benefit \u2013 Voluntary Inpatient Detox   Superseded by 18-001",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-006",
+   "title": "APL 14-006: Ongoing Provider File Submission Requirements (Supersedes APL 11-020)   Superseded by 16-019",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-007",
+   "title": "APL 14-007: Dual-Eligible Special Needs Plans",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-008",
+   "title": "APL 14-008: Standards for Determining Threshold Languages   Superseded by 17-011",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-009",
+   "title": "APL 14-009: Transition of Encounter Data Submission to National Standard Transactions  (ASC X12 837 5010, NCPDP 2.2 or 4.2)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-010",
+   "title": "APL 14-010: Care Coordination Requirements for Managed Long-Term Services and Supports\u00a0   Superseded by 17-012",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-011",
+   "title": "APL 14-011: Interim Policy for the Provision of Behavioral Health Treatment Coverage for Children Diagnosed with Autism Spectrum Disorder   Superseded b",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-012",
+   "title": "APL 14-012: Call Center Report Template  APL 14-012 Attachment:  DHCS Call Center Report Template (MS Excel)    Superseded by 20-017",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-013",
+   "title": "APL 14-013: Grievance Report Template  APL 14-013 Attachment:  DHCS Grievance Report Template (MS Excel)    Superseded by 20-017",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-014",
+   "title": "APL 14-014: Enrollment Requirements for Dual-Eligible Special Needs Plans in Alameda and Orange Counties",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-015",
+   "title": "APL 14-015: Primary Care Provider Assignment in Medi-Cal Managed Care for Dual-Eligible Beneficiaries \u2013     RETIRED",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-015-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-016",
+   "title": "APL 14-016: Summary of 2014 Chaptered Legislation Impacting or of Interest to Medi-Cal Managed Care Health Plans",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-016-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-017",
+   "title": "APL 14-017: Requirements for Coverage of Early and Periodic Screening, Diagnostic, and Treatment Services for Medi-Cal Beneficiaries under the Age of Tw",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-017-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-018",
+   "title": "APL 14-018: 2015-2016 Medi-Cal Managed Care Health Plan MEDS/834 Cutoff and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-018-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-019",
+   "title": "APL 14-019: Encounter Data Submission Requirements",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-019-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-020",
+   "title": "APL 14-020: Quality Measures for Encounter Data\u00a0\u00a0  APL 14-020 Attachment:  DHCS Quality Measures for Encounter Data \u00a0  Superseded by APL 26-003",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-020-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 14-021",
+   "title": "APL 14-021: Continuity of Care for Medi-Cal Beneficiaries Who Transition into Medi-Cal Managed Care (Supersedes APL 13-023)  \u00a0 Superseded by 15-019",
+   "source_url": "https://www.dhcs.ca.gov/file/apl14-021-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-001",
+   "title": "APL 13-001: Coordination of Benefits: Medicare and Medi-Cal   Superseded by APL 13-003",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-002",
+   "title": "APL 13-002: Processing Errors Related to Denied Medical Exemption Requests Regarding Mandatory Enrollment into a Medi-Cal Managed Care Plan",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-003",
+   "title": "APL 13-003: Coordination of Benefits: Medicare and Medi-Cal (Supersedes APL 13-001)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-004",
+   "title": "APL 13-004: Rates For Emergency And Post-Stabilization Acute Inpatient Services Provided By Out-Of-Network General Acute Care Hospitals Based On Diagnos",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-005",
+   "title": "APL 13-005: Quality & Performance Improvement Program Requirements for 2013\u00a0(Supersedes APL 11-021)   Superseded by APL 14-003",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-006",
+   "title": "APL 13-006: Encounter Data Element for Medi-Cal Managed Care Health Plans, Version 2.0.   Superseded by APL 14-019",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-007",
+   "title": "APL 13-007: Reporting Encounter Data Related to Provider Preventable Conditions\u00a0   Secure Online Reporting Portal    Superseded by APL 15-006",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-008",
+   "title": "APL 13-008: Contracts with Dual-Eligible Special Needs Plans",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-008-v2-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-009",
+   "title": "APL 13-009: Affordable Care Act (ACA) Section 1202 Final Rule on Increased Payments for Medi-Cal Primary Care Services",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-010",
+   "title": "APL 13-010: Managed Care Compliance Plan for Section 1202 of the Affordable Care Act",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-011",
+   "title": "APL 13-011: Ensuring Access to Transgender Services   Superseded by APL 16-013",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-012",
+   "title": "APL 13-012: Diagnosis Related Groups: Billing for Beneficiaries with California Children\u2019s Services Eligible Conditions and/or Medi-Cal Managed Care   S",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-013",
+   "title": "APL 13-013: Continuity of Care for New Enrollees Transitioned to Managed Care after Requesting a Medical Exemption   APL 13-013 Attachment C MER Denial",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-014",
+   "title": "APL 13-014: Hospice Services and Medi-Cal Managed Care",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-015",
+   "title": "APL 13-015: Marketing Requirements for Medi-Cal and Covered California",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-015-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-016",
+   "title": "APL 13-016: Proper use of and Billing for Makena   Superseded by 15-009",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-016-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-017",
+   "title": "APL 13-017: Staying Healthy Assessment/Individual Health Education Behavioral Assessment for Enrollees from Low-Income Health Program   Superseded by 22",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-017-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-018",
+   "title": "APL 13-018: Memorandum of Understanding Requirements for Medi-Cal Managed Care Plans   Superseded by 18-015",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-018-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-019",
+   "title": "APL 13-019: Utilization Data File to be Provided to Medi-Cal Managed Care Health Plans for Transitioning Low-Income Health Program Beneficiaries",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-019-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-020",
+   "title": "APL 13-020: Open Authorization and Scheduled Service Information for New Beneficiaries Transitioning from The Low-Income Health Program",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-020-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-021",
+   "title": "APL 13-021: Medi-Cal Managed Care Plan Responsibilities for Outpatient Mental Health Services   Superseded by 17-018",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-021-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-022",
+   "title": "APL 13-022: Medi-Cal Managed Care Health Plan Implementation of Primary Care Provider Assignment and Reimbursement for New Adult Expansion Members",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-022-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-023",
+   "title": "APL 13-023: Continuity of Care for Medi-Cal Beneficiaries who Transition from Fee-For-Service Medi-Cal into Medi-Cal Managed Care   Superseded by 14-021",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-023-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 13-024",
+   "title": "APL 13-024: Designating Non-Qualified Health Plan Medi-Cal Managed Care Plans as Medicaid Certified Application Counselors",
+   "source_url": "https://www.dhcs.ca.gov/file/apl13-024-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 12-001",
+   "title": "APL 12-001: Contracts with Dual-Eligible Special Needs Plans",
+   "source_url": "https://www.dhcs.ca.gov/file/apl12-001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 12-002",
+   "title": "APL 12-002: 2012-13 Rates For Post-Stabilization Inpatient Services Provided By Out-Of-Network Acute Care Hospitals     Superseded by APL 12-004",
+   "source_url": "https://www.dhcs.ca.gov/file/apl12-002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 12-003",
+   "title": "APL 12-003 Revised",
+   "source_url": "https://www.dhcs.ca.gov/file/apl12-003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 12-004",
+   "title": "APL 12-004 Revised",
+   "source_url": "https://www.dhcs.ca.gov/file/apl12-004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 12-005",
+   "title": "APL 12-005: 2013-2014 Managed Care Plan MEDS/834 Cutoff and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/apl12-005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 11-002",
+   "title": "APL 11-002: Quality and Performance Improvement Program Requirements for 2011 (supersedes\u00a0APL 10-001)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl11-002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 11-005",
+   "title": "APL 11-005: Aid Codes 4H and 4L: Identifying Foster Care Children in the California Work Opportunity and Responsibility to Kids (CalWORKS) or 1931(b) Pr",
+   "source_url": "https://www.dhcs.ca.gov/file/apl11-005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 11-006",
+   "title": "APL 11-006: Disclosure of Select Provider Contracting\u00a0Program Rates",
+   "source_url": "https://www.dhcs.ca.gov/file/apl11-006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 11-008",
+   "title": "APL 11-008: Aid Code 4T: Aid Code to Identify Children in the New Federal KIN-GAP Program",
+   "source_url": "https://www.dhcs.ca.gov/file/apl11-008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 11-012",
+   "title": "APL 11-012: Reporting Responsibilities Regarding Third-Party Tort Liability",
+   "source_url": "https://www.dhcs.ca.gov/file/apl11-012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 11-014",
+   "title": "APL 11-014: Transition to Update HIPAA Transactions for Enrollment and Premium Payments",
+   "source_url": "https://www.dhcs.ca.gov/file/apl11-014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 11-015",
+   "title": "APL 11-015: Rate Setting: Increased Percentage of Countywide Rates",
+   "source_url": "https://www.dhcs.ca.gov/file/apl11-015-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 11-016",
+   "title": "APL 11-016: 2011-2012 Rates for Emergency-Based Inpatient Services Provided by Out-of-Network Acute Care Hospitals",
+   "source_url": "https://www.dhcs.ca.gov/file/apl11-016-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 11-017",
+   "title": "APL 11-017: 2011-2012 Rates for Post-Stabilization Inpatient Services Provided by Out-of-Network Acute Care Hospitals",
+   "source_url": "https://www.dhcs.ca.gov/file/apl11-017-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 11-018",
+   "title": "APL 11-018: Readability and Suitability of Written Health Education Materials   Superseded by APL 18-016",
+   "source_url": "https://www.dhcs.ca.gov/file/apl11-018-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 11-019",
+   "title": "APL 11-019: Extended Continuity of Care for Seniors and Persons with Disabilities",
+   "source_url": "https://www.dhcs.ca.gov/file/apl11-019-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 11-020",
+   "title": "APL 11-020: Medi-Cal Managed Care Plan Ongoing Provider File Submission Requirements (Supersedes\u00a0APL 10-006)   Superseded by APL 14-006",
+   "source_url": "https://www.dhcs.ca.gov/file/apl11-020-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 11-021",
+   "title": "APL 11-021: Quality and Performance Improvement Program Requirements for 2012 (Supersedes\u00a0APL 11-002)   Superseded by APL 13-005",
+   "source_url": "https://www.dhcs.ca.gov/file/apl11-021-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 11-022",
+   "title": "APL 11-022: Six New Derivative Foster Care Aid Codes",
+   "source_url": "https://www.dhcs.ca.gov/file/apl11-022-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 11-023",
+   "title": "APL 11-023: Aid Code 0W",
+   "source_url": "https://www.dhcs.ca.gov/file/apl11-023x-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 11-024",
+   "title": "APL 11-024: 2012-2013 Managed Care Plan MEDS/FAME/5010 834 Cutoff and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/apl11-024-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 10-001",
+   "title": "APL 10-001: Quality and Performance Improvement Program Requirements for 2010 (supersedes APL 08-009)   Superseded by APL 11-002",
+   "source_url": "https://www.dhcs.ca.gov/file/apl10-001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 10-002",
+   "title": "APL 10-002: Rogers Amendment Data Request",
+   "source_url": "https://www.dhcs.ca.gov/file/apl10-002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 10-003",
+   "title": "APL 10-003: Augmented Reimbursement for Family Planning Services",
+   "source_url": "https://www.dhcs.ca.gov/file/apl10-003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 10-005",
+   "title": "APL 10-005: Financial Reporting Requirements",
+   "source_url": "https://www.dhcs.ca.gov/file/apl10-005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 10-006",
+   "title": "APL 10-006: Medi-Cal Managed Care Plan Ongoing Provider\u00a0File Updates   Superseded by APL 11-020",
+   "source_url": "https://www.dhcs.ca.gov/file/apl10-006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 10-007",
+   "title": "APL 10-007: 2010-11 Rates for Emergency Inpatient Services Provided by Out-Of-Network Acute Care Hospitals",
+   "source_url": "https://www.dhcs.ca.gov/file/apl10-007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 10-008",
+   "title": "APL 10-008: 2010-11 Rates for Post-Stabilization Inpatient Services Provided by Out-of-Network Acute Care Hospitals",
+   "source_url": "https://www.dhcs.ca.gov/file/apl10-008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 10-009",
+   "title": "APL 10-009: Utilization and Payment Data for Safety-Net Providers",
+   "source_url": "https://www.dhcs.ca.gov/file/apl10-009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 10-010",
+   "title": "APL 10-010: Reinstatement of Optometry Services",
+   "source_url": "https://www.dhcs.ca.gov/file/apl10-010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 10-011",
+   "title": "APL 10-011: The Rogers Amendment and Tertiary Hospitals",
+   "source_url": "https://www.dhcs.ca.gov/file/apl10-011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 10-014",
+   "title": "APL 10-014: Correction to All Plan Letter 10-003 Regarding Augmented Reimbursement for Family Planning Services",
+   "source_url": "https://www.dhcs.ca.gov/file/apl10-014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 10-015",
+   "title": "APL 10-015: 2011-2012 Managed Care Plans MEDS/FAME/834+Supplemental Cutoff and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/apl10-015-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 09-002",
+   "title": "APL 09-002: Aid Codes 06 and 46",
+   "source_url": "https://www.dhcs.ca.gov/file/apl09-002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 09-004",
+   "title": "APL 09-004: Aid Code 6G",
+   "source_url": "https://www.dhcs.ca.gov/file/apl2009-004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 09-007",
+   "title": "APL 09-007: List of Contracted Hospitals and Bed Days",
+   "source_url": "https://www.dhcs.ca.gov/file/apl09-007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 09-008",
+   "title": "APL 09-008: Procedures for Submitting QIP Documents and New Resources for Plans",
+   "source_url": "https://www.dhcs.ca.gov/file/apl09-008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 09-009",
+   "title": "APL 09-009: Indian Health Services   Superseded by 24-002",
+   "source_url": "https://www.dhcs.ca.gov/file/apl09-009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 09-010",
+   "title": "APL 09-010: Aid Code 2H",
+   "source_url": "https://www.dhcs.ca.gov/file/apl09-010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 09-011",
+   "title": "APL 09-011: List of Contracted Hospitals and Bed Days",
+   "source_url": "https://www.dhcs.ca.gov/file/apl09-011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 09-012",
+   "title": "APL 09-012: 2009-10 Rates For Non-Contracted Hospital Emergency Inpatient Services",
+   "source_url": "https://www.dhcs.ca.gov/file/apl09-012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 09-013",
+   "title": "APL 09-013: 2009-10 Rates For Hospital Payment for Medi-Cal Post-Stabilization Services",
+   "source_url": "https://www.dhcs.ca.gov/file/apl09-013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 09-014",
+   "title": "APL 09-014: Exhibit G, Health Insurance Portability and Accountability Act (HIPAA)",
+   "source_url": "https://www.dhcs.ca.gov/file/apl09-014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 08-001",
+   "title": "APL 08-001: Summary of 2007 Chaptered Legislation Affecting, or of Interest to Medi-Cal Managed Care Plans",
+   "source_url": "https://www.dhcs.ca.gov/file/apl08-001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 08-004",
+   "title": "APL 08-004: Managed Care Rate Reductions for FY 2008-09",
+   "source_url": "https://www.dhcs.ca.gov/file/apl08-004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 08-005",
+   "title": "APL 08-005: Managed Care Rate Reductions for FY 2008-09; Technical Clarification to\u00a0All Plan Letter NO. 08-004",
+   "source_url": "https://www.dhcs.ca.gov/file/apl08-005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 08-006",
+   "title": "APL 08-006: Interim Procedures Until Execution of New EQRO Contract",
+   "source_url": "https://www.dhcs.ca.gov/file/apl08-006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 08-007",
+   "title": "APL 08-007: Requirements for Employee Education Regarding False Claims Recovery",
+   "source_url": "https://www.dhcs.ca.gov/file/apl08-007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 08-008",
+   "title": "APL 08-008: Reimbursement for Non-contracted Hospital Emergency Inpatient Services",
+   "source_url": "https://www.dhcs.ca.gov/file/apl08-008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 08-009",
+   "title": "APL 08-009: Quality and Performance Improvement Requirements for 2009",
+   "source_url": "https://www.dhcs.ca.gov/file/apl08-009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 08-010",
+   "title": "APL 08-010: Hospital Payment for Post Medi-Cal Post-Stabilization Services",
+   "source_url": "https://www.dhcs.ca.gov/file/apl08-010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 08-012",
+   "title": "APL 08-012: 2009-2010 Managed Care Plan MEDS/FAME/834+Supplemental Cutoff and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/apl08-012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 07-001",
+   "title": "APL 07-001: Conversion to Electronic Filing of Financial Reports",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl07001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 07-002",
+   "title": "APL 07-002: Conlan v. Bonta: Conlan v. Shewry: Court Ordered Medi-Cal Beneficiary Reimbursement Process",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl07002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 07-003",
+   "title": "APL 07-003: Federal Deficit Reduction Act of 2005 (Reimbursement for Non-Contracted Emergency Services Providers)",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl07003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 07-004",
+   "title": "APL 07-004: Summary of 2006 Chaptered Legislation Affecting, or of Interest to, Medi-Cal Managed Care Plans",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl07004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 07-005",
+   "title": "APL 07-005: Implementation of NPI Update",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl07005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 07-007",
+   "title": "APL 07-007: Federal Deficit Reduction Act of 2005 (Employee Education About False Claims)",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl07007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 07-008",
+   "title": "APL 07-008: Topical Fluoride Varnish   Superseded by APL 19-010",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl07008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 07-009",
+   "title": "APL 07-009: New Financial Reporting Requirements",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl07009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 07-011",
+   "title": "APL 07-011: Update on California Department of Health Services Reorganization",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl07011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 07-012",
+   "title": "APL 07-012: Identification of Regional Center Consumers",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl07012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 07-013",
+   "title": "APL 07-013: Quality and Performance Improvement Program Requirements for 2008",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl07013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 07-014",
+   "title": "APL 07-014: Hospice Services and Medi-Cal Managed Care",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl07014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 07-015",
+   "title": "APL 07-015: Human Papillomavirus Vaccine     Superseded by APL 18-004",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl07015-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 07-017",
+   "title": "APL 07-017: Federal Deficit Reduction Act of 2005, Section 6036 (Citizenship Verification Requirement)",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl07017-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 07-019",
+   "title": "APL 07-019: 2008-2009 Managed Care Plan MEDS/FAME/834+Supplemental Cutoff and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl_07019-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 07-020",
+   "title": "APL 07-020: Medi-Cal Billing Restriction on the Use of Social Security Numbers",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl_07020-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 06-001",
+   "title": "APL 06-001: HIPAA Requirements: Notice of Privacy Practices and Notification of Breaches",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdallplanletter06001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 06-002",
+   "title": "APL 06-002: MEDICARE PART D UPDATE",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdallplanletter06002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 06-003",
+   "title": "APL 06-003: MEDICARE PART D UPDATE",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdallplanletter06003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 06-004",
+   "title": "APL 06-004: National Provider Identifier (NPI)",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdallplanletter06004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 06-005",
+   "title": "APL 06-005: Protected Health Information (PHI) and Notification of Breaches",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdallplanletter06005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 06-006",
+   "title": "APL 06-006: Update to All Plan Letter 06-04 re: Implementation of the National Provider Identifier (NPI)",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdallplanletter06006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 06-007",
+   "title": "APL 06-007: Termination of Subcontracting Relationships   Superseded by APL 16-001",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdallplanletter06007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 06-008",
+   "title": "APL 06-008: Contraceptive Devices\u00a0\u2013\u00a0  RETIRED",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdallplanletter06008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 06-009",
+   "title": "APL 06-009: Supplemental Data Request\u00a0 \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0   06-009 Attachment:  CA Information Request (Excel) \u00a0     06-009 Attachment:  Lookup Table (Excel",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdallplanletter06009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 06-010",
+   "title": "APL 06-010: Quality and Performance Improvement Requirements for 2007",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdallplanletter06010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 06-011",
+   "title": "APL 06-011: Same Day Banking",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdallplanletter06011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 06-012",
+   "title": "APL 06-012: 2007-2008 Managed Care Plan MEDS/FAME Cutoff and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdallplanletter06012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 05-001",
+   "title": "APL 05-001: Summary of 2003 and 2004 Chaptered Legislation Impacting or of Interest to Medi-Cal Managed Care Plans",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl05001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 05-002",
+   "title": "APL 05-002: New Process for Transmitting Enrollment/Disenrollment Data",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl05002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 05-003",
+   "title": "APL 05-003: Hospice Services and Medi-Cal Managed Care",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl05003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 05-004",
+   "title": "APL 05-004: Personal Injury Inquiry Letter",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl05004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 05-006",
+   "title": "APL 05-006: HIPAA Requirements:\u00a0 Plans\u2019 Reporting Responsibilities-  RETIRED",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl05006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 05-007",
+   "title": "APL 05-007: Erectile Dysfunction Treatment for Known Sex Offenders",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl05007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 05-008",
+   "title": "APL 05-008: Review and Analysis of Financial Status of Health Plans Proposed Request for Funding Augmentations",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl05008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 05-009",
+   "title": "APL 05-009: Carve out Erectile Dysfunction Drugs",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl05009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 05-010",
+   "title": "APL 05-010: Advance Directive Form",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl05010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 05-011",
+   "title": "APL 05-011: 2005-2006 Managed Care Plan (MCP) MEDS/FAME Cutoff and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl05011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 05-012",
+   "title": "APL 05-012: Medicare Modernization Act; Medicare Part D Prescription Drug Plan\u00a0\u2013\u00a0  RETIRED",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl05012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 05-013",
+   "title": "APL 05-013: Medicare Modernization Act; Medicare Part D Implementation System Changes",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl05013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 05-014",
+   "title": "APL 05-014: Summary of 2005 Chaptered Legislation Impacting or of Interest to Medi-Cal Managed Care Plans",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl05014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 04-001",
+   "title": "APL 04-001: 2004 Managed Care Plan (MCP) MEDS/FAME Cut-off and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl04001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 04-002",
+   "title": "APL 04-002: Recovery of Capitation Paid to Health Care Plans for Deceased Beneficiaries",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl04002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 04-003",
+   "title": "APL 04-003: Medi-Cal Providers on Probation",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl04003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 04-004",
+   "title": "APL 04-004: Workers\u2019 Compensation (WC)- Notice Award of New Workers\u2019 Compensation Recovery Program (WCRP) Contractor; Reporting and Other Requirements",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl04004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 04-005",
+   "title": "APL 04-005: Implementation of New Enrollment Forms",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl04005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 04-006",
+   "title": "APL 04-006: SB 59 (Stats. 1999, Chapter 539) Required Notices of Action   Superseded by APL 17-006",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl04006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 04-007",
+   "title": "APL 04-007: Implementation of New Enrollment Forms",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl04007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 04-008",
+   "title": "APL 04-008: 2004-2005 Managed Care Plan (MCP) MEDS/FAME Cut-off and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl04008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 03-001",
+   "title": "APL 03-001: Default Assignment of Beneficiaries",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl03001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 03-002",
+   "title": "APL 03-002: SB 87 Medi-Cal Contact Information Release Form",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl03002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 03-003",
+   "title": "APL 03-003: LTC Guidelines/Policy Letters GMC/Two Plan Letter   Superseded by APL 17-017",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl03003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 03-004",
+   "title": "APL 03-004: Medi-Cal Managed Care Health Plan Capitated and Non-Capitated Human Immunodeficiency Virus/Acquired Immune Deficiency Syndrome (HIV/AIDS) an",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl03004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 03-005",
+   "title": "APL 03-005: Medi-Cal Intercounty Transfers",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl03005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 03-006",
+   "title": "APL 03-006: Facility Site Review Clarification #2",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl03006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 03-007",
+   "title": "APL 03-007: Certified Quality Provider Site Certificate   Superseded by APL 20-006",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl03007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 03-008",
+   "title": "APL 03-008: Quarterly Submission of Grievance Logs",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl03008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 03-009",
+   "title": "APL 03-009: Implementation of Expedited State Hearings \u2013\u00a0  RETIRED",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl03009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 03-010",
+   "title": "APL 03-010: Medi-Cal Managed Care Plan Requirements for Provision of Contraceptive Drug Services and Supplies\u00a0\u2013\u00a0  RETIRED",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl03010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 03-011",
+   "title": "APL 03-011: Fraud Referral Procedure to Audits and Investigations (A&I)",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl03011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 03-012",
+   "title": "APL 03-012: Medi-Cal Providers on Probation",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl03012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 03-013",
+   "title": "APL 03-013: Non Contracted Emergency Room Rate Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl03013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 03-014",
+   "title": "APL 03-014: Delmarva Foundation for Medical Care, Inc.",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl03014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 03-015",
+   "title": "APL 03-015: Use of Services Measures",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl03015-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 02-001",
+   "title": "APL 02-001: Medi-Cal HIV/AIDS Home and Community Based Services Waiver Program",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl02001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 02-002",
+   "title": "APL 02-002: Possible Movement of Fame Files from the CA Health and Human Services (CalHHS) Data Center to the Medi-Cal Web Site",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl02002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 02-003",
+   "title": "APL 02-003: Cultural and Linguistic Contractual Requirements: Threshold and Concentration Standard Languages Update   Superseded by APL 16-012",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl02003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 02-004",
+   "title": "APL 02-004: Health Plan Employer Data and Information Set (HEDIS) and Consumer Assessment of Health Plans (CAHPS) Reports Are Now Available on the DHCS",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl02004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 02-005",
+   "title": "APL 02-005: Emergency Services Medical Claim Coding and Documentation Guidelines",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl02005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 02-006",
+   "title": "APL 02-006: Implementation of Medi-Cal Managed Care\u00a0Policy Letter 02-02",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl02006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 02-007",
+   "title": "APL 02-007: Summary of 2002 Chaptered Legislation for Medi-Cal Managed Care Plans",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl02007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 02-008",
+   "title": "APL 02-008: External Accountability Set (EAS) Performance Measure Audits",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl02008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 02-009",
+   "title": "APL 02-009: 2003 Managed Care Plan (MCP) MEDS/FAME Cut-off and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl02009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 01-001",
+   "title": "APL 01-001: Summary of 2000 Chaptered Legislation Impacting or of Interest to Medi-Cal Managed Care Plans",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl01001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 01-002",
+   "title": "APL 01-002: Reporting and Other Requirements Regarding Workers\u2019 Compensation Recovery   Superseded by APL 21-007",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl01002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 01-003",
+   "title": "APL 01-003: Mifepristone (RU-486) As a Medi-Cal Benefit-  RETIRED",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl01003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 01-004",
+   "title": "APL 01-004: Health Plan Choice Reminders (Annual Renotifications)",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl01004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 01-005",
+   "title": "APL 01-005: Implementation of a New Process Which Will Reject Encounter Data At Record Level",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl01005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 01-006",
+   "title": "APL 01-006: 2002 Managed Care Plan (MCP) MEDS/FAME Cut-off and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl01006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 01-007",
+   "title": "APL 01-007: Summary of 2001 Chaptered Legislation Impacting or of Interest to Medi-Cal Managed Care Plans",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl01007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 01-008",
+   "title": "APL 01-008: Breast and Cervical Cancer Treatment Program",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl01008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 00-001",
+   "title": "APL 00-001: 2000 Managed Care Plan (MCP) MEDS/FAME Cut-off and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl00001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 00-002",
+   "title": "APL 00-002: Medi-Cal Managed Care Medical Exemptions",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl00002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 00-003",
+   "title": "APL 00-003: Policy and Procedure Revisions",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl00003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 00-004",
+   "title": "APL 00-004: California Children\u2019s Services (CCS) Policy Regarding the Requirement That All CCS Applicants Shall Make Application to the Medi-Cal Program",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl00004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 00-005",
+   "title": "APL 00-005: Invitation to All Plan Meeting on Year 2000 Proposed Contract Amendments",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl00005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 00-006",
+   "title": "APL 00-006: Maximus Warehouse Relocation Superseded by APL 14-017",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl00006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 00-007",
+   "title": "APL 00-007: Potential Increase in New Enrollees Due to Changes in the Section 1931(b) Program",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl00007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 00-008",
+   "title": "APL 00-008: Importance of Increased Outreach to New Eligibles Under the Section 1931(b) Program",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl00008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 00-009",
+   "title": "APL 00-009: Percent of Poverty Population",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl00009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 00-010",
+   "title": "APL 00-010: Draft 2000 Medi-Cal Managed Care Contract Amendments Package 00-01",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl00010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 00-011",
+   "title": "APL 00-011: Ensuring Beneficiaries Receive Laboratory Services From CLIA Certified Laboratories",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl00011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 00-012",
+   "title": "APL 00-012: Utilization Review of Initial Risk Assessments for Pregnant Women   Superseded by APL 26-005",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl00012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 00-013",
+   "title": "APL 00-013: Amended Regulations for Enrollment and Disenrollment for Two-Plan Model Plans",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl00013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 00-014",
+   "title": "APL 00-014: 2001 Managed Care Plan (MCP) MEDS/FAME Cut-off and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl00014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 99-001",
+   "title": "APL 99-001: Managed Care Plan Utilization of Therapeutic Pharmaceutical Agents-Certified Optometrists",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl99001-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 99-002",
+   "title": "APL 99-002: 1999 Managed Care Plan (MCP) MEDS/FAME Cut-off and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl99002-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 99-003",
+   "title": "APL 99-003: Year 2000 Readiness Certification and Business Continuation Plan",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl99003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 99-004",
+   "title": "APL 99-004: New Laws from the 1997-98 Session of the California Legislature Affecting the Medi-Cal Program",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl99004-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 99-005",
+   "title": "APL 99-005: Cultural Competency in Health Care \u2013 Meeting the Needs of a Culturally and Linguistically Diverse Population   Superseded by APL 23-025",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl99005-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 99-006",
+   "title": "APL 99-006: Encounter Data Work Group",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl99006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 99-007",
+   "title": "APL 99-007: Medi-Cal Managed Care Health Education Work Group and the \u201cStaying Healthy\u201d Assessment Subcommittee",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl99007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 99-008",
+   "title": "APL 99-008: Updates to Managed Care Data Dictionary",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl99008-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 99-009",
+   "title": "APL 99-009: Draft 1999 Medi-Cal Managed Care Contract Amendments",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl99009-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 99-010",
+   "title": "APL 99-010: Status of the Conversion to the Fiscal Intermediary Access to Medi-Cal Eligibility",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl99010-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 99-011",
+   "title": "APL 99-011: New Medi-Cal Managed Care Exemption Forms",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl99011-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 99-012",
+   "title": "APL 99-012: Revision to\u00a0All Plan Letter 99003 Re: Year 2000 Readiness",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl99012-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 99-013",
+   "title": "APL 99-013: Concurrent Participation in the Medi-Cal Managed Care Program and the Multipurpose Senior Services Program",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl99013-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 99-014",
+   "title": "APL 99-014: Summary of 1999 Chaptered Legislation Impacting or of Interest to Medi-Cal Managed Care Plans",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl99014-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 99-015",
+   "title": "APL 99-015: Emergency Services Claims",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl99015-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 99-016",
+   "title": "APL 99-016: Year 2000 Contingency Plan Update",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl99016-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 98-003",
+   "title": "APL 98-003: 1998 Managed Care Plan (MCP) MEDS/FAME Cut-off and Processing Schedule",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl98003-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 98-006",
+   "title": "APL 98-006: California Children Services Numbered Letters 01-0298 and 09-0598",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl98006-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 98-007",
+   "title": "APL 98-007: Recombinant Growth Hormone Injections",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl98007-pdf/",
+   "doc_kind": "apl"
+  },
+  {
+   "policy_number": "APL 98-009",
+   "title": "APL 98-009: AID Code 38",
+   "source_url": "https://www.dhcs.ca.gov/file/mmcdapl98009-pdf/",
+   "doc_kind": "apl"
+  }
+ ]
+}
