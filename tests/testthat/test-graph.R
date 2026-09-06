@@ -67,3 +67,45 @@ test_that("similar_topic links only across plans, and is capped", {
   expect_false(any(e$source == "doc:a/1.pdf" & e$target == "doc:a/3.pdf"))
   expect_false(any(e$source == "doc:a/3.pdf" & e$target == "doc:a/1.pdf"))
 })
+
+test_that("small-world metrics are computed on a known graph", {
+  # A ring lattice is the high-clustering, long-path reference; adding a few
+  # random shortcuts must lower L without collapsing C. If this ever fails,
+  # sw_metrics() is not measuring what its name claims.
+  set.seed(1)
+  lat <- igraph::sample_smallworld(1, 200, 3, 0)
+  sw  <- igraph::sample_smallworld(1, 200, 3, 0.05)
+  m_lat <- sw_metrics(lat, n_rand = 2)
+  m_sw  <- sw_metrics(sw,  n_rand = 2)
+  expect_gt(m_lat$L, m_sw$L)                 # shortcuts shorten paths
+  expect_gt(m_sw$C, 0.3)                     # and leave clustering high
+  expect_gt(m_sw$sigma, 1)                   # so it reads as small-world
+  expect_equal(m_lat$components, 1)
+  expect_equal(m_lat$reach, 1)
+})
+
+test_that("omega is NA rather than -Inf when the lattice reference has no triangles", {
+  set.seed(2)
+  g <- igraph::make_ring(80)                 # C = 0 everywhere
+  m <- sw_metrics(g, n_rand = 2)
+  expect_true(is.na(m$omega) || is.finite(m$omega))
+})
+
+test_that("shortcut candidates are cross-plan and topologically distant", {
+  # two 3-node plan cliques, joined by nothing
+  el <- data.frame(
+    source = c("doc:a/1.pdf","doc:a/2.pdf","doc:a/1.pdf",
+               "doc:b/1.pdf","doc:b/2.pdf","doc:b/1.pdf"),
+    target = c("doc:a/2.pdf","doc:a/3.pdf","doc:a/3.pdf",
+               "doc:b/2.pdf","doc:b/3.pdf","doc:b/3.pdf"),
+    stringsAsFactors = FALSE)
+  g <- igraph::simplify(igraph::graph_from_data_frame(el, directed = FALSE))
+  cand <- data.frame(source = c("doc:a/1.pdf", "doc:a/1.pdf"),
+                     target = c("doc:b/1.pdf", "doc:a/2.pdf"),
+                     sim = c(0.9, 0.95), stringsAsFactors = FALSE)
+  out <- sw_filter_by_distance(cand, g, min_hops = 4)
+  # the cross-component pair survives (infinitely far); the 1-hop same-plan
+  # pair is dropped even though it is MORE similar — a shortcut has to be short-cutting
+  expect_true("doc:b/1.pdf" %in% out$target)
+  expect_false("doc:a/2.pdf" %in% out$target)
+})
