@@ -91,6 +91,52 @@ catalog (policy_search's schema + `plan_id`, `line_of_business`). Runs are
 idempotent and merge-by-plan: fetching one plan never touches another
 plan's rows, so each plan can refresh on its own cadence.
 
+## Small-world structure, and why retrieval cares
+
+```bash
+Rscript -e 'source("R/smallworld.R"); print(sw_report())'
+Rscript -e 'source("R/smallworld.R"); sw_augment(p = "auto")'
+Rscript -e 'source("R/retrieve_graph.R"); print(sw_retrieval_gain())'
+```
+
+Graph-augmented retrieval seeds from vector search and then walks the graph
+to reach what search missed — the other plans' version of a rule, the state
+letter both implement. That walk has a small hop budget (2; three hops pulls
+in most of a cluster), so whether it reaches another plan at all is a
+property of the graph's topology rather than of the query.
+
+Measured on the semantic layer (`implements`, `supersedes`, `similar_topic`,
+`shortcut` — the hub stars `published_by`/`owned_by` are excluded, since one
+hop through a plan node would "reach" everything that plan publishes, which
+is a table scan wearing a graph's clothes):
+
+| | before shortcuts |
+| --- | --- |
+| components | 200 |
+| reachable document pairs | **0.204** |
+| C / C_random | 111 |
+| L / L_random | 2.24 |
+
+The σ = 49.5 that falls out of those numbers looks spectacular and means
+almost nothing: L is averaged over *connected* pairs, so it is describing
+structure inside the silos while 80% of pairs cannot reach each other at all.
+That is why `reach` is reported beside σ and is the number to read.
+
+This is the regime [`../Topological_Origin_of_Small-World_Networks`](../Topological_Origin_of_Small-World_Networks)
+predicts for "highly modular networks with incompatible constraints", along
+with the remedy — "adding compatible coordinates should lower Λ/B and move
+the system into the small-world phase". `sw_augment()` adds that budget of
+shortcuts: cross-plan document pairs that are semantically close but
+topologically far. Both halves matter. Semantic closeness is what keeps a
+shortcut meaningful (random rewiring shortens paths and destroys the graph's
+meaning); topological distance is what makes it a shortcut at all.
+
+One honest finding: bridging 200 components costs at least 199 edges, or
+p = 0.094 — near the Λ/B > 0.1 breakdown threshold, and well outside the
+0.01–0.05 window. For this corpus fragmentation, not path length, is the
+binding constraint, so `sw_augment()` reports the bridging cost before
+spending anything and `p = "auto"` sizes the budget to it.
+
 ## Tests
 
 ```bash
