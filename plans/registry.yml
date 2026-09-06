@@ -1,0 +1,379 @@
+# LHPC plan registry — one entry per corpus, encoding the 2026-09-06 survey
+# (see SCRAPING_PLAN.md appendix for the evidence behind each entry).
+#
+# fetcher: readily | powerdms | site | sitecore_search | none
+#   readily / powerdms  — implemented (R/fetch_readily.R, R/fetch_powerdms.R)
+#   site                — Tier 2 static crawl, phase 4 (config here, no code yet)
+#   sitecore_search     — Tier 3 CalOptima adapter, phase 5
+#   none                — documented coverage gap
+#
+# user_agent: default (honest PolicyKB string) | browser (site 403s bots;
+#   documents themselves are public — see SCRAPING_PLAN.md note 1)
+# scope: doc kinds in the FIRST build. policy/manual now; forms, memos,
+#   member materials, formularies are later phases.
+
+plans:
+  - plan_id: alliance
+    name: Central California Alliance for Health
+    domain: thealliance.health
+    tier: 1
+    fetcher: readily
+    lines_of_business: [medi-cal]
+    scope: [policy, manual]
+    readily:
+      org: central-california-alliance-for-health
+    manual_urls:
+      - https://thealliance.health/wp-content/uploads/October_2026_Provider_Manual.pdf
+    notes: >-
+      Reference implementation (../knowledge_base/policy_search). 428
+      policies / 502 documents via Readily.
+
+  - plan_id: chpiv
+    name: Community Health Plan of Imperial Valley
+    domain: chpiv.org
+    tier: 1
+    fetcher: readily
+    lines_of_business: [medi-cal]
+    scope: [policy]
+    readily:
+      org: community-health-plan-of-imperial-valley
+    notes: >-
+      70 policies / 71 documents, schema-identical to the Alliance
+      (verified 2026-09-06). No provider manual found in Readily; check
+      site for one in phase 4.
+
+  - plan_id: partnership
+    name: Partnership HealthPlan of California
+    domain: partnershiphp.org
+    tier: 1
+    fetcher: powerdms
+    lines_of_business: [medi-cal]
+    scope: [policy]
+    powerdms:
+      site: PHC
+    robots_notes: >-
+      partnershiphp.org disallows AI crawlers by name (ClaudeBot, GPTBot)
+      and Cloudflare 403s plain clients. Do NOT crawl the website. The
+      PowerDMS public site is the plan's intended distribution channel
+      with no such restrictions; fetch exclusively from
+      public.powerdms.com. PowerDMS folder metadata carries an
+      aiAccessEnabled:false flag — that is PowerDMS's own AI-assistant
+      product feature, not an access directive, but it is noted here for
+      transparency.
+    exclude:
+      - FormularyNavigator JS app (grab PDF equivalents in a later phase)
+    notes: >-
+      454 documents with folder breadcrumbs (UM 121, Network Services 72,
+      QI 57, Claims 43, ...). The provider manual IS the policy set.
+
+  # ---- Tier 2 (phase 4: fetcher `site` not yet implemented) ----------------
+
+  - plan_id: sfhp
+    name: San Francisco Health Plan
+    domain: sfhp.org
+    tier: 2
+    fetcher: site
+    user_agent: default
+    lines_of_business: [medi-cal, healthy-workers]
+    scope: [policy, manual]
+    site:
+      sitemap: https://www.sfhp.org/sitemap_index.xml
+      seeds:
+        - https://www.sfhp.org/providers/provider-tools/sfhp-policies-procedures/
+        - https://www.sfhp.org/providers/provider-tools/provider-manual/
+      doc_url_patterns: ["/wp-content/files/"]
+    notes: >-
+      Fully open. ~30 CO-xx policies + Provider Manual, Claims Ops
+      Manual, CBAS Manual, KIMP. Dedupe HTML-entity href variants
+      (&#038; vs &).
+
+  - plan_id: lacare
+    name: L.A. Care Health Plan
+    domain: lacare.org
+    tier: 2
+    fetcher: site
+    user_agent: default
+    lines_of_business: [medi-cal, d-snp, covered, pasc-seiu]
+    scope: [policy, manual]
+    site:
+      sitemap: https://www.lacare.org/sitemap.xml
+      seeds:
+        - https://lacare.org/providers/forms-manuals
+        - https://lacare.org/providers/utilization-management/um-policies-clinical-criteria
+        - https://www.lacare.org/providers/tools/clinical-practice-guidelines
+      doc_url_patterns: ["/sites/default/files/"]
+    html_docs:
+      - https://www.lacare.org/members/handbook   # HTML sections (phase 6)
+    notes: >-
+      2026 Universal Provider Manual (la4289_upm_202512.pdf) covers all
+      LOBs. ~20 UM/MMUM policy PDFs. Friendliest site of the 17.
+
+  - plan_id: kern
+    name: Kern Health Systems (Kern Family Health Care)
+    domain: kernfamilyhealthcare.com
+    tier: 2
+    fetcher: site
+    user_agent: browser        # Coffey CMS 403s bot UAs
+    lines_of_business: [medi-cal]
+    scope: [policy, manual]
+    site:
+      sitemap: https://www.kernfamilyhealthcare.com/xml-sitemap/
+      seeds:
+        - https://www.kernfamilyhealthcare.com/providers/policies-and-procedures/
+        - https://www.kernfamilyhealthcare.com/providers/provider-resources-medi-cal/manual-and-forms/
+      doc_url_patterns: ["/media/", "res.cloudinary.com/dpmykpsih"]
+    notes: >-
+      229 numbered policy PDFs on ONE server-rendered page; KHS policy
+      numbers + revision dates in filenames. Quarterly provider manual.
+      Same CMS as scfhp — one adapter serves both.
+
+  - plan_id: scfhp
+    name: Santa Clara Family Health Plan
+    domain: scfhp.com
+    tier: 2
+    fetcher: site
+    user_agent: browser        # Coffey CMS 403s bot UAs
+    lines_of_business: [medi-cal, d-snp]
+    scope: [policy, manual]
+    site:
+      sitemap: https://www.scfhp.com/xml-sitemap/
+      seeds:
+        - https://www.scfhp.com/for-providers/provider-resources/policies-and-procedures/
+        - https://www.scfhp.com/for-providers/medi-caldualconnect-hmo-d-snp-provider-manual/
+      later_seeds:               # memo/forms corpora — later phase, ~600 PDFs
+        - https://www.scfhp.com/for-providers/provider-resources/provider-memos/
+        - https://www.scfhp.com/for-providers/provider-resources/forms-and-documents/
+        - https://www.scfhp.com/for-providers/provider-resources/clinical-guidelines/
+      doc_url_patterns: ["/media/", "res.cloudinary.com/dpmykpsih"]
+    notes: >-
+      First-build corpus is small (9 policy PDFs incl. UM omnibus +
+      combined manual); the 503 provider memos (many implementing DHCS
+      APLs) are a high-value later phase.
+
+  - plan_id: hpsj
+    name: Health Plan of San Joaquin / Mountain Valley
+    domain: hpsj.com
+    tier: 2
+    fetcher: site
+    user_agent: default
+    lines_of_business: [medi-cal, d-snp]
+    scope: [policy, manual]
+    site:
+      sitemap: https://www.hpsj.com/sitemap_index.xml
+      seeds:
+        - https://www.hpsj.com/provider-policies/
+        - https://www.hpsj.com/provider-manual/
+      doc_url_patterns: ["/wp-content/uploads/"]
+    notes: >-
+      ~40 numbered QM##/UM## policies behind a WP file-list plugin —
+      verify HTML fallback, else paginate. Manuals per LOB.
+
+  - plan_id: gchp
+    name: Gold Coast Health Plan
+    domain: goldcoasthealthplan.org
+    tier: 2
+    fetcher: site
+    user_agent: browser        # HTML pages 403 bots; Cloudinary PDFs open
+    lines_of_business: [medi-cal, d-snp]
+    scope: [policy, manual]
+    site:
+      sitemap: https://www.goldcoasthealthplan.org/xml-sitemap/
+      seeds:
+        - https://www.goldcoasthealthplan.org/for-providers/provider-resources/
+      doc_url_patterns: ["res.cloudinary.com/dpmykpsih"]
+    exclude:
+      - MCG portal (gchp.access.mcg.com) — licensed criteria
+    notes: >-
+      ~90 PDFs on one hub page (HS-001..005 UM policies, CPGs, two
+      manuals). Carelon BH manual is on carelonbehavioralhealth.com.
+
+  - plan_id: alameda
+    name: Alameda Alliance for Health
+    domain: alamedaalliance.org
+    tier: 2
+    fetcher: site
+    user_agent: default
+    lines_of_business: [medi-cal, group-care, d-snp]
+    scope: [policy, manual]
+    site:
+      sitemap: https://alamedaalliance.org/sitemap_index.xml
+      seeds:
+        - https://alamedaalliance.org/providers/alliance-provider-manual/
+        - https://alamedaalliance.org/providers/provider-manual-clinical-guidelines-and-policy-updates/
+        - https://alamedaalliance.org/providers/provider-resources/
+      doc_url_patterns: ["/wp-content/uploads/", "download.php?file="]
+    exclude:
+      - MCG portal (aah.access.mcg.com) — licensed criteria
+    notes: >-
+      One consolidated manual, all LOBs. No formal P&P library —
+      occasional UM policy-update PDFs only.
+
+  - plan_id: cencal
+    name: CenCal Health
+    domain: cencalhealth.org
+    tier: 2
+    fetcher: site
+    user_agent: default
+    crawl_delay: 3             # robots.txt Crawl-delay
+    lines_of_business: [medi-cal]
+    scope: [policy, manual, apl-digest]
+    site:
+      sitemap: null            # sitemap.xml is a stale 0-byte file — link-crawl
+      seeds:
+        - https://www.cencalhealth.org/providers/forms-manuals-policies/policies-procedures/
+        - https://www.cencalhealth.org/providers/forms-manuals-policies/provider-manual/
+        - https://www.cencalhealth.org/providers/forms-manuals-policies/all-plan-letters/
+      doc_url_patterns: ["/wp-content/uploads/"]
+    notes: >-
+      ~11 numbered policies + annual manual. The APL digest pages carry
+      CenCal-written "provider takeaways" — unique local content, ingest
+      the HTML pages themselves, not just linked DHCS PDFs.
+
+  - plan_id: iehp
+    name: Inland Empire Health Plan
+    domain: providerservices.iehp.org
+    tier: 2
+    fetcher: site
+    user_agent: default
+    http1: true                # server emits HTTP/2 frames libcurl rejects
+    lines_of_business: [medi-cal, d-snp, covered]
+    scope: [policy, manual]
+    site:
+      seeds:
+        - https://www.providerservices.iehp.org/en/resources/resources-for-providers/utilization-management-clinical-criteria
+        - https://www.providerservices.iehp.org/en/pharmacy/pharmacy-resources/pharmacy-policies
+      doc_sitemaps:
+        - url: https://www.providerservices.iehp.org/en/pdf-sitemap.xml
+          include: ["um-criteria", "pharmacy-policies"]
+      doc_url_patterns: ["/content/dam/"]
+    exclude:
+      - SAI360/Compliance360 portal (session-tokenized; DAM PDFs are the source)
+      - MCG (iehp.access.mcg.com) and Apollo — licensed criteria
+    notes: >-
+      UM criteria + pharmacy policies come from the crawl;
+      plans/manifests/iehp.json adds the 24 Medi-Cal 2026 manual
+      chapters (chapter list read from the public SAI360 catalog,
+      PDFs verified on the open AEM DAM). Remaining gap: Medicare
+      D-SNP and CCA manual chapters have no public DAM shelf — SAI360
+      viewer only. The full pdf-sitemap (~700 PDFs) is a later-scope
+      expansion.
+
+  - plan_id: cchp
+    name: Contra Costa Health Plan
+    domain: cchealth.org
+    tier: 3
+    fetcher: manifest           # plans/manifests/cchp.json, written by
+                                # scripts/download_cchp.py (Selenium Chrome)
+    lines_of_business: [medi-cal, d-snp]
+    scope: [policy, manual]
+    notes: >-
+      Akamai fingerprints TLS — curl is 403 regardless of UA or cookies,
+      so BOTH enumeration and download run inside headless Chrome
+      (scripts/download_cchp.py; the UA must not say HeadlessChrome).
+      The script fills data/pdf/cchp/ with the same slug names the R
+      side computes, so fetch_all("cchp") adopts the files idempotently
+      without touching the network for existing ones.
+
+  - plan_id: hpsm
+    name: Health Plan of San Mateo
+    domain: hpsm.org
+    tier: 2
+    fetcher: site
+    user_agent: default
+    lines_of_business: [medi-cal, d-snp, healthworx, ace]
+    scope: [policy, manual]
+    site:
+      sitemap: https://www.hpsm.org/sitemap/sitemap.gz
+      seeds:
+        - https://www.hpsm.org/provider/resources/manual
+      doc_url_patterns: ["/docs/default-source/"]
+    html_docs:                  # 12 HTML manual sections — prefer over PDF
+      - https://www.hpsm.org/provider/resources/manual
+    notes: >-
+      One manual, all four LOBs, dual format. First consumer of the HTML
+      ingest path (phase 6). Small PDF corpus otherwise.
+
+  - plan_id: calviva
+    name: CalViva Health
+    domain: calvivahealth.org
+    tier: 2
+    fetcher: site
+    user_agent: default
+    lines_of_business: [medi-cal]
+    scope: [policy, manual]
+    site:
+      sitemap: https://calvivahealth.org/sitemap_index.xml
+      seeds:
+        - https://calvivahealth.org/providers/resources/
+      doc_url_patterns: ["/wp-content/uploads/"]
+    html_docs:
+      - https://providerlibrary.healthnetcalifornia.com/medi-cal.html
+    notes: >-
+      Operations delegated to Health Net — the real manual is Health
+      Net's public HTML provider library (filter CalViva-tagged pages;
+      phase 6). Own site has Ops Guide + ~12 resource PDFs.
+
+  # ---- Tier 3 (phase 5) ----------------------------------------------------
+
+  - plan_id: caloptima
+    name: CalOptima Health
+    domain: caloptima.org
+    tier: 3
+    fetcher: manifest           # plans/manifests/caloptima.json — 462 docs
+                                # (383 numbered policies, OILs, PA criteria,
+                                # manual), enumerated 2026-09-06 via
+                                # scripts/enumerate_caloptima.py
+    user_agent: default         # CDN downloads need no browser UA
+    lines_of_business: [medi-cal, onecare, pace]
+    scope: [policy, manual]
+    sitecore_search:            # provenance for re-enumeration
+      endpoint: https://discover.sitecorecloud.io/discover/v2/87111946
+      library_page: https://www.caloptima.org/en/policy-documents
+      cdn: https://cop-p-001.sitecorecontenthub.cloud/api/public/content/
+    notes: >-
+      Site is Vercel bot-challenged but its search backend (Sitecore
+      discover API, public key in the site's JS bundle) and document CDN
+      both answer plain clients. Re-enumerate with
+      scripts/enumerate_caloptima.py (no cookie needed); the API key
+      changes when the site redeploys its bundle — re-extract from
+      chunk JS if 401s appear.
+
+  # ---- Coverage gap --------------------------------------------------------
+
+  - plan_id: chg
+    name: Community Health Group
+    domain: chgsd.com
+    tier: 4
+    fetcher: none
+    lines_of_business: [medi-cal, d-snp, c-snp]
+    scope: []
+    notes: >-
+      robots.txt disallows /*.pdf and /*.aspx; no public provider
+      manual; UM criteria MCG on-request; Readily org exists with 0
+      public documents. Decision (SCRAPING_PLAN.md): honor robots,
+      document the gap, ask the plan directly for their policy set.
+
+  # ---- Cross-plan spine ----------------------------------------------------
+
+  - plan_id: dhcs_apl
+    name: DHCS All Plan Letters
+    domain: dhcs.ca.gov
+    tier: 3
+    fetcher: manifest           # enumerated in-browser 2026-09-06 →
+                                # plans/manifests/dhcs_apl.json (474 APLs,
+                                # 1998–2026). Downloads need the Incapsula
+                                # session cookie in KB_COOKIE_DHCS_APL.
+    lines_of_business: [medi-cal]
+    scope: [apl]
+    site:
+      seeds:
+        - https://www.dhcs.ca.gov/formsandpubs/Pages/AllPlanLetters.aspx
+        - https://www.dhcs.ca.gov/formsandpubs/Pages/MgdCarePlanPolicyLtrs.aspx
+      doc_url_patterns: [".pdf"]
+    notes: >-
+      Verified 2026-09-06: Incapsula challenge on every request from
+      plain HTTP clients. Prior art in ../gauntlet
+      (src/scraper/alliance_scraper.py) fetched these pages with headless
+      Chrome (Selenium) — enumerate in a real browser, downloads ride the
+      session cookies. The MgdCarePlanPolicyLtrs.aspx seed comes from
+      gauntlet's working config.
