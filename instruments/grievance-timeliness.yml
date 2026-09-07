@@ -1,0 +1,125 @@
+# Instrument: Grievance & Appeals Timeliness
+#
+# A member files a grievance. The instrument resolves the case, assembles the
+# evidence needed to decide it, renders the plan's authorized framework and
+# its deadline gates, records a human disposition, and writes the audit record
+# as the work happens.
+#
+# Chosen as the first reusable instrument because it is the smallest
+# consequential workflow where all five steps are simultaneously mandatory and
+# audited: DHCS pulls grievance files directly, the deadlines are binary and
+# timestamped, and the determination cannot lawfully be automated.
+#
+# Framework gates below are quoted from the corpus (see data/catalog.json);
+# all 16 plans with extractable text carry grievance policy with explicit
+# timeframes, so this framework transfers across the membership.
+
+instrument:
+  id: grievance-timeliness
+  name: Grievance & Appeals Timeliness
+  version: 0.1.0
+  status: pre-operational
+  workflow: Member grievance intake through disposition and notice
+
+# --- The authorized framework -------------------------------------------------
+# Gates are obligations with a clock. Each cites the authority it derives from
+# so the ledger entry can name it, and carries the corpus document that states
+# it so the citation resolves to a passage rather than to a memory.
+
+framework:
+  authority:
+    - id: APL 21-011
+      title: Grievance and Appeals Requirements, Notice and "Your Rights"
+      supersedes: APL 17-006
+      plans_implementing: 10
+  gates:
+    - id: ACK
+      obligation: Acknowledge receipt of the grievance
+      clock: 5 calendar days from receipt
+      basis: APL 21-011
+      automatable: timing only — the acknowledgement itself is a notice, not a determination
+    - id: RESOLVE_STANDARD
+      obligation: Resolve and notify the member
+      clock: 30 calendar days from receipt
+      basis: APL 21-011
+      automatable: no — disposition is a human determination
+    - id: RESOLVE_EXPEDITED
+      obligation: Resolve and notify where expedited criteria are met
+      clock: 72 hours from receipt
+      basis: APL 21-011
+      automatable: no — both the expedited determination and the disposition are human
+    - id: CLASSIFY
+      obligation: Determine whether the case is a grievance, appeal, or exempt inquiry
+      clock: at intake
+      basis: APL 21-011
+      automatable: assistive only — machine proposes, operator confirms; misclassification
+                   restarts the clock under the wrong gate, so this is a recorded human act
+
+# Machine assistance is bounded here, not in code comments, so the boundary is
+# reviewable by someone who does not read R. Anything not listed is prohibited.
+machine_assistance:
+  permitted:
+    - Extract case attributes from intake text for operator confirmation
+    - Retrieve candidate evidence from connected systems
+    - Surface the framework passage governing a gate
+    - Compute elapsed time against a gate clock
+  prohibited:
+    - Answer a gate
+    - Issue or draft the disposition
+    - Determine whether expedited criteria are met
+    - Generate language that is presented as policy
+
+# --- Control Passport ---------------------------------------------------------
+# baseline: the NIST SP 800-53 Rev 5 impact baseline this instrument inherits.
+# additions: controls selected ABOVE the baseline, each with the reason. An
+#   addition is not an inherited control and must never be presented as one.
+# inherited: controls satisfied by the hosting environment rather than by this
+#   artifact; listed because an assessor asks who is responsible, not whether
+#   the control exists.
+
+passport:
+  baseline: low
+  additions:
+    - id: AU-10
+      reason: >-
+        Non-repudiation is the instrument's core claim — the ledger asserts that
+        a named person made a specific determination. AU-10 is HIGH baseline in
+        Rev 5, so it is a deliberate addition at LOW rather than inherited.
+    # AU-9 (Protection of Audit Information) belongs here by intent — the
+    # decision record is only evidence if it cannot be altered after the fact —
+    # but it is already selected by the LOW baseline, so claiming it as
+    # tailoring would overstate the hardening. It is inherited, and the
+    # append-only guarantee is carried as an evidence binding instead.
+    - id: SA-11
+      reason: >-
+        Developer testing. MODERATE baseline in Rev 5, added at LOW because the
+        instrument computes regulatory deadlines and an arithmetic error is a
+        compliance failure, not a defect.
+    - id: SI-10
+      reason: >-
+        Machine extraction feeds an operator decision; unvalidated input becomes
+        a confirmed case attribute and then a disposition.
+  inherited:
+    - id: AC-2
+      from: hosting environment identity provider
+    - id: SC-13
+      from: platform cryptographic module
+
+# Organization-defined parameters this instrument answers on the plan's behalf.
+# Everything else in the baseline remains for the plan to define; the generator
+# reports the count so the gap is visible rather than assumed closed.
+parameters:
+  au-02_odp.01: >-
+    Case creation, evidence retrieval, gate evaluation, operator confirmation,
+    disposition, notice issuance, and every correction event.
+  au-02_odp.03: continuously, as the work happens
+  ca-07_odp.01: gate compliance rate and open-case ageing, reviewed weekly
+
+# Which ledger event proves which control. An unbound control is an assertion;
+# a bound one is evidence. The generator reports both counts.
+evidence:
+  AU-2:  ledger.event.*
+  AU-10: ledger.event.disposition (actor, rationale, authority version)
+  AU-9:  ledger.append_only_verification
+  AC-3:  ledger.event.access_check
+  CA-7:  metrics.gate_compliance_weekly
