@@ -56,9 +56,18 @@ graph_neighbors <- function(doc_ids, hops = 2, cfg = kb_config(),
   out <- data.frame(id = hit, hops = as.integer(best[hit]), stringsAsFactors = FALSE)
   out <- out[order(out$hops), , drop = FALSE]
   out <- head(out, max_out)
-  out$plan_id <- sub("^doc:([^/]+)/.*$", "\\1", out$id)
-  out$filename <- sub("^doc:[^/]+/", "", out$id)
-  out[out$id != "" & startsWith(out$id, "doc:") | startsWith(out$id, "apl:"), , drop = FALSE]
+
+  # Node kind must be explicit. Deriving plan_id with a regex that only
+  # matches "doc:<plan>/..." leaves APL ids untouched, so every state letter
+  # reached silently became its own "plan" — which reported 41 plans out of a
+  # possible 17 and made the whole measurement meaningless.
+  out$kind <- ifelse(startsWith(out$id, "doc:"), "document",
+              ifelse(startsWith(out$id, "apl:"), "apl", "other"))
+  out$plan_id <- ifelse(out$kind == "document",
+                        sub("^doc:([^/]+)/.*$", "\\1", out$id), NA_character_)
+  out$filename <- ifelse(out$kind == "document",
+                         sub("^doc:[^/]+/", "", out$id), NA_character_)
+  out[out$kind %in% c("document", "apl"), , drop = FALSE]
 }
 
 #' Vector search over the chunk store, collapsed to one row per document.
@@ -118,11 +127,15 @@ sw_retrieval_gain <- function(queries = SW_PROBES, top_k = 8, hops = 2,
   rows <- lapply(queries, function(q) {
     r <- tryCatch(retrieve_graph(q, top_k, hops, cfg), error = function(e) NULL)
     if (is.null(r) || !nrow(r$seeds)) return(NULL)
+    reached_plans <- if (nrow(r$reached))
+      r$reached$plan_id[r$reached$kind == "document"] else character()
     vp <- length(unique(r$seeds$plan_id))
-    gp <- length(unique(c(r$seeds$plan_id,
-                          if (nrow(r$reached)) r$reached$plan_id else character())))
+    gp <- length(unique(c(r$seeds$plan_id, reached_plans[!is.na(reached_plans)])))
     data.frame(query = substr(q, 1, 42), vector_plans = vp, with_graph = gp,
-               reached_docs = nrow(r$reached), stringsAsFactors = FALSE)
+               reached_docs = sum(r$reached$kind == "document"),
+               reached_apls = sum(r$reached$kind == "apl"),
+               capped = nrow(r$reached) >= 40,
+               stringsAsFactors = FALSE)
   })
   out <- do.call(rbind, Filter(Negate(is.null), rows))
   if (is.null(out)) return(data.frame())

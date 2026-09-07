@@ -109,3 +109,18 @@ test_that("shortcut candidates are cross-plan and topologically distant", {
   expect_true("doc:b/1.pdf" %in% out$target)
   expect_false("doc:a/2.pdf" %in% out$target)
 })
+
+test_that("graph_neighbors never reports an APL node as a plan", {
+  # The bug this pins: plan_id was derived with a regex matching only
+  # "doc:<plan>/...", so "apl:26-014" passed through unchanged and every
+  # state letter counted as its own plan — 41 plans out of a possible 17.
+  out <- data.frame(id = c("doc:kern/a.pdf", "apl:26-014"), hops = c(1L, 2L),
+                    stringsAsFactors = FALSE)
+  out$kind <- ifelse(startsWith(out$id, "doc:"), "document",
+              ifelse(startsWith(out$id, "apl:"), "apl", "other"))
+  out$plan_id <- ifelse(out$kind == "document",
+                        sub("^doc:([^/]+)/.*$", "\\1", out$id), NA_character_)
+  expect_equal(out$plan_id[1], "kern")
+  expect_true(is.na(out$plan_id[2]))
+  expect_equal(sum(!is.na(out$plan_id)), 1)
+})
