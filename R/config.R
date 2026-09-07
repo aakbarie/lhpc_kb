@@ -61,6 +61,13 @@ kb_config <- function() {
     # plan's. Off only to measure what it is worth.
     plan_in_context = env_lgl("KB_PLAN_IN_CONTEXT", TRUE),
 
+    # --- generation ---------------------------------------------------------
+    # Deliberately a weaker generator, following policy_search's reasoning:
+    # holding the model constant and modest keeps answer quality a measure of
+    # the grounding rather than of model cleverness. The framework assistant
+    # is a lookup with citations, not a reasoner.
+    chat_model = env_chr("KB_CHAT_MODEL", "gpt-4"),
+
     # --- embedding ----------------------------------------------------------
     # "ollama" (local, nothing leaves the machine) | "openai" | "azure".
     # The corpus is public documents, so a hosted embedder discloses nothing

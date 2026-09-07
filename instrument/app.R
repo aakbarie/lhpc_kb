@@ -22,8 +22,21 @@ suppressPackageStartupMessages({
   library(shiny); library(bslib)
 })
 
-for (f in c("R/fetch_common.R", "R/config.R", "R/passport.R",
-            "R/ledger.R", "R/independence.R", "R/cases.R")) source(f)
+# The instrument owns its modules; the corpus (store, config, helpers) lives
+# one level up and is READ, never written to, from here.
+local({
+  d <- normalizePath(getwd(), winslash = "/")
+  while (!file.exists(file.path(d, "plans", "registry.yml")) && dirname(d) != d)
+    d <- dirname(d)
+  for (f in c("fetch_common.R", "config.R")) source(file.path(d, "R", f))
+  for (f in c("passport.R", "ledger.R", "independence.R", "cases.R",
+              "assistant.R", "policies.R"))
+    source(file.path(d, "instrument", "R", f))
+})
+
+# Serve the corpus PDFs read-only so a citation can open the source at the
+# cited page. Same anchor the citation uses, so the two cannot disagree.
+shiny::addResourcePath("corpus", kb_config()$pdf_dir)
 
 ledger_init()
 OPERATOR <- Sys.getenv("KB_OPERATOR", "a.rivera")
@@ -136,7 +149,8 @@ ui <- page_sidebar(
     nav_panel("2 · Assemble", uiOutput("assemble")),
     nav_panel("3 · Apply",    uiOutput("apply_ui")),
     nav_panel("4 · Decide",   uiOutput("decide")),
-    nav_panel("5 · Prove",    uiOutput("prove"))
+    nav_panel("5 · Prove",    uiOutput("prove")),
+    nav_panel("Assist",       uiOutput("assist"))
   )
 )
 
@@ -278,13 +292,42 @@ server <- function(input, output, session) {
                         fmt_remaining(row$remaining, row$met)))),
             div(class = "small mt-2",
                 span(class = "text-uppercase text-muted", "Automatable: "), row$automatable),
-            if (!is.null(auth)) div(class = "mt-2 p-2 bg-light border-start border-3 small",
-                div(class = "text-muted mb-1",
-                    "Retrieved from ", tags$code(auth$plan_id[1]), " · ",
-                    substr(auth$title[1], 1, 60), " · p.", auth$page[1]),
-                tags$em(paste0(substr(gsub("\\s+", " ", auth$passage[1]), 1, 420), "…")))
+            if (!is.null(auth)) div(class = "mt-2 p-2 cau-panel",
+                div(class = "d-flex justify-content-between align-items-start",
+                    div(style = paste0("font-size:11px;color:", CAU$ink_soft, ";"),
+                        "Retrieved from ", tags$code(auth$plan_id[1]), " \u00b7 ",
+                        substr(auth$title[1], 1, 52), " \u00b7 p.", auth$page[1]),
+                    if (pdf_exists(auth$plan_id[1], auth$filename[1]))
+                      tags$a(href = pdf_url(auth$plan_id[1], auth$filename[1], auth$page[1]),
+                             target = "_blank", class = "cau-badge",
+                             style = paste0("background:", CAU$blue, ";color:#fff;text-decoration:none;"),
+                             "OPEN PDF")),
+                div(class = "mt-1", style = "font-size:12.5px;font-style:italic;",
+                    paste0(substr(gsub("[[:space:]]+", " ", auth$passage[1]), 1, 400), "\u2026")))
             else div(class = "mt-2 small text-muted fst-italic",
-                     "No corpus passage bound to this gate in this deployment."))
+                     "No corpus passage bound to this gate in this deployment."),
+            local({
+              pol <- applicable_policies(row$basis, limit = 6)
+              if (is.null(pol) || !nrow(pol)) return(NULL)
+              div(class = "mt-2",
+                eyebrow("Applicable plan policies"),
+                div(class = "mt-1", lapply(seq_len(nrow(pol)), function(j) {
+                  ex <- pdf_exists(pol$plan_id[j], pol$filename[j])
+                  pg <- if (ex) policy_page_for(pol$plan_id[j], pol$filename[j],
+                                                gate_terms(row$gate_id, row$obligation)) else NA
+                  div(class = "d-flex justify-content-between align-items-center py-1",
+                      style = paste0("font-size:12.5px;border-bottom:1px solid ", CAU$line, ";"),
+                      div(tags$code(style = "font-size:11px;", pol$plan_id[j]),
+                          span(class = "ms-2", substr(pol$label[j], 1, 58))),
+                      if (ex) tags$a(href = pdf_url(pol$plan_id[j], pol$filename[j], pg),
+                                     target = "_blank",
+                                     style = paste0("color:", CAU$blue, ";font-size:11.5px;",
+                                                    "font-family:", CAU$mono, ";text-decoration:none;"),
+                                     if (is.na(pg)) "OPEN \u2197" else paste0("p.", pg, " \u2197"))
+                      else span(style = paste0("color:", CAU$ink_soft, ";font-size:11px;"),
+                                "not in corpus"))
+                })))
+            }))
       })))
   })
 
@@ -379,6 +422,73 @@ server <- function(input, output, session) {
             div(class = "mt-1 text-muted",
                 tags$code(style = "font-size:.75em", substr(e$hash, 1, 32), "…")))
       })))
+  })
+
+  # --- Framework assistant ----------------------------------------------------
+  asst <- reactiveVal(NULL)
+
+  output$assist <- renderUI({
+    cc <- current(); res <- asst()
+    auth <- unique(gates()$basis[nzchar(gates()$basis)])
+    tagList(
+      p(style = paste0("color:", CAU$ink_soft, ";"),
+        "Ask what the authorized framework requires. The assistant retrieves and",
+        " cites; it cannot answer a gate or issue a disposition, and every",
+        " exchange is written to the ledger."),
+      div(class = "cau-panel p-3 mb-3",
+          eyebrow("Scope"),
+          div(class = "mt-1", style = "font-size:13px;",
+              "Searching ", tags$code(paste(auth, collapse = ", ")),
+              " only \u2014 the case narrative is never sent to the model.")),
+      textAreaInput("ask_q", NULL, width = "100%", rows = 2,
+                    placeholder = "e.g. How long do we have to acknowledge a grievance?"),
+      actionButton("ask_go", "Ask the framework", class = "btn-primary"),
+      if (!is.null(res)) div(class = "mt-3",
+        if (isTRUE(res$refused))
+          div(class = "cau-strip p-3",
+              eyebrow("Refused"),
+              div(class = "mt-1", res$answer))
+        else tagList(
+          div(class = "cau-panel p-3",
+              eyebrow("Machine \u00b7 advisory"),
+              div(class = "mt-2", style = "font-size:14.5px;line-height:1.55;",
+                  res$answer %||% res$note)),
+          if (!is.null(res$citations) && length(res$citations$unverified))
+            div(class = "cau-strip p-3 mt-2",
+                eyebrow("Unverified citation"),
+                div(class = "mt-1",
+                    "The answer cites ",
+                    paste(sub("#", " page ", res$citations$unverified), collapse = ", "),
+                    ", which was not among the passages retrieved. Do not rely on it."))
+          else if (!is.null(res$citations) && isTRUE(res$citations$uncited))
+            div(class = "cau-strip p-3 mt-2", eyebrow("No citation"),
+                div(class = "mt-1", "The answer cites no passage. Treat it as unsourced."))
+          else if (!is.null(res$citations) && length(res$citations$cited))
+            div(class = "mt-2", style = paste0("font-size:12px;color:", CAU$ink_soft, ";"),
+                "Citations verified against retrieved passages: ",
+                paste(sub("#", " p.", res$citations$cited), collapse = ", ")),
+          if (!is.null(res$passages)) div(class = "mt-3",
+            eyebrow("Passages shown to the model"),
+            div(class = "cau-panel mt-2", lapply(seq_len(nrow(res$passages)), function(i)
+              div(class = "p-2 border-bottom", style = "font-size:12.5px;",
+                  div(style = paste0("color:", CAU$blue, ";font-family:", CAU$mono, ";font-size:11px;"),
+                      res$passages$policy_number[i], " \u00b7 p.", res$passages$page[i]),
+                  div(class = "mt-1", substr(gsub("[[:space:]]+", " ",
+                      res$passages$passage[i]), 1, 300), "\u2026")))))
+        ))
+    )
+  })
+
+  observeEvent(input$ask_go, {
+    q <- trimws(input$ask_q %||% "")
+    if (!nzchar(q)) return()
+    cc <- current()
+    auth <- unique(gates()$basis[nzchar(gates()$basis)])
+    asst(tryCatch(
+      ask_framework(q, cc$case_id, authorities = auth, operator = OPERATOR,
+                    spec_version = SPEC_VERSION),
+      error = function(e) list(refused = FALSE, answer = paste("Error:", conditionMessage(e)))))
+    bump(bump() + 1)
   })
 
   output$chain_status <- renderUI({

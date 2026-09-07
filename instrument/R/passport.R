@@ -35,6 +35,20 @@ local({
   source(file.path(d, "R", "fetch_common.R"))
 })
 
+#' The instrument's own directory.
+#'
+#' Separate from kb_root(): the instrument is a product that READS the LHPC
+#' corpus but owns its specs, reporting lines and app. kb_root() finds the
+#' corpus (the folder holding plans/registry.yml); this finds the instrument
+#' (the folder holding instruments/). Conflating them is how a deployment
+#' ends up loading another tenant's framework.
+inst_root <- function() {
+  d <- normalizePath(getwd(), winslash = "/")
+  while (!dir.exists(file.path(d, "instruments")) && dirname(d) != d) d <- dirname(d)
+  if (dir.exists(file.path(d, "instruments"))) d
+  else file.path(kb_root(), "instrument")
+}
+
 nist_catalog <- function(path = file.path(kb_root(), "data", "nist_800_53.json")) {
   if (!file.exists(path))
     stop("no NIST catalog at ", path,
@@ -44,7 +58,7 @@ nist_catalog <- function(path = file.path(kb_root(), "data", "nist_800_53.json")
   cat
 }
 
-instrument_spec <- function(id, dir = file.path(kb_root(), "instruments")) {
+instrument_spec <- function(id, dir = file.path(inst_root(), "instruments")) {
   p <- file.path(dir, paste0(id, ".yml"))
   if (!file.exists(p)) stop("no instrument spec at ", p, call. = FALSE)
   yaml::read_yaml(p)
@@ -113,7 +127,7 @@ passport <- function(id, artifact = NULL, cat = nist_catalog()) {
   # The spec itself is versioned material: a passport that cannot say which
   # spec produced it cannot be reproduced.
   spec_hash <- paste0("sha256:", digest(file = file.path(
-    kb_root(), "instruments", paste0(id, ".yml")), algo = "sha256"))
+    inst_root(), "instruments", paste0(id, ".yml")), algo = "sha256"))
 
   structure(list(
     instrument = spec$instrument,

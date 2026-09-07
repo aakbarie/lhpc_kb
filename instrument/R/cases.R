@@ -16,7 +16,10 @@ local({
   d <- normalizePath(getwd(), winslash = "/")
   while (!file.exists(file.path(d, "plans", "registry.yml")) && dirname(d) != d)
     d <- dirname(d)
-  for (f in c("fetch_common.R", "ledger.R", "passport.R")) source(file.path(d, "R", f))
+  inst <- file.path(d, "instrument")
+  if (!dir.exists(file.path(inst, "R"))) inst <- d
+  CORPUS_R <- c("fetch_common.R", "config.R", "registry.R")
+  for (f in c("fetch_common.R", "ledger.R", "passport.R")) source(file.path(if (f %in% CORPUS_R) d else inst, "R", f))
 })
 
 #' Parse "5 calendar days" / "72 hours" into seconds.
@@ -118,7 +121,7 @@ gate_authority_text <- function(basis, terms = character(),
 
   ask <- function(where, params) tryCatch(
     DBI::dbGetQuery(con, paste0(
-      "SELECT plan_id, title, page, substr(text, 1, 700) AS passage
+      "SELECT plan_id, filename, title, page, substr(text, 1, 700) AS passage
        FROM chunks WHERE policy_number = ? AND length(text) > 300 ", where,
       " ORDER BY page LIMIT 1"), params = params), error = function(e) NULL)
 

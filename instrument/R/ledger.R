@@ -31,6 +31,8 @@ local({
   d <- normalizePath(getwd(), winslash = "/")
   while (!file.exists(file.path(d, "plans", "registry.yml")) && dirname(d) != d)
     d <- dirname(d)
+  inst <- file.path(d, "instrument")
+  if (!dir.exists(file.path(inst, "R"))) inst <- d
   source(file.path(d, "R", "fetch_common.R"))
 })
 

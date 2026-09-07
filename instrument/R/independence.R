@@ -32,7 +32,7 @@ suppressPackageStartupMessages({ library(yaml) })
 #' Reporting lines: person -> supervisor. Supplied per deployment because an
 #' org chart is not something to infer. Absent file = no subordinate checks,
 #' and independence_check() says so rather than silently passing.
-reporting_lines <- function(path = file.path(kb_root(), "instruments",
+reporting_lines <- function(path = file.path(inst_root(), "instruments",
                                              "reporting-lines.yml")) {
   if (!file.exists(path)) return(NULL)
   y <- yaml::read_yaml(path)
