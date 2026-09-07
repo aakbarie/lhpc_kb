@@ -34,6 +34,17 @@ case_outcomes <- function() {
     e <- split_ev[[cid]]
     opened <- min(e$occurred_at)
     disp <- e[e$event_type == "disposition.recorded", , drop = FALSE]
+    # Covariates come from the intake event, never recomputed now. Recomputing
+    # backlog today would measure the queue as it is rather than as it was,
+    # and a covariate that moved after treatment is post-treatment bias.
+    created <- e[e$event_type == "case.created", , drop = FALSE]
+    cov <- if (nrow(created))
+      tryCatch(jsonlite::fromJSON(created$payload[1]), error = function(x) list())
+      else list()
+    num <- function(k) {
+      v <- cov[[k]]
+      if (is.null(v) || length(v) == 0) NA_real_ else as.numeric(v)
+    }
     data.frame(
       case_id = cid,
       simulated = FALSE,
@@ -41,10 +52,47 @@ case_outcomes <- function() {
       resolved = nrow(disp) > 0,
       hours_to_resolution = if (nrow(disp))
         as.numeric(difftime(min(disp$occurred_at), opened, units = "hours")) else NA_real_,
-      operator = if (nrow(disp)) disp$actor[1] else NA_character_,
+      operator = if (nrow(created)) created$actor[1]
+                 else if (nrow(disp)) disp$actor[1] else NA_character_,
+      complexity = num("complexity"), expedited = num("expedited"),
+      backlog = num("backlog"), tenure = num("tenure"), sdoh = num("sdoh"),
       stringsAsFactors = FALSE)
   })
-  do.call(rbind, rows)
+  out <- do.call(rbind, rows)
+  add_rollout_panel(out, ev)
+}
+
+#' Recover the staggered-adoption panel the contract's DiD design needs.
+#'
+#' An operator's adoption date is the first time they consulted the
+#' assistant; `post` marks cases they opened after it, `adopter` marks the
+#' operators who ever did. Derived from the ledger rather than configured,
+#' because adoption is a behaviour and the ledger is where it happened —
+#' a roster of who was "given access" would measure intent instead.
+add_rollout_panel <- function(df, ev) {
+  if (is.null(df) || !nrow(df)) return(df)
+  opened <- ev[ev$event_type == "case.created", c("case_id", "actor", "occurred_at")]
+  used <- ev[ev$event_type == "assistance.requested", c("actor", "occurred_at")]
+  first_use <- tapply(used$occurred_at, used$actor, min)
+
+  m <- match(df$case_id, opened$case_id)
+  df$opened_at <- opened$occurred_at[m]
+  adopt <- first_use[df$operator]
+  df$adopter <- as.integer(!is.na(adopt))
+
+  # `post` is CALENDAR time against a common rollout date, not each
+  # operator's own adoption. Defining it per-operator meant non-adopters
+  # never had a post period, so post = 1 implied adopter = 1, the
+  # interaction was collinear with post, and R dropped it — the estimate
+  # failed with "subscript out of bounds" rather than returning something
+  # wrong, which was lucky. A difference-in-differences needs both groups
+  # observed on both sides of the same line; the rollout date is that line.
+  rollout <- if (length(first_use)) stats::median(as.numeric(first_use)) else NA_real_
+  df$post <- if (is.na(rollout)) 0L else
+    as.integer(as.numeric(df$opened_at) >= rollout)
+  attr(df, "rollout_date") <- if (is.na(rollout)) NA else
+    as.POSIXct(rollout, origin = "1970-01-01")
+  df
 }
 
 #' A simulated operational history, with a KNOWN true effect.

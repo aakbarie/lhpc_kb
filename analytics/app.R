@@ -17,9 +17,10 @@ local({
   d <- normalizePath(getwd(), winslash = "/")
   while (!file.exists(file.path(d, "plans", "registry.yml")) && dirname(d) != d)
     d <- dirname(d)
-  for (f in c("fetch_common.R", "config.R", "causalytics_theme.R"))
+  for (f in c("fetch_common.R", "config.R", "causalytics_theme.R", "contract.R"))
     source(file.path(d, "R", f))
-  for (f in c("passport.R", "ledger.R")) source(file.path(d, "instrument", "R", f))
+  for (f in c("passport.R", "ledger.R", "intake.R"))
+    source(file.path(d, "instrument", "R", f))
   for (f in c("dag.R", "dataset.R", "causal.R", "interpret.R"))
     source(file.path(d, "analytics", "R", f))
 })
@@ -40,6 +41,8 @@ ui <- page_fluid(
     div(class = "row mt-3",
       div(class = "col-4", uiOutput("controls")),
       div(class = "col-8", uiOutput("headline"))),
+    div(class = "mt-4", uiOutput("contract_panel")),
+    div(class = "mt-4", uiOutput("roi_panel")),
     div(class = "mt-4", uiOutput("dag_panel")),
     div(class = "mt-4", uiOutput("overlap_panel")),
     div(class = "mt-4", uiOutput("balance_panel")),
@@ -67,7 +70,7 @@ server <- function(input, output, session) {
   # screenshots away. So the banner is rendered by the app, above the
   # numbers, and cannot be omitted.
   output$provenance <- renderUI({
-    r <- res(); if (is.null(r) || !is.null(r$error)) return(NULL)
+    r <- res(); if (is.null(r) || !is.null(r$error) || isTRUE(r$blocked)) return(NULL)
     if (isTRUE(r$frame$simulated))
       div(class = "cau-strip p-2 mt-3", style = "font-size:13px;",
           strong("SIMULATED DATA. "),
@@ -98,6 +101,12 @@ server <- function(input, output, session) {
     r <- res()
     if (is.null(r)) return(div(class = "cau-panel p-3", "Choose a source and estimate."))
     if (!is.null(r$error)) return(div(class = "cau-strip p-3", r$error))
+    if (isTRUE(r$blocked)) return(div(class = "cau-strip p-3",
+      strong("No estimate. "), r$readiness$message,
+      div(style = "font-size:12.5px;margin-top:.5rem;",
+          "The contract declines rather than producing a number with a caveat. ",
+          "An adjustment set missing a confounder does not estimate a smaller ",
+          "effect — it estimates a different quantity.")))
     p <- r$psm; d <- r$did
     div(class = "row g-2",
       div(class = "col-3", div(class = "cau-panel p-3",
@@ -126,7 +135,14 @@ server <- function(input, output, session) {
               if (is.null(d)) "—" else sprintf("%+.1f", d$estimate)),
           div(style = paste0("font-size:11.5px;color:", CAU$ink_soft, ";"),
               if (is.null(d)) "not identified — no operator panel"
-              else sprintf("95%% CI [%.1f, %.1f] · %d operators", d$ci[1], d$ci[2], d$clusters)))),
+              else sprintf("95%% CI [%.1f, %.1f] · %d operators · intent-to-treat",
+                           d$ci[1], d$ci[2], d$clusters)))),
+      if (!is.null(d) && !is.null(p) && sign(d$estimate) != sign(p$estimate))
+        div(class = "col-12", div(style = paste0("font-size:12.5px;color:", CAU$ink_soft, ";"),
+          "The difference-in-differences answers a different question: what offering the ",
+          "assistant does, across every case an adopter handles, most of which did not use it. ",
+          "A smaller or null figure beside a clearly negative matched estimate is the ",
+          "expected pattern rather than a contradiction.")),
       if (!is.na(r$recovered)) div(class = "col-12 mt-1",
         div(style = paste0("font-size:12.5px;color:", CAU$ink_soft, ";"),
             if (isTRUE(r$recovered))
@@ -138,8 +154,86 @@ server <- function(input, output, session) {
                      "trusting this specification."))))
   })
 
+  output$contract_panel <- renderUI({
+    r <- res(); if (is.null(r)) return(NULL)
+    ct <- r$contract; if (is.null(ct)) return(NULL)
+    rd <- r$readiness
+    div(class = "cau-panel p-3",
+      div(class = "d-flex justify-content-between align-items-start",
+          div(eyebrow(pulse = TRUE, "Measurement contract"),
+              div(class = "cau-display", style = "font-size:19px;margin:.4rem 0 .2rem;",
+                  ct$intervention$name),
+              div(style = paste0("font-size:12.5px;color:", CAU$ink_soft, ";"),
+                  "v", ct$contract$version, " \u00b7 ", ct$contract$status,
+                  " \u00b7 written ", ct$contract$written)),
+          if (!is.null(rd)) cau_badge(if (isTRUE(rd$ready)) "satisfiable" else "not satisfiable",
+                                      if (isTRUE(rd$ready)) "done" else "warn")),
+      div(style = paste0("font-size:13px;color:", CAU$ink_soft, ";max-width:80ch;margin-top:.4rem;"),
+          "Declared before deployment: the outcome, the diagram, the fields the instrument ",
+          "must capture, the rollout design, the estimators and the ROI formula. ",
+          "Fixing them in advance is what makes the evaluation able to fail."),
+      if (!is.null(rd)) div(class = if (isTRUE(rd$ready)) "mt-2" else "cau-strip p-2 mt-2",
+          style = "font-size:13px;", rd$message),
+      div(class = "row mt-3",
+        div(class = "col-6",
+          tags$table(
+            tags$tr(tags$th("Required at intake"), tags$th("Source"), tags$th("")),
+            apply(contract_fields(ct), 1, function(f)
+              tags$tr(tags$td(tags$code(f[["name"]])),
+                      tags$td(style = "font-size:12px;", substr(f[["source"]], 1, 40)),
+                      tags$td(cau_badge(if (f[["measurable"]] == "TRUE") "recorded" else "no connector",
+                                        if (f[["measurable"]] == "TRUE") "done" else "warn")))))),
+        div(class = "col-6",
+          tags$table(
+            tags$tr(tags$th("Estimator"), tags$th("Assumption")),
+            lapply(ct$estimators, function(e)
+              tags$tr(tags$td(tags$code(e$name)),
+                      tags$td(style = "font-size:12px;", substr(e$assumption, 1, 70))))),
+          div(style = paste0("font-size:12px;color:", CAU$ink_soft, ";margin-top:.5rem;"),
+              strong("Rollout: "), ct$rollout$design, " \u00b7 minimum ",
+              ct$rollout$minimum_cases, " cases, ", ct$rollout$minimum_operators,
+              " operators"))))
+  })
+
+  output$roi_panel <- renderUI({
+    r <- res(); if (is.null(r) || isTRUE(r$blocked) || is.null(r$roi)) return(NULL)
+    roi <- r$roi; i <- roi$inputs
+    money <- function(x) paste0(if (x < 0) "-$" else "$",
+                                format(round(abs(x)), big.mark = ","))
+    div(class = "cau-panel p-3",
+      eyebrow("Return"),
+      div(class = "cau-display", style = "font-size:19px;margin:.4rem 0 .3rem;",
+          "What the effect is worth, as an interval"),
+      div(class = "row g-2",
+        div(class = "col-4", div(class = "cau-panel p-3",
+            div(class = "stat-label", "Net annual benefit"),
+            div(class = "stat", style = paste0("color:",
+                if (roi$crosses_zero) CAU$strip_fg else CAU$blue, ";font-size:1.4rem;"),
+                money(roi$net_annual_benefit[1]), " to ", money(roi$net_annual_benefit[2])))),
+        div(class = "col-4", div(class = "cau-panel p-3",
+            div(class = "stat-label", "Hours saved per case"),
+            div(class = "stat", style = "font-size:1.4rem;",
+                sprintf("%.1f to %.1f", roi$hours_saved[1], roi$hours_saved[2])))),
+        div(class = "col-4", div(class = "cau-panel p-3",
+            div(class = "stat-label", "Break-even"),
+            div(class = "stat", style = "font-size:1.4rem;",
+                sprintf("%.2f h", roi$break_even_hours_per_case)),
+            div(style = paste0("font-size:11.5px;color:", CAU$ink_soft, ";"),
+                "saved per case to cover the licence")))),
+      if (roi$crosses_zero) div(class = "cau-strip p-2 mt-2", style = "font-size:13px;",
+          strong("The return is not yet distinguishable from nothing. "),
+          "The effect interval crosses zero, so the benefit interval crosses the annual cost. ",
+          "A single figure quoted from the midpoint would be a promise the data does not support."),
+      div(style = paste0("font-size:12px;color:", CAU$ink_soft, ";margin-top:.6rem;"),
+          tags$code(roi$formula)),
+      div(style = paste0("font-size:12px;color:", CAU$ink_soft, ";margin-top:.3rem;"),
+          "Buyer-supplied inputs: ", i$cases_per_year, " cases/year at $",
+          i$loaded_hourly_cost, "/hour loaded; $", format(i$annual_cost, big.mark = ","),
+          " annual cost. Effect size comes from the estimator, not from these."))
+  })
+
   output$dag_panel <- renderUI({
-    r <- res(); if (is.null(r) || !is.null(r$error)) return(NULL)
+    r <- res(); if (is.null(r) || !is.null(r$error) || isTRUE(r$blocked)) return(NULL)
     s <- r$dag
     div(class = "cau-panel p-3",
       eyebrow(pulse = TRUE, "Identification"),
@@ -164,7 +258,7 @@ server <- function(input, output, session) {
   })
 
   output$dag_plot <- DiagrammeR::renderGrViz({
-    r <- res(); if (is.null(r) || !is.null(r$error)) return(NULL)
+    r <- res(); if (is.null(r) || !is.null(r$error) || isTRUE(r$blocked)) return(NULL)
     roles <- dag_roles(); e <- grievance_dag()
     col <- c(exposure = CAU$blue, outcome = CAU$ink,
              `confounder (adjusted)` = "#8fa3c9",
@@ -180,7 +274,7 @@ server <- function(input, output, session) {
   })
 
   output$overlap_panel <- renderUI({
-    r <- res(); if (is.null(r) || !is.null(r$error) || is.null(r$overlap)) return(NULL)
+    r <- res(); if (is.null(r) || !is.null(r$error) || isTRUE(r$blocked) || is.null(r$overlap)) return(NULL)
     o <- r$overlap
     div(class = if (isTRUE(o$ok)) "cau-panel p-3" else "cau-strip p-3",
       eyebrow("Overlap"),
@@ -196,7 +290,7 @@ server <- function(input, output, session) {
   })
 
   output$balance_panel <- renderUI({
-    r <- res(); if (is.null(r) || !is.null(r$error)) return(NULL)
+    r <- res(); if (is.null(r) || !is.null(r$error) || isTRUE(r$blocked)) return(NULL)
     p <- r$psm
     div(class = "cau-panel p-3",
       eyebrow("Comparability after matching"),
@@ -220,7 +314,7 @@ server <- function(input, output, session) {
   })
 
   output$interpretation <- renderUI({
-    r <- res(); if (is.null(r) || !is.null(r$error)) return(NULL)
+    r <- res(); if (is.null(r) || !is.null(r$error) || isTRUE(r$blocked)) return(NULL)
     i <- interpret_results(r)
     div(class = "cau-panel p-3",
       div(class = "d-flex justify-content-between align-items-center",

@@ -6,9 +6,9 @@ root <- local({
   while (!file.exists(file.path(d, "plans", "registry.yml")) && dirname(d) != d) d <- dirname(d)
   d
 })
-for (f in c("fetch_common.R", "config.R"))
+for (f in c("fetch_common.R", "config.R", "contract.R"))
   suppressPackageStartupMessages(source(file.path(root, "R", f)))
-for (f in c("passport.R", "ledger.R"))
+for (f in c("passport.R", "ledger.R", "intake.R"))
   suppressPackageStartupMessages(source(file.path(root, "instrument", "R", f)))
 for (f in c("dag.R", "dataset.R", "causal.R", "interpret.R"))
   suppressPackageStartupMessages(source(file.path(root, "analytics", "R", f)))

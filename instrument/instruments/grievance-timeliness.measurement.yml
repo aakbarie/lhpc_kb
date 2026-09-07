@@ -1,0 +1,169 @@
+# MEASUREMENT CONTRACT — Grievance & Appeals Timeliness
+#
+# Written before deployment, alongside the Control Passport. The Passport says
+# which controls govern the instrument; this says what effect the instrument
+# claims and how that claim will be tested. Both are commitments made in
+# advance, and both are checkable afterwards.
+#
+# The reason it is a contract rather than an analysis plan: every field below
+# is a pre-registration. The diagram is fixed before the data exists, the
+# estimators are named before anyone sees a result, and the ROI formula is
+# agreed with the buyer rather than constructed after the fact from whatever
+# moved. An evaluation designed after deployment can always be made to
+# succeed; this one can fail.
+#
+# It is also what makes the instrument capture the right fields. The required
+# fields below are not documentation of what the app happens to record —
+# they are the specification the app must satisfy, and analysis_readiness()
+# refuses to estimate when they are absent.
+
+contract:
+  id: grievance-timeliness
+  version: 1.0.0
+  status: pre-deployment
+  written: 2026-09-06
+
+# --- What is being done, and what it is expected to change ------------------
+intervention:
+  name: Framework assistant consulted on a case
+  description: >-
+    An operator asks the instrument what the authorized framework requires and
+    is shown retrieved passages with citations. The assistant cannot answer a
+    gate or draft a disposition.
+  unit: case
+  assignment: >-
+    Operator choice, not assigned. This is observational, which is why
+    confounding is the central threat and why the diagram below exists.
+  recorded_as: ledger event assistance.requested
+
+outcome:
+  primary:
+    name: hours_to_resolution
+    definition: Hours from case.created to disposition.recorded
+    direction: lower is better
+  secondary:
+    - name: on_time
+      definition: Resolution recorded before the gate deadline
+      direction: higher is better
+    - name: overturn_rate
+      definition: Share of dispositions recorded as overturned
+      direction: not a target — monitored for unintended effects
+
+# --- The causal diagram -----------------------------------------------------
+# Each edge is a claim about the operation that a domain expert can dispute.
+# The adjustment set is DERIVED from this by the backdoor criterion, never
+# chosen by hand — see R/contract.R and analytics/R/dag.R.
+dag:
+  exposure: assisted
+  outcome: hours
+  edges:
+    - {from: complexity, to: assisted, note: analysts consult on cases they find hard}
+    - {from: complexity, to: hours,    note: hard cases take longer regardless}
+    - {from: expedited,  to: assisted, note: expedited cases raise the stakes}
+    - {from: expedited,  to: hours,    note: expedited cases are worked faster (72h clock)}
+    - {from: backlog,    to: assisted, note: a deep queue pushes staff to seek help}
+    - {from: backlog,    to: hours,    note: a deep queue slows everything}
+    - {from: tenure,     to: assisted, note: less experienced staff consult more}
+    - {from: tenure,     to: hours,    note: experience shortens handling time}
+    - {from: sdoh,       to: assisted, note: social barriers make a case look harder}
+    - {from: sdoh,       to: hours,    note: a member hard to reach takes longer}
+    - {from: assisted,   to: hours,    note: THE EFFECT UNDER STUDY}
+    - {from: hours,      to: on_time,  note: timeliness follows hours against the deadline}
+
+# --- What the instrument must record, and when ------------------------------
+# `at` is load-bearing. A covariate captured after the operator consults the
+# assistant may have been affected by it; adjusting for such a variable
+# damages the estimate rather than protecting it. Everything here is captured
+# at intake, before assistance is possible, and the append-only ledger is what
+# makes "before" verifiable.
+required_fields:
+  - {name: complexity, at: intake, source: operator assessment (1-10),
+     measurable: true,  note: subjective; recorded as such}
+  - {name: expedited,  at: intake, source: case attribute, measurable: true}
+  - {name: backlog,    at: intake, source: instrument computes open-case count,
+     measurable: true,  note: nobody can reconstruct this later}
+  - {name: tenure,     at: intake, source: deployment staff file,
+     measurable: true}
+  - name: sdoh
+    at: intake
+    source: member record connector
+    measurable: false
+    note: >-
+      No connector in this deployment. Recorded as NA rather than guessed, and
+      the analysis declines rather than treating an unmeasured confounder as
+      controlled for.
+
+# --- How it will be rolled out ----------------------------------------------
+rollout:
+  design: staggered adoption by operator
+  rationale: >-
+    Operators take up the assistant at different times, which supplies a
+    before/after within each operator and a contemporaneous comparison group.
+    Cases are cross-sectional, so operators are the panel; without this there
+    is no difference-in-differences, only a two-group comparison wearing its
+    name.
+  comparison_group: operators who have not yet adopted
+  randomisation: none — adoption is voluntary
+  minimum_cases: 30
+  minimum_operators: 10
+
+# --- How it will be estimated -----------------------------------------------
+# Two independent estimators on the same identification. They fail
+# differently — matching on poor overlap, weighting on extreme weights — so
+# agreement is worth more than either alone, and disagreement is a signal to
+# stop rather than to pick one.
+estimators:
+  - name: psm
+    method: Propensity score matching, nearest neighbour, caliper 0.2
+    assumption: No unmeasured confounding given the adjustment set
+  - name: iptw
+    method: Inverse probability weighting (ATT, trimmed at 1st/99th percentile)
+    assumption: As above, plus no extreme weights after trimming
+  - name: did
+    method: Difference-in-differences over the operator panel, cluster-robust SE
+    assumption: >-
+      Adopters and non-adopters would have trended alike absent the assistant
+
+preconditions:
+  overlap_ratio_max: 5      # treated:control above propensity 0.8
+  balance_max: 0.1          # worst standardised mean difference after matching
+  refuse_if_unmet: true     # report the failure; do not publish a number
+
+# --- What it is worth -------------------------------------------------------
+# Inputs the buyer supplies; the formula is fixed here so the return cannot be
+# reverse-engineered from the result. Effect size comes from the estimator,
+# not from this file.
+roi:
+  formula: >-
+    (hours_saved_per_case * cases_per_year * loaded_hourly_cost)
+    + (breaches_avoided_per_year * cost_per_breach)
+    - annual_cost
+  inputs:
+    loaded_hourly_cost:
+      value: 62
+      unit: USD/hour
+      source: fully loaded grievance analyst cost, buyer-supplied
+    cases_per_year:
+      value: 4200
+      unit: cases
+      source: plan's own grievance volume
+    cost_per_breach:
+      value: 1800
+      unit: USD
+      source: >-
+        Rework, corrective action plan exposure and escalation to state fair
+        hearing. Buyer-supplied; deliberately conservative, and the single
+        input most worth arguing about.
+    annual_cost:
+      value: 90000
+      unit: USD
+      source: instrument licence and support
+  report:
+    - net_annual_benefit
+    - roi_ratio
+    - break_even_hours_per_case
+  honesty: >-
+    ROI is reported as an interval derived from the estimate's confidence
+    interval, never from the point estimate alone. If the effect interval
+    crosses zero, the ROI interval crosses the annual cost, and the finding is
+    that the return is not yet distinguishable from nothing.

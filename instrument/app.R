@@ -31,7 +31,7 @@ local({
   for (f in c("fetch_common.R", "config.R", "causalytics_theme.R"))
     source(file.path(d, "R", f))
   for (f in c("passport.R", "ledger.R", "independence.R", "cases.R",
-              "assistant.R", "policies.R", "search.R"))
+              "assistant.R", "policies.R", "search.R", "intake.R"))
     source(file.path(d, "instrument", "R", f))
 })
 
@@ -191,6 +191,21 @@ server <- function(input, output, session) {
       if (done) div(class = "alert alert-success py-2",
                     "Confirmed by ", strong(OPERATOR), " — recorded in the ledger.")
       else tagList(
+        # Intake covariates are captured HERE, before any assistance is
+        # possible, because the measurement contract requires them at intake:
+        # a covariate recorded after the assistant is consulted may have been
+        # affected by it, and adjusting for such a variable damages the
+        # estimate rather than protecting it.
+        div(class = "cau-panel p-3 mb-3",
+            eyebrow("Intake assessment"),
+            div(style = paste0("font-size:12.5px;color:", CAU$ink_soft, ";margin:.3rem 0 .5rem;"),
+                "Required by the measurement contract. Recorded before the framework ",
+                "assistant is available on this case."),
+            sliderInput("intake_complexity", "How involved is this case? (1 simple - 10 complex)",
+                        1, 10, value = 5, step = 1, width = "100%"),
+            div(style = paste0("font-size:11.5px;color:", CAU$ink_soft, ";"),
+                "Queue depth and your tenure are recorded automatically; ",
+                "social barriers need a member-record connector this deployment lacks.")),
         textAreaInput("classify_why", "Rationale (required)", width = "100%", rows = 2,
                       placeholder = "Why is this classification correct?"),
         actionButton("confirm_class", "Confirm classification", class = "btn-primary"),
@@ -205,9 +220,19 @@ server <- function(input, output, session) {
       showNotification("A rationale is required — the ledger will not accept the act without one.",
                        type = "error"); return()
     }
-    ledger_append(current()$case_id, "operator.confirmed", OPERATOR, "human",
+    cc <- current()
+    # Intake first: the covariates must precede the classification act, and
+    # the append-only ledger makes that ordering verifiable rather than
+    # asserted.
+    if (!any(ledger_events(cc$case_id)$event_type == "case.created"))
+      record_intake(cc$case_id, OPERATOR, expedited = cc$expedited,
+                    complexity = input$intake_complexity %||% NA_real_,
+                    subject_ref = cc$subject_ref, category = cc$category,
+                    occurred_at = cc$received)
+    ledger_append(cc$case_id, "operator.confirmed", OPERATOR, "human",
                   rationale = why, gate_id = "CLASSIFY",
                   authority = "APL 21-011", framework_version = SPEC_VERSION,
+                  subject_ref = cc$subject_ref,
                   payload = list(classification = "grievance"))
     bump(bump() + 1)
     showNotification("Classification confirmed and written to the ledger.", type = "message")

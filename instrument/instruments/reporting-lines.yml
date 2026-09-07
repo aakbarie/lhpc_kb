@@ -8,9 +8,45 @@
 #
 # Synthetic names, matching the demo cases.
 
+# Twelve analysts across two supervisors. The measurement contract requires a
+# minimum of ten operators, because the difference-in-differences needs a
+# comparison group of non-adopters — with fewer, the rollout design has
+# nothing to compare against.
 reports_to:
   a.rivera: t.okonkwo        # grievance analyst -> grievance supervisor
   j.mendez: t.okonkwo
+  k.osei: t.okonkwo
+  l.tran: t.okonkwo
+  m.silva: t.okonkwo
+  p.arand: t.okonkwo
+  r.donnelly: b.whitfield
+  s.ibarra: b.whitfield
+  v.chen: b.whitfield
+  w.abebe: b.whitfield
+  y.morales: b.whitfield
+  z.kaur: b.whitfield
   t.okonkwo: d.harper        # grievance supervisor -> compliance director
+  b.whitfield: d.harper
   n.patel: c.imani           # UM nurse -> medical director
   c.imani: d.harper          # medical director -> compliance director
+
+# Operator tenure in years. An org fact the instrument is told, not one it
+# infers — and required at intake by the measurement contract, because
+# experience predicts both seeking assistance and handling time.
+tenure_years:
+  a.rivera: 2.1
+  j.mendez: 5.4
+  k.osei: 1.2
+  l.tran: 7.8
+  m.silva: 0.9
+  p.arand: 4.3
+  r.donnelly: 6.1
+  s.ibarra: 1.8
+  v.chen: 3.4
+  w.abebe: 10.5
+  y.morales: 2.7
+  z.kaur: 5.9
+  t.okonkwo: 9.0
+  b.whitfield: 8.2
+  n.patel: 3.6
+  c.imani: 12.0

@@ -22,6 +22,7 @@ local({
   while (!file.exists(file.path(d, "plans", "registry.yml")) && dirname(d) != d)
     d <- dirname(d)
   source(file.path(d, "analytics", "R", "dag.R"))
+  if (!exists("measurement_contract")) source(file.path(d, "R", "contract.R"))
 })
 
 #' Cluster-robust (CR1) standard errors.
@@ -106,9 +107,41 @@ estimate_psm <- function(df, outcome = "hours_to_resolution",
 
   n_t <- sum(df[[exposure]] == 1); n_c <- sum(df[[exposure]] == 0)
   use_replace <- n_t > n_c * 0.8
-  m <- MatchIt::matchit(f, data = df, method = "nearest",
-                        distance = "glm", ratio = ratio,
-                        replace = use_replace, caliper = 0.2)
+  # Search matching specifications and keep the BEST-BALANCED one.
+  #
+  # Two mistakes were made here and both are worth recording. The first
+  # version tried progressively tighter calipers and kept whichever it tried
+  # LAST — so when none met the threshold it reported the worst, not the
+  # best. The second added Mahalanobis matching on the covariates, which is
+  # the textbook remedy for the propensity-score paradox (the score balanced
+  # to 0.001 while backlog sat at -0.209, because two cases equally likely to
+  # be assisted can differ on everything that produced that likelihood) — but
+  # inside a 0.025 caliper it had almost nothing to choose from and made
+  # balance worse.
+  #
+  # So: try both distances across a range of calipers, score each on the
+  # balance the contract actually cares about, and keep the winner. If none
+  # reaches the threshold that is a finding, not a reason to keep tuning.
+  bal_max <- tryCatch(measurement_contract()$preconditions$balance_max,
+                      error = function(e) NULL) %||% 0.1
+  worst_of <- function(fit) suppressWarnings(
+    max(abs(summary(fit)$sum.matched[, "Std. Mean Diff."]), na.rm = TRUE))
+  mahf <- stats::as.formula(paste("~", paste(covs, collapse = " + ")))
+
+  m <- NULL; caliper_used <- NA_real_; best <- Inf; used_mahalanobis <- FALSE
+  for (mah in c(FALSE, TRUE)) {
+    for (cal in c(0.5, 0.25, 0.2, 0.1, 0.05)) {
+      cand <- tryCatch(MatchIt::matchit(
+        f, data = df, method = "nearest", distance = "glm", ratio = ratio,
+        replace = use_replace, caliper = cal,
+        mahvars = if (mah) mahf else NULL), error = function(e) NULL)
+      if (is.null(cand)) next
+      wb <- worst_of(cand)
+      if (!is.finite(wb) || wb >= best) next
+      m <- cand; best <- wb; caliper_used <- cal; used_mahalanobis <- mah
+    }
+  }
+  if (is.null(m)) stop("matching failed at every specification", call. = FALSE)
   md <- MatchIt::match.data(m)
 
   fit <- stats::lm(stats::as.formula(paste(outcome, "~", exposure)),
@@ -132,8 +165,10 @@ estimate_psm <- function(df, outcome = "hours_to_resolution",
   list(
     overlap = ov,
     robust_se = !is.na(se_cl),
-    method = sprintf("Propensity score matching (nearest neighbour%s, caliper 0.2)",
-                     if (use_replace) ", with replacement" else ""),
+    caliper = caliper_used, mahalanobis = used_mahalanobis,
+    method = sprintf("Propensity score matching (nearest neighbour%s, caliper %.3g%s)",
+                     if (use_replace) ", with replacement" else "", caliper_used,
+                     if (used_mahalanobis) ", Mahalanobis within caliper" else ""),
     replacement = use_replace,
     covariates = covs,
     n_matched = nrow(md), n_treated = sum(md[[exposure]] == 1),
@@ -169,8 +204,15 @@ estimate_did <- function(df, outcome = "hours_to_resolution") {
   se <- tryCatch(cluster_se(fit, df$operator)[[term]],
                  error = function(e) summary(fit)$coefficients[term, 2])
   est <- unname(stats::coef(fit)[[term]])
+  # DiD here estimates something CLOSER TO INTENT-TO-TREAT than the matched
+  # estimate does: it compares operators who ever adopted against those who
+  # did not, and an adopter uses the assistant on only some of their cases.
+  # So a smaller, often null, DiD alongside a clearly negative matched
+  # estimate is the expected pattern, not a contradiction — the two answer
+  # "what does offering the tool do" and "what does using it do".
   list(
-    method = "Difference-in-differences, operator panel (cluster-robust SE)",
+    method = "Difference-in-differences, operator panel, cluster-robust SE (intent-to-treat)",
+    estimand = "intent-to-treat: effect of adoption, diluted by non-use",
     clusters = length(unique(df$operator)),
     estimate = est, se = se,
     ci = est + c(-1.96, 1.96) * se,
@@ -213,14 +255,33 @@ estimate_iptw <- function(df, outcome = "hours_to_resolution",
 #' `true_effect` is available only on simulated data. Where it exists the
 #' comparison is the point of the exercise: an estimator that cannot be
 #' checked is a decoration.
-run_analysis <- function(df, true_effect = NA_real_) {
+run_analysis <- function(df, true_effect = NA_real_, ct = NULL) {
+  ct <- ct %||% tryCatch(measurement_contract(), error = function(e) NULL)
+  # The contract decides whether an estimate may be produced at all. Checked
+  # BEFORE estimating, so a missing confounder is reported as a missing
+  # confounder rather than discovered later as odd balance.
+  ready <- if (!is.null(ct)) contract_readiness(df, ct) else NULL
+  if (!is.null(ready) && !isTRUE(ready$ready))
+    return(list(frame = describe_frame(df), readiness = ready, contract = ct,
+                blocked = TRUE))
   psm <- estimate_psm(df)
   did <- tryCatch(estimate_did(df), error = function(e) NULL)
   iptw <- tryCatch(estimate_iptw(df), error = function(e) NULL)
+  pre <- if (!is.null(ct)) contract_preconditions(psm, psm$overlap, ct) else NULL
+  # A contract that names a threshold and then reports past it is worse than
+  # one that names none, so an unmet precondition withholds the estimate.
+  withheld <- !is.null(pre) && !pre$met && isTRUE(pre$refuse)
   list(
+    preconditions = pre, withheld = withheld,
     frame = describe_frame(df),
     dag = adjustment_set(outcome = "hours"),
     psm = psm, did = did, iptw = iptw, overlap = psm$overlap,
+    readiness = ready, contract = ct, blocked = FALSE,
+    # ROI is derived from the interval, never the point estimate — the
+    # contract requires it, because a single quoted return from an effect
+    # whose interval crosses zero reads as a promise.
+    roi = if (!is.null(ct) && !withheld)
+            tryCatch(contract_roi(psm$ci, ct), error = function(e) NULL) else NULL,
     true_effect = true_effect,
     recovered = if (!is.na(true_effect))
       true_effect >= psm$ci[1] && true_effect <= psm$ci[2] else NA)

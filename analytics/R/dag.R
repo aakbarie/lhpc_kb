@@ -25,42 +25,21 @@
 
 suppressPackageStartupMessages({ library(igraph) })
 
-#' The declared causal structure for grievance timeliness.
+local({
+  d <- normalizePath(getwd(), winslash = "/")
+  while (!file.exists(file.path(d, "plans", "registry.yml")) && dirname(d) != d)
+    d <- dirname(d)
+  if (!exists("measurement_contract")) source(file.path(d, "R", "contract.R"))
+})
+
+#' The declared causal structure, read from the measurement contract.
 #'
-#' Each edge is a claim about the operation that a domain expert can dispute.
-#' Written as data rather than prose so the analysis and the diagram cannot
-#' drift apart.
-grievance_dag <- function() {
-  data.frame(
-    from = c("complexity", "complexity",
-             "expedited",  "expedited",
-             "backlog",    "backlog",
-             "tenure",     "tenure",
-             "sdoh",       "sdoh",
-             "assisted",
-             "hours"),
-    to   = c("assisted",   "hours",
-             "assisted",   "hours",
-             "assisted",   "hours",
-             "assisted",   "hours",
-             "assisted",   "hours",
-             "hours",
-             "on_time"),
-    note = c(
-      "analysts consult on cases they find hard",
-      "hard cases take longer regardless of assistance",
-      "expedited cases raise the stakes of getting it right",
-      "expedited cases are worked faster — a 72-hour clock",
-      "a deep queue pushes staff to seek help",
-      "a deep queue slows everything",
-      "less experienced staff consult more",
-      "experience shortens handling time",
-      "social barriers make a case look harder, so help is sought",
-      "a member who is hard to reach or reschedule takes longer to resolve",
-      "THE EFFECT UNDER STUDY",
-      "timeliness is determined by hours against the deadline"),
-    stringsAsFactors = FALSE)
-}
+#' The diagram used to live here as a literal. It now lives in the contract,
+#' because the contract is what is agreed before deployment and a diagram the
+#' analyst can edit after seeing results is not a pre-registration. Everything
+#' downstream — the adjustment set, the matching formula, the fields the
+#' instrument must capture — follows from that one declaration.
+grievance_dag <- function(ct = measurement_contract()) contract_dag(ct)
 
 dag_graph <- function(edges = grievance_dag())
   igraph::graph_from_data_frame(edges[, c("from", "to")], directed = TRUE)
@@ -113,8 +92,11 @@ path_blocked <- function(g, path, z) {
 #' Returns the smallest valid set, plus everything it deliberately excluded
 #' and why — the exclusions are the interesting part, because they are what an
 #' analyst reaching for "control for everything" would have got wrong.
-adjustment_set <- function(edges = grievance_dag(), exposure = "assisted",
-                           outcome = "hours") {
+adjustment_set <- function(edges = grievance_dag(), exposure = NULL,
+                           outcome = NULL) {
+  ct <- tryCatch(measurement_contract(), error = function(e) NULL)
+  exposure <- exposure %||% (ct$dag$exposure %||% "assisted")
+  outcome  <- outcome  %||% (ct$dag$outcome  %||% "hours")
   g <- dag_graph(edges)
   nodes <- igraph::V(g)$name
   desc <- descendants_of(g, exposure)
@@ -145,6 +127,8 @@ adjustment_set <- function(edges = grievance_dag(), exposure = "assisted",
 #' Warn when a proposed model adjusts for something the DAG says it must not.
 dag_check_model <- function(covariates, edges = grievance_dag(),
                             exposure = "assisted", outcome = "hours") {
+  # exposure/outcome keep literal defaults here so a caller can check a
+  # hypothetical model without loading a contract.
   g <- dag_graph(edges)
   desc <- descendants_of(g, exposure)
   set <- adjustment_set(edges, exposure, outcome)
