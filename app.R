@@ -23,7 +23,7 @@ suppressPackageStartupMessages({
 })
 
 for (f in c("R/fetch_common.R", "R/config.R", "R/passport.R",
-            "R/ledger.R", "R/cases.R")) source(f)
+            "R/ledger.R", "R/independence.R", "R/cases.R")) source(f)
 
 ledger_init()
 OPERATOR <- Sys.getenv("KB_OPERATOR", "a.rivera")
@@ -219,11 +219,34 @@ server <- function(input, output, session) {
     ev <- ledger_current(cc$case_id)
     decided <- any(ev$event_type == "disposition.recorded")
     open_gate <- g$gate_id[!g$met & g$gate_id != "CLASSIFY"]
+    chk <- independence_check(cc$case_id, OPERATOR, cc$subject_ref)
+    prior <- ledger_events(cc$case_id)
+    prior <- prior[prior$event_type == "prior_decision.attested", , drop = FALSE]
+
     tagList(
       p(class = "text-muted",
         "The determination is a human act. Machine assistance cannot answer a gate or issue the disposition — the ledger rejects the write."),
+
+      # Independence is shown BEFORE the form, not enforced only on submit: an
+      # operator who cannot lawfully decide this case should learn that when
+      # they open it, not after composing a rationale.
+      div(class = paste("border rounded p-3 mb-3",
+                        if (chk$clear) "border-success bg-white" else "border-danger"),
+          div(class = "small text-uppercase text-muted mb-1", "Reviewer independence"),
+          div(class = if (chk$clear) "text-success" else "text-danger fw-bold",
+              chk$statement),
+          div(class = "small text-muted mt-1",
+              "Resolver: ", tags$code(OPERATOR), " · ",
+              if (nrow(prior))
+                paste0(nrow(prior), " attested prior determination(s) on ", cc$subject_ref)
+              else "no prior determination attested for this subject"),
+          if (!chk$clear) div(class = "small mt-2",
+              "The ledger will refuse this disposition. Reassign to a reviewer who did not participate in the prior decision and does not report to anyone who did.")),
+
       if (decided) div(class = "alert alert-success",
         strong("Disposition recorded."), " See the Prove tab for the ledger entry.")
+      else if (!chk$clear) div(class = "text-muted fst-italic",
+        "Disposition unavailable to this operator.")
       else tagList(
         selectInput("gate_pick", "Gate being answered", choices = open_gate, width = "420px"),
         radioButtons("disposition", "Disposition",
@@ -244,10 +267,16 @@ server <- function(input, output, session) {
       showNotification("A rationale is required — the ledger will not accept the act without one.",
                        type = "error"); return()
     }
-    ledger_append(current()$case_id, "disposition.recorded", OPERATOR, "human",
-                  rationale = why, gate_id = input$gate_pick,
-                  authority = "APL 21-011", framework_version = SPEC_VERSION,
-                  payload = list(disposition = input$disposition))
+    cc <- current()
+    ok <- tryCatch({
+      ledger_append(cc$case_id, "disposition.recorded", OPERATOR, "human",
+                    rationale = why, gate_id = input$gate_pick,
+                    authority = "APL 21-011", framework_version = SPEC_VERSION,
+                    subject_ref = cc$subject_ref,
+                    payload = list(disposition = input$disposition)); TRUE
+    }, error = function(e) { showNotification(conditionMessage(e), type = "error",
+                                              duration = 12); FALSE })
+    if (!ok) return()
     bump(bump() + 1)
     showNotification("Disposition written to the ledger.", type = "message")
   })

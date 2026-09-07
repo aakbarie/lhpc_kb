@@ -123,3 +123,26 @@ evidence:
   AU-9:  ledger.append_only_verification
   AC-3:  ledger.event.access_check
   CA-7:  metrics.gate_compliance_weekly
+
+# --- Reviewer independence ----------------------------------------------------
+# Added after a design review of live practice at a plan where grievance
+# correspondence is conducted inside the clinical/UM system. That is not
+# inherently non-compliant, but it makes independence undemonstrable: the
+# clinical system's audit trail answers "what happened to this member", not
+# "did the person resolving this grievance decide the thing being grieved".
+#
+# The instrument does not reach into the clinical record. It imports only the
+# fact of who determined what, as an attestation, and refuses a disposition
+# from anyone conflicted against it.
+
+independence:
+  rule: >-
+    The individual resolving a grievance or appeal must not have participated
+    in any prior decision related to it, and must not be a subordinate of
+    anyone who did.
+  authority:
+    - Alliance 403-1160 p.15
+    - Alliance 403-1162 p.8
+    - Alliance 200-9007 p.3 (medical necessity appeals)
+  enforced_at: ledger write time — see INDEPENDENCE_REQUIRED in R/ledger.R
+  reporting_lines: instruments/reporting-lines.yml

@@ -42,10 +42,14 @@ ledger_path <- function()
 CONSEQUENTIAL <- c("operator.confirmed", "gate.answered", "disposition.recorded",
                    "notice.issued", "correction.recorded")
 
-LEDGER_COLS <- c("seq", "event_id", "case_id", "occurred_at", "occurred_at_iso",
-                 "actor", "actor_kind", "event_type", "gate_id", "rationale",
-                 "authority", "framework_version", "payload",
-                 "supersedes", "prev_hash", "hash")
+LEDGER_COLS <- c("seq", "event_id", "case_id", "subject_ref", "occurred_at",
+                 "occurred_at_iso", "actor", "actor_kind", "event_type",
+                 "gate_id", "rationale", "authority", "framework_version",
+                 "payload", "supersedes", "prev_hash", "hash")
+
+# Determinations must be made by someone independent of the decision being
+# reviewed. Enforced at write time for these events; see R/independence.R.
+INDEPENDENCE_REQUIRED <- c("disposition.recorded", "gate.answered")
 
 ledger_con <- function(read_only = FALSE) {
   p <- ledger_path()
@@ -58,6 +62,7 @@ ledger_init <- function(reset = FALSE) {
   if (reset) dbExecute(con, "DROP TABLE IF EXISTS ledger")
   dbExecute(con, "CREATE TABLE IF NOT EXISTS ledger (
       seq BIGINT PRIMARY KEY, event_id VARCHAR, case_id VARCHAR,
+      subject_ref VARCHAR,
       occurred_at TIMESTAMP, occurred_at_iso VARCHAR,
       actor VARCHAR, actor_kind VARCHAR,
       event_type VARCHAR, gate_id VARCHAR, rationale VARCHAR,
@@ -80,7 +85,7 @@ ledger_init <- function(reset = FALSE) {
 #' cannot silently collide with one that never had it.
 event_digest <- function(e, prev_hash) {
   nb <- function(x) if (is.null(x) || length(x) == 0 || is.na(x)) "" else as.character(x)
-  paste(prev_hash, e$event_id, e$case_id, nb(e$occurred_at_iso),
+  paste(prev_hash, e$event_id, e$case_id, nb(e$subject_ref), nb(e$occurred_at_iso),
         e$actor, e$actor_kind, e$event_type, nb(e$gate_id),
         nb(e$rationale), nb(e$authority), nb(e$framework_version),
         e$payload %||% "", e$supersedes %||% "", sep = "") |>
@@ -91,8 +96,8 @@ event_digest <- function(e, prev_hash) {
 ledger_append <- function(case_id, event_type, actor, actor_kind = "human",
                           rationale = NULL, gate_id = NULL, authority = NULL,
                           framework_version = NULL, payload = list(),
-                          supersedes = NULL, occurred_at = Sys.time(),
-                          con = NULL) {
+                          supersedes = NULL, subject_ref = NULL,
+                          occurred_at = Sys.time(), con = NULL) {
   if (event_type %in% CONSEQUENTIAL) {
     if (!identical(actor_kind, "human"))
       stop("refusing to write ", event_type, " with actor_kind='", actor_kind,
@@ -105,6 +110,18 @@ ledger_append <- function(case_id, event_type, actor, actor_kind = "human",
   own <- is.null(con)
   if (own) { con <- ledger_con(); on.exit(dbDisconnect(con, shutdown = TRUE)) }
 
+  # Independence is a precondition of the write, not a warning after it. A
+  # determination by someone who decided the thing being reviewed — or who
+  # reports to them — is refused, and the refusal names the conflicting event
+  # so the case can be reassigned rather than merely blocked.
+  if (event_type %in% INDEPENDENCE_REQUIRED && exists("independence_check")) {
+    chk <- independence_check(case_id, actor, subject_ref, con = con)
+    if (!chk$clear)
+      stop("refusing to write ", event_type, " by '", actor, "': ",
+           chk$statement, " (conflicting event ",
+           paste(chk$conflicts$event_id, collapse = ", "), ")", call. = FALSE)
+  }
+
   last <- dbGetQuery(con, "SELECT seq, hash FROM ledger ORDER BY seq DESC LIMIT 1")
   seq <- if (nrow(last)) last$seq[1] + 1L else 1L
   prev <- if (nrow(last)) last$hash[1] else ""
@@ -112,6 +129,7 @@ ledger_append <- function(case_id, event_type, actor, actor_kind = "human",
   ts <- as.POSIXct(occurred_at)
   e <- list(
     seq = seq, event_id = uuid::UUIDgenerate(), case_id = case_id,
+    subject_ref = subject_ref %||% NA_character_,
     occurred_at = ts,
     occurred_at_iso = format(ts, "%Y-%m-%dT%H:%M:%OS3", tz = "UTC"),
     actor = actor, actor_kind = actor_kind,

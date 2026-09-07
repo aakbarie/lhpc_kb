@@ -52,6 +52,10 @@ SYNTHETIC_CASES <- function() data.frame(
   received = as.POSIXct(Sys.time()) -
              c(2 * 86400, 27 * 86400, 40 * 3600, 6 * 86400),
   expedited = c(FALSE, FALSE, TRUE, FALSE),
+  # The authorization or determination being grieved. Independence is
+  # evaluated against prior decisions on THIS subject, so a case with no
+  # subject can only check the resolver's own history.
+  subject_ref = c("AUTH-2026-55120", NA, "AUTH-2026-55984", NA),
   category = c("Access to care — specialist referral delay",
                "Billing — balance billed for covered service",
                "Pharmacy — urgent medication denial",

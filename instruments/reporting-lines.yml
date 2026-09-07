@@ -1,0 +1,16 @@
+# Reporting lines for the independence check (R/independence.R).
+#
+# Supplied per deployment: an org chart is not something to infer. Without
+# this file the instrument still refuses a resolver who personally made the
+# prior determination, but it cannot evaluate "is not a subordinate of any
+# such individual" — and it says so rather than reporting independence it
+# has not established.
+#
+# Synthetic names, matching the demo cases.
+
+reports_to:
+  a.rivera: t.okonkwo        # grievance analyst -> grievance supervisor
+  j.mendez: t.okonkwo
+  t.okonkwo: d.harper        # grievance supervisor -> compliance director
+  n.patel: c.imani           # UM nurse -> medical director
+  c.imani: d.harper          # medical director -> compliance director
