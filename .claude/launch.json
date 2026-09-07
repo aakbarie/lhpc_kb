@@ -6,6 +6,12 @@
       "runtimeExecutable": "Rscript",
       "runtimeArgs": ["-e", "shiny::runApp('instrument', port = 8110, host = '127.0.0.1')"],
       "port": 8110
+    },
+    {
+      "name": "analytics",
+      "runtimeExecutable": "Rscript",
+      "runtimeArgs": ["-e", "shiny::runApp('analytics', port = 8120, host = '127.0.0.1')"],
+      "port": 8120
     }
   ]
 }
