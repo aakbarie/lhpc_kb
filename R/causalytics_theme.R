@@ -54,6 +54,19 @@ cau_badge <- function(label, kind = c("neutral", "done", "pending", "warn", "bad
 
 #' The stylesheet. `%N$s` indexing throughout so the argument order below is
 #' the only place a token position is asserted.
+#'
+#' The navbar rules undo three bslib defaults that fought this brand. The
+#' active indicator was a LEFT inset bar, written for a vertical tab list; on
+#' a horizontal navbar it drew a rule at the tab leading edge, hard against
+#' the wordmark, which is what made title and first tab look overlapped. It
+#' is an underline now. The links also carry asymmetric 8/16px padding and a
+#' margin-bottom of -8px -- the latter an idiom for hanging a tab border on
+#' the navbar bottom edge, which this navbar does not have. Together they sat
+#' every label 4px below the brand; both are overridden, so the whole row now
+#' centres on one line.
+#'
+#' Editing note: the CSS below is a single-quoted R string, so an apostrophe
+#' inside it terminates the string. Keep prose out of it.
 cau_css <- function() sprintf('
   body{background:%1$s;color:%2$s;font-family:%3$s;font-size:15px;}
   .cau-eyebrow{color:%4$s;font:700 .64rem %5$s;letter-spacing:.06em;
@@ -64,7 +77,8 @@ cau_css <- function() sprintf('
   .cau-badge{display:inline-block;font:650 .55rem %5$s;letter-spacing:.05em;
     padding:3px 7px;border-radius:2px;white-space:nowrap;}
   .cau-brand{font-weight:750;letter-spacing:-.02em;font-size:.98rem;
-    display:flex;align-items:center;gap:.55rem;}
+    display:inline-flex;align-items:center;gap:.55rem;white-space:nowrap;}
+  .navbar-brand{margin-right:2.25rem;display:flex;align-items:center;}
   .cau-brand::before{background:%6$s;content:"";display:inline-block;
     height:.62rem;width:.62rem;flex:none;}
   .cau-doctrine{color:%7$s;font:.72rem %3$s;border-left:3px solid %6$s;
@@ -78,7 +92,10 @@ cau_css <- function() sprintf('
   .nav-link{color:%7$s !important;font:650 .7rem %5$s;letter-spacing:.05em;
     text-transform:uppercase;}
   .nav-link.active{color:%4$s !important;background:%11$s !important;
-    box-shadow:inset 3px 0 0 %4$s;}
+    box-shadow:inset 0 -3px 0 %4$s;}
+  .navbar .navbar-nav .nav-link{padding:.55rem .85rem !important;
+    margin-bottom:0 !important;}
+  .navbar-nav{align-items:center;}
   .btn-primary{background:%4$s;border-color:%4$s;border-radius:3px;
     font-size:.78rem;font-weight:700;letter-spacing:.02em;}
   .form-control{border-color:%10$s;border-radius:3px;font-size:.85rem;}
