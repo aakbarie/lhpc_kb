@@ -32,8 +32,14 @@ graph_con <- function(cfg = kb_config()) {
 
 #' Normalise "APL 26-014" / "26-014" / "apl26-014" to the node key "26-014".
 as_apl_key <- function(x) {
+  x <- trimws(as.character(x))
+  # A bare YY-NNN is already the node key. apl_ids() deliberately refuses it —
+  # it scans free text, where an unprefixed 23-005 is far more likely to be a
+  # policy number than an APL — but here the caller has said which it means.
+  if (grepl("^\\d{2}-\\d{3}$", x)) return(x)
   k <- apl_ids(x)[[1]]
-  if (!length(k)) stop("not an APL identifier: ", x)
+  if (!length(k)) stop("not an APL identifier: ", x,
+                       " (expected \"APL 26-014\" or \"26-014\")")
   k[1]
 }
 
