@@ -111,6 +111,24 @@ cau_css <- sprintf('
 ', CAU$surface, CAU$ink, CAU$sans, CAU$blue, CAU$mono, CAU$signal, CAU$ink_soft,
    CAU$strip_bg, CAU$strip_fg, CAU$line, CAU$active_bg, CAU$paper)
 
+#' A link that opens the source document inside the instrument.
+#'
+#' target="_blank" was wrong here: the case is the unit of work, and sending
+#' the operator to a browser tab to read the policy they are deciding against
+#' breaks that — they lose the gates, the clock and the ledger panel at the
+#' moment they most need them. One shared input carries the request so the
+#' page does not need an observer per link; {priority:"event"} makes a repeat
+#' click on the same document re-open it.
+pdf_open_link <- function(url, label, text, class = "cau-badge", style = NULL) {
+  if (is.null(url)) return(NULL)
+  esc <- function(x) gsub("'", "\\\\'", gsub("\\\\", "\\\\\\\\", x %||% ""))
+  tags$a(href = "#", class = class, style = style,
+         onclick = sprintf(
+           "Shiny.setInputValue('open_pdf',{url:'%s',label:'%s'},{priority:'event'});return false;",
+           esc(url), esc(label)),
+         text)
+}
+
 fmt_remaining <- function(h, met) {
   if (isTRUE(met)) return("—")
   if (is.na(h)) return("no clock")
@@ -299,10 +317,10 @@ server <- function(input, output, session) {
                         "Retrieved from ", tags$code(auth$plan_id[1]), " \u00b7 ",
                         substr(auth$title[1], 1, 52), " \u00b7 p.", auth$page[1]),
                     if (pdf_exists(auth$plan_id[1], auth$filename[1]))
-                      tags$a(href = pdf_url(auth$plan_id[1], auth$filename[1], auth$page[1]),
-                             target = "_blank", class = "cau-badge",
-                             style = paste0("background:", CAU$blue, ";color:#fff;text-decoration:none;"),
-                             "OPEN PDF")),
+                      pdf_open_link(pdf_url(auth$plan_id[1], auth$filename[1], auth$page[1]),
+                        paste0(auth$policy_number[1] %||% auth$plan_id[1], " \u00b7 p.", auth$page[1]),
+                        "OPEN PDF",
+                        style = paste0("background:", CAU$blue, ";color:#fff;text-decoration:none;"))),
                 div(class = "mt-1", style = "font-size:12.5px;font-style:italic;",
                     paste0(substr(gsub("[[:space:]]+", " ", auth$passage[1]), 1, 400), "\u2026")))
             else div(class = "mt-2 small text-muted fst-italic",
@@ -320,11 +338,13 @@ server <- function(input, output, session) {
                       style = paste0("font-size:12.5px;border-bottom:1px solid ", CAU$line, ";"),
                       div(tags$code(style = "font-size:11px;", pol$plan_id[j]),
                           span(class = "ms-2", substr(pol$label[j], 1, 58))),
-                      if (ex) tags$a(href = pdf_url(pol$plan_id[j], pol$filename[j], pg),
-                                     target = "_blank",
+                      if (ex) pdf_open_link(pdf_url(pol$plan_id[j], pol$filename[j], pg),
+                                     paste0(pol$plan_id[j], " \u00b7 ", substr(pol$label[j], 1, 60)),
+                                     if (is.na(pg)) "OPEN" else paste0("p.", pg),
+                                     class = "",
                                      style = paste0("color:", CAU$blue, ";font-size:11.5px;",
-                                                    "font-family:", CAU$mono, ";text-decoration:none;"),
-                                     if (is.na(pg)) "OPEN \u2197" else paste0("p.", pg, " \u2197"))
+                                                    "font-family:", CAU$mono, ";text-decoration:none;",
+                                                    "cursor:pointer;"))
                       else span(style = paste0("color:", CAU$ink_soft, ";font-size:11px;"),
                                 "not in corpus"))
                 })))
@@ -425,6 +445,28 @@ server <- function(input, output, session) {
       })))
   })
 
+  # --- In-app document viewer -------------------------------------------------
+  observeEvent(input$open_pdf, {
+    info <- input$open_pdf
+    if (is.null(info$url)) return()
+    showModal(modalDialog(
+      title = div(class = "d-flex justify-content-between align-items-center",
+                  div(eyebrow("Source document"),
+                      div(class = "cau-display", style = "font-size:17px;margin-top:3px;",
+                          info$label %||% "Document")),
+                  # An escape hatch, not the default: a browser tab is the
+                  # right place to print or to keep a document open beside
+                  # the case, and refusing that would be its own annoyance.
+                  tags$a(href = info$url, target = "_blank", class = "cau-badge",
+                         style = paste0("background:", CAU$strip_bg, ";color:",
+                                        CAU$strip_fg, ";text-decoration:none;"),
+                         "OPEN IN NEW TAB")),
+      tags$iframe(src = info$url,
+                  style = "width:100%;height:74vh;border:1px solid #d4d0c5;border-radius:3px;"),
+      size = "xl", easyClose = TRUE,
+      footer = modalButton("Close")))
+  })
+
   # --- Policy search ----------------------------------------------------------
   # State guidance only. The scope is a product boundary, not a default: a
   # plan's own library is tenant data and does not ship with the instrument.
@@ -495,10 +537,10 @@ server <- function(input, output, session) {
                                toupper(h$status)),
                           div(style = paste0("font-size:12.5px;color:", CAU$ink_soft, ";margin-top:3px;"),
                               substr(sub("^APL [0-9-]+: ", "", h$title), 1, 78), " \u00b7 p.", h$page)),
-                      tags$a(href = pdf_url(SEARCH_SOURCE, h$filename, h$page), target = "_blank",
-                             class = "cau-badge",
-                             style = paste0("background:", CAU$blue, ";color:#fff;text-decoration:none;"),
-                             "OPEN PDF")),
+                      pdf_open_link(pdf_url(SEARCH_SOURCE, h$filename, h$page),
+                        paste0(h$policy_number, " \u00b7 p.", h$page),
+                        "OPEN PDF",
+                        style = paste0("background:", CAU$blue, ";color:#fff;text-decoration:none;"))),
                   div(class = "mt-2", style = "font-size:13.5px;line-height:1.55;",
                       HTML(h$snippet)))
             }))))

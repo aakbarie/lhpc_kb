@@ -69,14 +69,23 @@ policy_page_for <- function(plan_id, filename, terms, cfg = kb_config()) {
 
 #' Browser-openable URL for a corpus PDF, at a page.
 #'
-#' Relies on addResourcePath("corpus", data/pdf) in the app. The #page anchor
-#' is honoured by every built-in PDF viewer, so this needs no pdf.js — and a
-#' plain link degrades to opening page 1 rather than failing, if a viewer
-#' ignores it.
+#' Relies on addResourcePath("corpus", data/pdf) in the app.
+#'
+#' The `?p=` query looks redundant beside `#page=` and is not. Embedded in an
+#' iframe, Chrome's PDF viewer ignores the fragment when the document is
+#' already cached or when the src differs only after the '#', and silently
+#' opens page 1 — which is worse than no deep link at all, because the
+#' citation says page 3 and the reader is looking at page 1 with no
+#' indication anything went wrong. Varying the query makes each page a
+#' distinct request, so the fragment is applied on a fresh load. Verified in
+#' the browser: without it the viewer showed 1/28, with it 3/28.
+#' `view=FitH` fits the width, which is what a reader checking a citation
+#' wants rather than a zoom level carried over from the last document.
 pdf_url <- function(plan_id, filename, page = NA) {
   if (!nzchar(plan_id %||% "") || !nzchar(filename %||% "")) return(NULL)
-  paste0("corpus/", utils::URLencode(plan_id), "/", utils::URLencode(filename),
-         if (!is.na(page)) paste0("#page=", as.integer(page)) else "")
+  base <- paste0("corpus/", utils::URLencode(plan_id), "/", utils::URLencode(filename))
+  if (is.na(page)) return(base)
+  paste0(base, "?p=", as.integer(page), "#page=", as.integer(page), "&view=FitH")
 }
 
 #' Does the file actually exist? A dead link in an audit tool is worse than a

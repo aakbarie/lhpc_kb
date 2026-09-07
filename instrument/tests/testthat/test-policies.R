@@ -11,8 +11,15 @@ test_that("implementing policies resolve from the graph, cross-plan", {
   expect_equal(nrow(applicable_policies("21-011", limit = 20)), nrow(pol))
 })
 
-test_that("pdf_url builds a page-anchored corpus path and pdf_exists is honest", {
-  expect_equal(pdf_url("alliance", "x.pdf", 7), "corpus/alliance/x.pdf#page=7")
+test_that("pdf_url anchors the page in BOTH query and fragment", {
+  u <- pdf_url("alliance", "x.pdf", 7)
+  # The fragment is what the viewer reads; the query is what forces it to
+  # read it. Chrome's embedded viewer ignores a fragment-only change and
+  # opens page 1 — silently, so the citation says 7 and the reader sees 1.
+  expect_match(u, "#page=7")
+  expect_match(u, "\\?p=7")
+  expect_true(startsWith(u, "corpus/alliance/x.pdf"))
+  # No page: no anchor at all, rather than a bogus one.
   expect_equal(pdf_url("alliance", "x.pdf", NA), "corpus/alliance/x.pdf")
   expect_null(pdf_url("", "x.pdf", 1))
   # A dead link in an audit tool looks like evidence until someone clicks it.
