@@ -17,52 +17,20 @@ local({
   d <- normalizePath(getwd(), winslash = "/")
   while (!file.exists(file.path(d, "plans", "registry.yml")) && dirname(d) != d)
     d <- dirname(d)
-  for (f in c("fetch_common.R", "config.R")) source(file.path(d, "R", f))
+  for (f in c("fetch_common.R", "config.R", "causalytics_theme.R"))
+    source(file.path(d, "R", f))
   for (f in c("passport.R", "ledger.R")) source(file.path(d, "instrument", "R", f))
   for (f in c("dag.R", "dataset.R", "causal.R", "interpret.R"))
     source(file.path(d, "analytics", "R", f))
 })
 
-CAU <- list(
-  ink = "#18212b", ink_soft = "#46515d", paper = "#f7f5ef", surface = "#fffefa",
-  line = "#d4d0c5", blue = "#3159b8", blue_dark = "#203b78", signal = "#cf583f",
-  strip_bg = "#f3dfda", strip_fg = "#733223",
-  sans = '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
-  mono = '"SFMono-Regular", Consolas, "Liberation Mono", monospace')
-
-theme <- bs_theme(version = 5, bg = CAU$surface, fg = CAU$ink, primary = CAU$blue,
-                  base_font = CAU$sans, heading_font = CAU$sans, code_font = CAU$mono)
-
-css <- sprintf('
-  body{background:%1$s;color:%2$s;font-family:%3$s;font-size:15px;}
-  .cau-eyebrow{color:%4$s;font:700 .64rem %5$s;letter-spacing:.06em;
-    text-transform:uppercase;display:flex;align-items:center;gap:.5rem;}
-  .cau-pulse{background:%6$s;display:inline-block;height:8px;width:8px;flex:none;}
-  h1,h2,h3,.cau-display{font-family:%3$s;font-weight:720;letter-spacing:-.045em;
-    line-height:1.02;}
-  .cau-brand{font-weight:750;letter-spacing:-.02em;display:flex;align-items:center;gap:.55rem;}
-  .cau-brand::before{background:%6$s;content:"";display:inline-block;height:.62rem;width:.62rem;}
-  .cau-panel{background:%7$s;border:1px solid %8$s;border-radius:4px;}
-  .cau-strip{background:%9$s;color:%10$s;border-radius:3px;}
-  .stat{font:600 2rem %5$s;letter-spacing:-.03em;}
-  .stat-label{font:650 .58rem %5$s;letter-spacing:.07em;text-transform:uppercase;color:%11$s;}
-  code{color:%4$s;background:transparent;font-family:%5$s;}
-  table{width:100%%;font-size:13px;} th{font:650 .58rem %5$s;letter-spacing:.06em;
-    text-transform:uppercase;color:%11$s;padding-bottom:6px;}
-  td{padding:5px 8px 5px 0;border-bottom:1px solid %8$s;font-variant-numeric:tabular-nums;}
-', CAU$surface, CAU$ink, CAU$sans, CAU$blue, CAU$mono, CAU$signal, CAU$paper,
-   CAU$line, CAU$strip_bg, CAU$strip_fg, CAU$ink_soft)
-
-eyebrow <- function(..., pulse = FALSE)
-  div(class = "cau-eyebrow", if (pulse) span(class = "cau-pulse"), ...)
 
 fmt_ci <- function(e, lo, hi) sprintf("%+.1f h  [%.1f, %.1f]", e, lo, hi)
 
 ui <- page_fluid(
-  theme = theme, tags$head(tags$style(HTML(css)),
-                           tags$title("Causalytics — Outcome Analytics")),
+  theme = cau_theme(), cau_head("Outcome Analytics"),
   div(style = "max-width:1180px;margin:0 auto;padding:26px 22px 70px;",
-    div(class = "cau-brand mb-1", "Causalytics"),
+    cau_brand(),
     div(class = "cau-display", style = "font-size:30px;margin:.5rem 0 .3rem;",
         "Does the framework assistant change grievance timeliness?"),
     div(style = paste0("color:", CAU$ink_soft, ";font-size:14px;max-width:70ch;"),

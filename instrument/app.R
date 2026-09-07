@@ -28,7 +28,8 @@ local({
   d <- normalizePath(getwd(), winslash = "/")
   while (!file.exists(file.path(d, "plans", "registry.yml")) && dirname(d) != d)
     d <- dirname(d)
-  for (f in c("fetch_common.R", "config.R")) source(file.path(d, "R", f))
+  for (f in c("fetch_common.R", "config.R", "causalytics_theme.R"))
+    source(file.path(d, "R", f))
   for (f in c("passport.R", "ledger.R", "independence.R", "cases.R",
               "assistant.R", "policies.R", "search.R"))
     source(file.path(d, "instrument", "R", f))
@@ -48,69 +49,6 @@ SPEC_VERSION <- passport("grievance-timeliness")$spec_sha256
 # things the deployed CSS had obscured behind Quarto's defaults and are
 # corrected here: headings are the system sans at weight 720 with -.06em
 # tracking (not a condensed uppercase face), and eyebrows are BLUE mono.
-CAU <- list(
-  ink = "#18212b", ink_soft = "#46515d", paper = "#f7f5ef", surface = "#fffefa",
-  line = "#d4d0c5", blue = "#3159b8", blue_dark = "#203b78", signal = "#cf583f",
-  step_grey = "#747d86", active_bg = "#eaf0ff",
-  strip_bg = "#f3dfda", strip_fg = "#733223", footer_bg = "#e5eaf3",
-  sans = '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
-  mono = '"SFMono-Regular", Consolas, "Liberation Mono", monospace')
-
-theme <- bs_theme(
-  version = 5, bg = CAU$surface, fg = CAU$ink, primary = CAU$blue,
-  base_font = CAU$sans, heading_font = CAU$sans, code_font = CAU$mono)
-
-# Status reuses the system's own state colours rather than inventing a
-# palette: complete is blue (as .pipeline-step.is-complete), pending is the
-# step grey, warning is the control-strip pair, and breach is the signal.
-status_badge <- function(s) {
-  spec <- switch(s,
-    met        = c(CAU$blue, "#ffffff"),
-    open       = c("transparent", CAU$step_grey),
-    `due soon` = c(CAU$strip_bg, CAU$strip_fg),
-    breached   = c(CAU$signal, "#ffffff"))
-  span(class = "cau-badge",
-       style = paste0("background:", spec[1], ";color:", spec[2],
-                      if (s == "open") paste0(";border:1px solid ", CAU$line) else ""),
-       toupper(s))
-}
-
-#' The site's eyebrow: blue mono, uppercase, with the signal-square pulse
-#' that marks the brand throughout.
-eyebrow <- function(..., pulse = FALSE)
-  div(class = "cau-eyebrow", if (pulse) span(class = "cau-pulse"), ...)
-
-cau_css <- sprintf('
-  body{background:%1$s;color:%2$s;font-family:%3$s;font-size:15px;}
-  .cau-eyebrow{color:%4$s;font:700 .64rem %5$s;letter-spacing:.06em;
-    text-transform:uppercase;display:flex;align-items:center;gap:.5rem;}
-  .cau-pulse{background:%6$s;display:inline-block;height:8px;width:8px;flex:none;}
-  h1,h2,h3,h4,.cau-display{font-family:%3$s;font-weight:720;
-    letter-spacing:-.045em;line-height:1.0;color:%2$s;}
-  .cau-badge{display:inline-block;font:650 .55rem %5$s;letter-spacing:.05em;
-    padding:3px 7px;border-radius:2px;white-space:nowrap;}
-  .cau-brand{font-weight:750;letter-spacing:-.02em;font-size:.98rem;
-    display:flex;align-items:center;gap:.55rem;}
-  .cau-brand::before{background:%6$s;content:"";display:inline-block;
-    height:.62rem;width:.62rem;flex:none;}
-  .cau-doctrine{color:%7$s;font:.72rem %3$s;border-left:3px solid %6$s;
-    padding-left:.7rem;line-height:1.55;}
-  .cau-strip{background:%8$s;color:%9$s;border-radius:3px;}
-  .cau-rule{border-bottom:1px solid %10$s;}
-  .card,.border,.border-bottom,.border-top,hr{border-color:%10$s !important;}
-  .card{background:%1$s;border-radius:4px;}
-  code{color:%4$s;background:transparent;font-family:%5$s;}
-  .nav-link{color:%7$s !important;font:650 .7rem %5$s;letter-spacing:.05em;
-    text-transform:uppercase;}
-  .nav-link.active{color:%4$s !important;background:%11$s !important;
-    box-shadow:inset 3px 0 0 %4$s;}
-  .btn-primary{background:%4$s;border-color:%4$s;border-radius:3px;
-    font-size:.78rem;font-weight:700;letter-spacing:.02em;}
-  .form-control{border-color:%10$s;border-radius:3px;font-size:.85rem;}
-  .cau-panel{background:%12$s;border:1px solid %10$s;border-radius:4px;}
-', CAU$surface, CAU$ink, CAU$sans, CAU$blue, CAU$mono, CAU$signal, CAU$ink_soft,
-   CAU$strip_bg, CAU$strip_fg, CAU$line, CAU$active_bg, CAU$paper)
-
 #' A link that opens the source document inside the instrument.
 #'
 #' target="_blank" was wrong here: the case is the unit of work, and sending
@@ -129,6 +67,12 @@ pdf_open_link <- function(url, label, text, class = "cau-badge", style = NULL) {
          text)
 }
 
+# Gate status maps onto the shared chip vocabulary; the mapping is the only
+# part specific to this instrument.
+status_badge <- function(s)
+  cau_badge(s, switch(s, met = "done", open = "pending",
+                      `due soon` = "warn", breached = "bad"))
+
 fmt_remaining <- function(h, met) {
   if (isTRUE(met)) return("—")
   if (is.na(h)) return("no clock")
@@ -139,8 +83,7 @@ fmt_remaining <- function(h, met) {
 
 ui <- page_sidebar(
   title = NULL,
-  theme = theme,
-  tags$head(tags$style(HTML(cau_css)), tags$title("Causalytics — Grievance Timeliness")),
+  theme = cau_theme(), cau_head("Grievance Timeliness"),
   sidebar = sidebar(
     width = 345, bg = CAU$paper,
     div(class = "cau-brand mb-1", "Causalytics"),
