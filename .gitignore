@@ -5,3 +5,4 @@
 data/
 .env
 data/nist/
+data/ledger.duckdb
