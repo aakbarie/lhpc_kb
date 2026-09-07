@@ -30,18 +30,73 @@ OPERATOR <- Sys.getenv("KB_OPERATOR", "a.rivera")
 SPEC <- instrument_spec("grievance-timeliness")
 SPEC_VERSION <- passport("grievance-timeliness")$spec_sha256
 
-theme <- bs_theme(
-  version = 5, bg = "#FBFCFC", fg = "#16211F", primary = "#1F6F5C",
-  base_font = font_google("Source Sans 3"),
-  heading_font = font_google("Archivo"),
-  code_font = font_google("IBM Plex Mono"))
+# Causalytics identity — the tokens and component patterns from
+# ../causalytics/styles.css, not an approximation of the rendered site. Two
+# things the deployed CSS had obscured behind Quarto's defaults and are
+# corrected here: headings are the system sans at weight 720 with -.06em
+# tracking (not a condensed uppercase face), and eyebrows are BLUE mono.
+CAU <- list(
+  ink = "#18212b", ink_soft = "#46515d", paper = "#f7f5ef", surface = "#fffefa",
+  line = "#d4d0c5", blue = "#3159b8", blue_dark = "#203b78", signal = "#cf583f",
+  step_grey = "#747d86", active_bg = "#eaf0ff",
+  strip_bg = "#f3dfda", strip_fg = "#733223", footer_bg = "#e5eaf3",
+  sans = '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
+  mono = '"SFMono-Regular", Consolas, "Liberation Mono", monospace')
 
+theme <- bs_theme(
+  version = 5, bg = CAU$surface, fg = CAU$ink, primary = CAU$blue,
+  base_font = CAU$sans, heading_font = CAU$sans, code_font = CAU$mono)
+
+# Status reuses the system's own state colours rather than inventing a
+# palette: complete is blue (as .pipeline-step.is-complete), pending is the
+# step grey, warning is the control-strip pair, and breach is the signal.
 status_badge <- function(s) {
-  col <- c(met = "#1F6F5C", open = "#5C6B67",
-           `due soon` = "#A8762A", breached = "#A63D2E")[[s]]
-  span(class = "badge", style = paste0(
-    "background:", col, ";color:#fff;font-weight:500;letter-spacing:.03em;"), toupper(s))
+  spec <- switch(s,
+    met        = c(CAU$blue, "#ffffff"),
+    open       = c("transparent", CAU$step_grey),
+    `due soon` = c(CAU$strip_bg, CAU$strip_fg),
+    breached   = c(CAU$signal, "#ffffff"))
+  span(class = "cau-badge",
+       style = paste0("background:", spec[1], ";color:", spec[2],
+                      if (s == "open") paste0(";border:1px solid ", CAU$line) else ""),
+       toupper(s))
 }
+
+#' The site's eyebrow: blue mono, uppercase, with the signal-square pulse
+#' that marks the brand throughout.
+eyebrow <- function(..., pulse = FALSE)
+  div(class = "cau-eyebrow", if (pulse) span(class = "cau-pulse"), ...)
+
+cau_css <- sprintf('
+  body{background:%1$s;color:%2$s;font-family:%3$s;font-size:15px;}
+  .cau-eyebrow{color:%4$s;font:700 .64rem %5$s;letter-spacing:.06em;
+    text-transform:uppercase;display:flex;align-items:center;gap:.5rem;}
+  .cau-pulse{background:%6$s;display:inline-block;height:8px;width:8px;flex:none;}
+  h1,h2,h3,h4,.cau-display{font-family:%3$s;font-weight:720;
+    letter-spacing:-.045em;line-height:1.0;color:%2$s;}
+  .cau-badge{display:inline-block;font:650 .55rem %5$s;letter-spacing:.05em;
+    padding:3px 7px;border-radius:2px;white-space:nowrap;}
+  .cau-brand{font-weight:750;letter-spacing:-.02em;font-size:.98rem;
+    display:flex;align-items:center;gap:.55rem;}
+  .cau-brand::before{background:%6$s;content:"";display:inline-block;
+    height:.62rem;width:.62rem;flex:none;}
+  .cau-doctrine{color:%7$s;font:.72rem %3$s;border-left:3px solid %6$s;
+    padding-left:.7rem;line-height:1.55;}
+  .cau-strip{background:%8$s;color:%9$s;border-radius:3px;}
+  .cau-rule{border-bottom:1px solid %10$s;}
+  .card,.border,.border-bottom,.border-top,hr{border-color:%10$s !important;}
+  .card{background:%1$s;border-radius:4px;}
+  code{color:%4$s;background:transparent;font-family:%5$s;}
+  .nav-link{color:%7$s !important;font:650 .7rem %5$s;letter-spacing:.05em;
+    text-transform:uppercase;}
+  .nav-link.active{color:%4$s !important;background:%11$s !important;
+    box-shadow:inset 3px 0 0 %4$s;}
+  .btn-primary{background:%4$s;border-color:%4$s;border-radius:3px;
+    font-size:.78rem;font-weight:700;letter-spacing:.02em;}
+  .form-control{border-color:%10$s;border-radius:3px;font-size:.85rem;}
+  .cau-panel{background:%12$s;border:1px solid %10$s;border-radius:4px;}
+', CAU$surface, CAU$ink, CAU$sans, CAU$blue, CAU$mono, CAU$signal, CAU$ink_soft,
+   CAU$strip_bg, CAU$strip_fg, CAU$line, CAU$active_bg, CAU$paper)
 
 fmt_remaining <- function(h, met) {
   if (isTRUE(met)) return("—")
@@ -52,17 +107,28 @@ fmt_remaining <- function(h, met) {
 }
 
 ui <- page_sidebar(
-  title = "Grievance & Appeals Timeliness",
+  title = NULL,
   theme = theme,
+  tags$head(tags$style(HTML(cau_css)), tags$title("Causalytics — Grievance Timeliness")),
   sidebar = sidebar(
-    width = 330,
-    div(class = "small text-muted",
-        strong("INSTRUMENT / 0002"), br(),
-        "Pre-operational · synthetic cases"),
-    hr(),
-    uiOutput("case_list"),
-    hr(),
-    div(class = "small text-muted", uiOutput("chain_status"))
+    width = 345, bg = CAU$paper,
+    div(class = "cau-brand mb-1", "Causalytics"),
+    div(class = "cau-display", style = "font-size:21px;margin:.55rem 0 .2rem;",
+        "Grievance & Appeals Timeliness"),
+    div(class = "d-flex justify-content-between align-items-center mb-3 pb-3 cau-rule",
+        eyebrow("Instrument / 0002"),
+        span(class = "cau-badge",
+             style = paste0("background:", CAU$strip_bg, ";color:", CAU$strip_fg, ";"),
+             "PRE-OPERATIONAL")),
+    # The doctrine is on screen because it is the operating rule of the
+    # product, and because the ledger enforces it a few lines below.
+    div(class = "cau-doctrine mb-3",
+        "The model may assist.", br(), "The framework governs.", br(),
+        strong("A person decides.")),
+    eyebrow("Case queue"),
+    div(class = "mt-2", uiOutput("case_list")),
+    hr(style = paste0("border-color:", CAU$line, ";opacity:1;")),
+    uiOutput("chain_status")
   ),
   uiOutput("case_header"),
   navset_card_tab(
@@ -98,7 +164,10 @@ server <- function(input, output, session) {
                else if (any(g$status == "due soon")) "due soon"
                else if (all(g$status == "met")) "met" else "open"
       actionLink(paste0("pick_", i), class = "d-block mb-2 text-decoration-none",
-        div(class = if (cc$case_id == selected()) "p-2 border rounded bg-white" else "p-2",
+        div(class = "p-2",
+            style = if (cc$case_id == selected())
+              paste0("background:", CAU$active_bg, ";box-shadow:inset 4px 0 0 ", CAU$blue, ";")
+              else "",
             div(class = "d-flex justify-content-between align-items-center",
                 tags$code(cc$case_id), status_badge(worst)),
             div(class = "small text-muted", substr(cc$category, 1, 44))))
@@ -109,12 +178,16 @@ server <- function(input, output, session) {
 
   output$case_header <- renderUI({
     cc <- current()
-    div(class = "mb-3",
-        h4(cc$category),
-        div(class = "text-muted small",
-            tags$code(cc$case_id), " · member ", tags$code(cc$member),
-            " · received ", format(cc$received, "%Y-%m-%d %H:%M"),
-            if (cc$expedited) span(class = "ms-2 badge bg-warning text-dark", "EXPEDITED")))
+    div(class = "mb-3 pb-3 cau-rule",
+        eyebrow(pulse = TRUE, paste0("Case / ", cc$case_id,
+                if (!is.na(cc$subject_ref)) paste0("  \u00b7  reviewing ", cc$subject_ref) else "")),
+        div(class = "cau-display", style = "font-size:30px;margin:.5rem 0 .45rem;",
+            cc$category),
+        div(style = paste0("font-size:12.5px;color:", CAU$ink_soft, ";"),
+            "member ", tags$code(cc$member),
+            " \u00b7 received ", format(cc$received, "%Y-%m-%d %H:%M"),
+            if (cc$expedited) span(class = "cau-badge ms-2",
+                style = paste0("background:", CAU$signal, ";color:#fff;"), "EXPEDITED")))
   })
 
   # --- 1 Identify -------------------------------------------------------------
@@ -124,13 +197,15 @@ server <- function(input, output, session) {
     done <- any(ev$event_type == "operator.confirmed" & ev$gate_id == "CLASSIFY")
     tagList(
       p(class = "text-muted", "Resolve the subject and confirm the machine's reading of the intake."),
-      div(class = "border rounded p-3 mb-3 bg-white",
-          div(class = "small text-uppercase text-muted mb-1", "Intake text"),
+      div(class = "cau-panel p-3 mb-3",
+          eyebrow("Intake text"),
           p(cc$intake)),
-      div(class = "border rounded p-3 mb-3",
-          div(class = "small text-uppercase mb-2",
-              span(class = "badge bg-secondary", "MACHINE · ADVISORY"),
-              span(class = "ms-2 text-muted", "proposed classification — not a determination")),
+      div(class = "cau-panel p-3 mb-3",
+          div(class = "d-flex align-items-center gap-2 mb-2",
+              span(class = "cau-badge",
+                   style = paste0("background:", CAU$ink, ";color:#fff;"), "MACHINE \u00b7 ADVISORY"),
+              span(style = paste0("font-size:11.5px;color:", CAU$ink_soft, ";"),
+                   "proposed classification — not a determination")),
           tags$ul(
             tags$li(strong("Type: "), "Grievance (not an inquiry)"),
             tags$li(strong("Expedited criteria: "),
@@ -174,7 +249,7 @@ server <- function(input, output, session) {
     tagList(
       p(class = "text-muted",
         "Pull each source in one pass and label what could not be reached. An unavailable system is shown, never silently omitted — a case decided on partial evidence must show which part was missing."),
-      div(class = "border rounded", lapply(sources, function(s)
+      div(class = "cau-panel", lapply(sources, function(s)
         div(class = "d-flex justify-content-between align-items-center p-2 border-bottom",
             div(strong(s$n), div(class = "small text-muted", s$d)),
             span(class = if (s$s == "connected") "badge bg-success" else "badge bg-secondary",
@@ -189,7 +264,7 @@ server <- function(input, output, session) {
     tagList(
       p(class = "text-muted",
         "The authorized framework and its clocks. Gate text is retrieved from the policy corpus with its source; the instrument does not paraphrase policy."),
-      div(class = "border rounded", lapply(seq_len(nrow(g)), function(i) {
+      div(class = "cau-panel", lapply(seq_len(nrow(g)), function(i) {
         row <- g[i, ]
         auth <- gate_authority_text(row$basis, gate_terms(row$gate_id, row$obligation))
         div(class = "p-3 border-bottom",
@@ -230,10 +305,9 @@ server <- function(input, output, session) {
       # Independence is shown BEFORE the form, not enforced only on submit: an
       # operator who cannot lawfully decide this case should learn that when
       # they open it, not after composing a rationale.
-      div(class = paste("border rounded p-3 mb-3",
-                        if (chk$clear) "border-success bg-white" else "border-danger"),
-          div(class = "small text-uppercase text-muted mb-1", "Reviewer independence"),
-          div(class = if (chk$clear) "text-success" else "text-danger fw-bold",
+      div(class = if (chk$clear) "cau-panel p-3 mb-3" else "cau-strip p-3 mb-3",
+          eyebrow("Reviewer independence"),
+          div(class = "mt-1", style = paste0("font-weight:", if (chk$clear) "500" else "700", ";"),
               chk$statement),
           div(class = "small text-muted mt-1",
               "Resolver: ", tags$code(OPERATOR), " · ",
@@ -289,7 +363,7 @@ server <- function(input, output, session) {
       p(class = "text-muted",
         "The record produced by the work. Append-only: a correction is a new event that supersedes an earlier one; nothing is edited or removed."),
       if (!nrow(ev)) div(class = "text-muted fst-italic", "No events recorded for this case yet.")
-      else div(class = "border rounded", lapply(seq_len(nrow(ev)), function(i) {
+      else div(class = "cau-panel", lapply(seq_len(nrow(ev)), function(i) {
         e <- ev[i, ]
         div(class = "p-2 border-bottom small",
             div(class = "d-flex justify-content-between",
@@ -311,11 +385,17 @@ server <- function(input, output, session) {
     bump()
     v <- ledger_verify()
     tagList(
-      div(strong("LEDGER")),
-      div(v$events, " events · ",
-          if (v$ok) span(style = "color:#1F6F5C", "chain intact")
-          else span(style = "color:#A63D2E", paste("BROKEN at", v$broken_at))),
-      div(class = "mt-1", "Instrument spec"), tags$code(substr(SPEC_VERSION, 1, 22)))
+      eyebrow("Decision ledger"),
+      div(style = "font-size:12px;margin-top:3px;",
+          tags$code(v$events), " events \u00b7 ",
+          if (v$ok) span(style = paste0("color:", CAU$ink, ";font-weight:600;"), "CHAIN INTACT")
+          else span(style = paste0("color:", CAU$signal, ";font-weight:700;"),
+                    paste("BROKEN AT", v$broken_at))),
+      div(class = "mt-2", eyebrow("Control passport")),
+      div(style = "font-size:11px;margin-top:2px;",
+          "NIST SP 800-53 Rev 5 \u00b7 LOW + 3"),
+      div(class = "mt-2", eyebrow("Instrument spec")),
+      div(tags$code(style = "font-size:10px;", substr(SPEC_VERSION, 8, 30))))
   })
 }
 
