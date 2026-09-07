@@ -30,7 +30,7 @@ local({
     d <- dirname(d)
   for (f in c("fetch_common.R", "config.R")) source(file.path(d, "R", f))
   for (f in c("passport.R", "ledger.R", "independence.R", "cases.R",
-              "assistant.R", "policies.R"))
+              "assistant.R", "policies.R", "search.R"))
     source(file.path(d, "instrument", "R", f))
 })
 
@@ -150,7 +150,8 @@ ui <- page_sidebar(
     nav_panel("3 · Apply",    uiOutput("apply_ui")),
     nav_panel("4 · Decide",   uiOutput("decide")),
     nav_panel("5 · Prove",    uiOutput("prove")),
-    nav_panel("Assist",       uiOutput("assist"))
+    nav_panel("Assist",       uiOutput("assist")),
+    nav_panel("Policy Search", uiOutput("policy_search"))
   )
 )
 
@@ -422,6 +423,86 @@ server <- function(input, output, session) {
             div(class = "mt-1 text-muted",
                 tags$code(style = "font-size:.75em", substr(e$hash, 1, 32), "…")))
       })))
+  })
+
+  # --- Policy search ----------------------------------------------------------
+  # State guidance only. The scope is a product boundary, not a default: a
+  # plan's own library is tenant data and does not ship with the instrument.
+  SCOPE <- grievance_scope()
+  sq <- reactiveVal(""); sf_status <- reactiveVal(character()); sf_apl <- reactiveVal(character())
+
+  observeEvent(input$ps_go, sq(trimws(input$ps_q %||% "")))
+  observeEvent(input$ps_status, sf_status(input$ps_status), ignoreNULL = FALSE)
+  observeEvent(input$ps_apl, sf_apl(input$ps_apl), ignoreNULL = FALSE)
+
+  output$policy_search <- renderUI({
+    q <- sq()
+    t0 <- Sys.time()
+    hits <- if (nzchar(q)) apl_search(q, SCOPE, status = sf_status(),
+                                      apls = sf_apl(), k = 25) else NULL
+    ms <- round(as.numeric(difftime(Sys.time(), t0, units = "secs")) * 1000)
+    fac <- if (nzchar(q)) search_facets(q, SCOPE) else NULL
+
+    tagList(
+      div(class = "d-flex justify-content-between align-items-end mb-2",
+          div(eyebrow("State guidance \u00b7 grievances"),
+              div(style = paste0("font-size:12.5px;color:", CAU$ink_soft, ";margin-top:3px;"),
+                  nrow(SCOPE), " DHCS All Plan Letters materially about grievances and appeals.",
+                  " Plan policy libraries are tenant data and do not ship with the instrument.")),
+          if (!is.null(fac)) div(style = paste0("font-family:", CAU$mono, ";font-size:11px;color:", CAU$ink_soft, ";"),
+                                 fac$total, " results \u00b7 ", ms, " ms")),
+      div(class = "d-flex gap-2 mb-3",
+          div(style = "flex:1;", textInput("ps_q", NULL, value = q, width = "100%",
+                                           placeholder = "Search state guidance \u2014 e.g. expedited grievance timeframe")),
+          actionButton("ps_go", "Search", class = "btn-primary", style = "height:38px;")),
+
+      if (!nzchar(q)) div(class = "cau-panel p-3",
+          eyebrow("Letters in scope"),
+          div(class = "mt-2", lapply(seq_len(min(10, nrow(SCOPE))), function(i)
+            div(class = "d-flex justify-content-between py-1",
+                style = paste0("font-size:12.5px;border-bottom:1px solid ", CAU$line, ";"),
+                div(tags$code(SCOPE$policy_number[i]),
+                    span(class = "ms-2", substr(sub("^APL [0-9-]+: ", "", SCOPE$title[i]), 1, 62))),
+                div(span(class = "cau-badge",
+                         style = paste0("background:",
+                           if (SCOPE$status[i] == "Current") CAU$blue else CAU$strip_bg,
+                           ";color:", if (SCOPE$status[i] == "Current") "#fff" else CAU$strip_fg, ";"),
+                         toupper(SCOPE$status[i])))))))
+      else div(class = "row",
+        div(class = "col-3",
+            div(class = "cau-panel p-3",
+                eyebrow("Status"),
+                checkboxGroupInput("ps_status", NULL, selected = sf_status(),
+                  choiceNames = if (!is.null(fac)) sprintf("%s (%d)", names(fac$status), as.integer(fac$status)) else character(),
+                  choiceValues = if (!is.null(fac)) names(fac$status) else character()),
+                hr(style = paste0("border-color:", CAU$line)),
+                eyebrow("Letter"),
+                checkboxGroupInput("ps_apl", NULL, selected = sf_apl(),
+                  choiceNames = if (!is.null(fac)) sprintf("%s (%d)", head(names(fac$apl), 8), head(as.integer(fac$apl), 8)) else character(),
+                  choiceValues = if (!is.null(fac)) head(names(fac$apl), 8) else character()))),
+        div(class = "col-9",
+            if (is.null(hits)) div(class = "cau-panel p-3 fst-italic",
+                                   "No passage in the scoped letters matches that query.")
+            else div(lapply(seq_len(nrow(hits)), function(i) {
+              h <- hits[i, ]
+              div(class = "cau-panel p-3 mb-2",
+                  div(class = "d-flex justify-content-between align-items-start",
+                      div(tags$code(style = paste0("color:", CAU$blue, ";"), h$policy_number),
+                          span(class = "cau-badge ms-2",
+                               style = paste0("background:",
+                                 if (h$status == "Current") CAU$blue else CAU$strip_bg,
+                                 ";color:", if (h$status == "Current") "#fff" else CAU$strip_fg, ";"),
+                               toupper(h$status)),
+                          div(style = paste0("font-size:12.5px;color:", CAU$ink_soft, ";margin-top:3px;"),
+                              substr(sub("^APL [0-9-]+: ", "", h$title), 1, 78), " \u00b7 p.", h$page)),
+                      tags$a(href = pdf_url(SEARCH_SOURCE, h$filename, h$page), target = "_blank",
+                             class = "cau-badge",
+                             style = paste0("background:", CAU$blue, ";color:#fff;text-decoration:none;"),
+                             "OPEN PDF")),
+                  div(class = "mt-2", style = "font-size:13.5px;line-height:1.55;",
+                      HTML(h$snippet)))
+            }))))
+    )
   })
 
   # --- Framework assistant ----------------------------------------------------

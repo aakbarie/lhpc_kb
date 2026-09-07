@@ -14,7 +14,7 @@ root <- local({
 
 for (f in c("fetch_common.R", "config.R", "registry.R"))
   suppressPackageStartupMessages(source(file.path(root, "R", f)))
-for (f in c("passport.R", "ledger.R", "independence.R", "cases.R", "assistant.R", "policies.R"))
+for (f in c("passport.R", "ledger.R", "independence.R", "cases.R", "assistant.R", "policies.R", "search.R"))
   suppressPackageStartupMessages(source(file.path(root, "instrument", "R", f)))
 
 test_dir(file.path(root, "instrument", "tests", "testthat"), stop_on_failure = TRUE)
