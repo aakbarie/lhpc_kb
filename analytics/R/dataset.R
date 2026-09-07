@@ -29,36 +29,44 @@ case_outcomes <- function() {
   ev <- tryCatch(ledger_events(), error = function(e) NULL)
   if (is.null(ev) || !nrow(ev)) return(NULL)
 
-  split_ev <- split(ev, ev$case_id)
-  rows <- lapply(names(split_ev), function(cid) {
-    e <- split_ev[[cid]]
-    opened <- min(e$occurred_at)
-    disp <- e[e$event_type == "disposition.recorded", , drop = FALSE]
-    # Covariates come from the intake event, never recomputed now. Recomputing
-    # backlog today would measure the queue as it is rather than as it was,
-    # and a covariate that moved after treatment is post-treatment bias.
-    created <- e[e$event_type == "case.created", , drop = FALSE]
-    cov <- if (nrow(created))
-      tryCatch(jsonlite::fromJSON(created$payload[1]), error = function(x) list())
-      else list()
-    num <- function(k) {
-      v <- cov[[k]]
-      if (is.null(v) || length(v) == 0) NA_real_ else as.numeric(v)
-    }
-    data.frame(
-      case_id = cid,
-      simulated = FALSE,
-      assisted = as.integer(any(e$event_type == "assistance.requested")),
-      resolved = nrow(disp) > 0,
-      hours_to_resolution = if (nrow(disp))
-        as.numeric(difftime(min(disp$occurred_at), opened, units = "hours")) else NA_real_,
-      operator = if (nrow(created)) created$actor[1]
-                 else if (nrow(disp)) disp$actor[1] else NA_character_,
-      complexity = num("complexity"), expedited = num("expedited"),
-      backlog = num("backlog"), tenure = num("tenure"), sdoh = num("sdoh"),
-      stringsAsFactors = FALSE)
-  })
-  out <- do.call(rbind, rows)
+  # Built with vectorised operations rather than a per-case data.frame and
+  # rbind. The loop version was quadratic — 700 cases took 2.8 s, and it grows
+  # with the ledger, which is the one thing guaranteed to keep growing.
+  created <- ev[ev$event_type == "case.created", , drop = FALSE]
+  disp <- ev[ev$event_type == "disposition.recorded", , drop = FALSE]
+  disp <- disp[!duplicated(disp$case_id), , drop = FALSE]
+  asked <- unique(ev$case_id[ev$event_type == "assistance.requested"])
+
+  opened <- stats::aggregate(occurred_at ~ case_id, data = ev, FUN = min)
+  ids <- created$case_id
+  if (!length(ids)) return(NULL)
+
+  # One parse per case, but no data.frame churn: pull the fields out into
+  # plain vectors and assemble once.
+  fields <- c("complexity", "expedited", "backlog", "tenure", "sdoh")
+  parsed <- lapply(created$payload, function(js)
+    tryCatch(jsonlite::fromJSON(js), error = function(e) list()))
+  grab <- function(k) vapply(parsed, function(p) {
+    v <- p[[k]]
+    if (is.null(v) || length(v) == 0 || identical(v, "NA")) NA_real_
+    else suppressWarnings(as.numeric(v)[1])
+  }, 0)
+
+  m_open <- match(ids, opened$case_id)
+  m_disp <- match(ids, disp$case_id)
+  out <- data.frame(
+    case_id = ids,
+    simulated = grab("simulated") == 1,
+    assisted = as.integer(ids %in% asked),
+    resolved = !is.na(m_disp),
+    hours_to_resolution = as.numeric(difftime(disp$occurred_at[m_disp],
+                                              opened$occurred_at[m_open],
+                                              units = "hours")),
+    operator = created$actor,
+    complexity = grab("complexity"), expedited = grab("expedited"),
+    backlog = grab("backlog"), tenure = grab("tenure"), sdoh = grab("sdoh"),
+    stringsAsFactors = FALSE)
+  out$simulated[is.na(out$simulated)] <- FALSE
   add_rollout_panel(out, ev)
 }
 

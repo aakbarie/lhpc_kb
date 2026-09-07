@@ -28,33 +28,67 @@ local({
 
 fmt_ci <- function(e, lo, hi) sprintf("%+.1f h  [%.1f, %.1f]", e, lo, hi)
 
-ui <- page_fluid(
-  theme = cau_theme(), cau_head("Outcome Analytics"),
-  div(style = "max-width:1180px;margin:0 auto;padding:26px 22px 70px;",
-    cau_brand(),
-    div(class = "cau-display", style = "font-size:30px;margin:.5rem 0 .3rem;",
+# Four pages, not one scroll. Beyond legibility this is a load-time
+# decision: Shiny suspends outputs on hidden tabs, so the interpretation —
+# a live model call measured at 7.75 s — does not run until someone opens
+# the page that shows it. The first screen is the result, and it arrives in
+# about a second.
+page_head <- function(title, blurb)
+  div(class = "mb-3",
+      div(class = "cau-display", style = "font-size:24px;margin-bottom:.25rem;", title),
+      div(style = paste0("color:", CAU$ink_soft, ";font-size:13.5px;max-width:78ch;"), blurb))
+
+ui <- page_navbar(
+  title = div(class = "cau-brand", "Causalytics"),
+  theme = cau_theme(), header = cau_head("Outcome Analytics"),
+  sidebar = sidebar(width = 300, bg = CAU$paper,
+    eyebrow(pulse = TRUE, "Outcome analytics"),
+    div(class = "cau-display", style = "font-size:17px;margin:.5rem 0 .3rem;",
         "Does the framework assistant change grievance timeliness?"),
-    div(style = paste0("color:", CAU$ink_soft, ";font-size:14px;max-width:70ch;"),
-        "Effect of consulting the framework assistant on hours to resolution, ",
-        "estimated from instrument outcomes."),
-    uiOutput("provenance"),
-    div(class = "row mt-3",
-      div(class = "col-4", uiOutput("controls")),
-      div(class = "col-8", uiOutput("headline"))),
-    div(class = "mt-4", uiOutput("contract_panel")),
-    div(class = "mt-4", uiOutput("roi_panel")),
-    div(class = "mt-4", uiOutput("dag_panel")),
-    div(class = "mt-4", uiOutput("overlap_panel")),
-    div(class = "mt-4", uiOutput("balance_panel")),
-    div(class = "mt-4", uiOutput("interpretation"))))
+    hr(style = paste0("border-color:", CAU$line, ";opacity:1;")),
+    uiOutput("controls"),
+    div(class = "mt-3", uiOutput("provenance"))),
+
+  nav_panel("Result",
+    page_head("What the effect is, and what it is worth",
+              paste("The naive comparison is shown beside the adjusted ones because on",
+                    "this problem they disagree: assistance is sought on harder cases,",
+                    "so raw means say it makes things worse.")),
+    uiOutput("headline"), div(class = "mt-4", uiOutput("roi_panel"))),
+
+  nav_panel("Design",
+    page_head("What was committed before deployment",
+              paste("The measurement contract fixes the outcome, the diagram, the fields",
+                    "the instrument must capture and the ROI formula in advance. The",
+                    "adjustment set is derived from the diagram, never chosen by hand.")),
+    uiOutput("contract_panel"), div(class = "mt-4", uiOutput("dag_panel"))),
+
+  nav_panel("Diagnostics",
+    page_head("Whether the comparison is admissible",
+              paste("Overlap decides whether a like-for-like comparison exists at all;",
+                    "balance decides whether matching achieved one. The contract sets",
+                    "thresholds for both and withholds the estimate when they are missed.")),
+    uiOutput("overlap_panel"), div(class = "mt-4", uiOutput("balance_panel"))),
+
+  nav_panel("Reading",
+    page_head("The estimates in plain language",
+              paste("Generated on request. The interpreter states the effect — unlike the",
+                    "instrument's assistant, which may not — because a design was chosen",
+                    "and an estimator run. It may not invent a figure or omit an interval.")),
+    uiOutput("interpretation"))
+)
 
 server <- function(input, output, session) {
   res <- reactiveVal(NULL)
+  # The reading is cached against the estimate it describes, so switching
+  # pages does not re-bill a model call for an answer already given.
+  reading <- reactiveVal(NULL); reading_key <- reactiveVal("")
 
   observeEvent(input$run, {
     df <- if (identical(input$source, "ledger")) case_outcomes() else
       simulate_from_cohort(n = input$n %||% 900, true_effect = input$effect %||% -9)
     truth <- if (identical(input$source, "ledger")) NA_real_ else (input$effect %||% -9)
+    reading(NULL); reading_key("")     # a new estimate invalidates the old reading
     res(tryCatch(run_analysis(df, true_effect = truth),
                  error = function(e) list(error = conditionMessage(e))))
     # ignoreNULL = FALSE is required, not stylistic: the Estimate button is
@@ -313,9 +347,21 @@ server <- function(input, output, session) {
           " assisted cases had no acceptable match within the caliper and were dropped."))
   })
 
+  observeEvent(input$read_go, {
+    r <- res(); if (is.null(r) || isTRUE(r$blocked)) return()
+    key <- paste(round(r$psm$estimate, 4), round(r$psm$ci[1], 4), r$frame$cases)
+    if (identical(key, reading_key()) && !is.null(reading())) return()
+    reading(interpret_results(r)); reading_key(key)
+  })
+
   output$interpretation <- renderUI({
     r <- res(); if (is.null(r) || !is.null(r$error) || isTRUE(r$blocked)) return(NULL)
-    i <- interpret_results(r)
+    i <- reading()
+    if (is.null(i)) return(div(class = "cau-panel p-3",
+      div(style = paste0("color:", CAU$ink_soft, ";font-size:13.5px;margin-bottom:.7rem;"),
+          "A live model call takes several seconds, so it runs when you ask for it ",
+          "rather than on every page load."),
+      actionButton("read_go", "Interpret these estimates", class = "btn-primary")))
     div(class = "cau-panel p-3",
       div(class = "d-flex justify-content-between align-items-center",
           eyebrow("Reading"),
@@ -323,7 +369,8 @@ server <- function(input, output, session) {
                               "background:", CAU$ink, ";color:#fff;padding:3px 7px;border-radius:2px;"),
                "MACHINE · INTERPRETS ESTIMATES ONLY")),
       div(class = "mt-2", style = "font-size:14.5px;line-height:1.6;white-space:pre-wrap;",
-          i$answer %||% "(interpreter unavailable — the estimates above stand on their own)"))
+          i$answer %||% "(interpreter unavailable — the estimates stand on their own)"),
+      div(class = "mt-3", actionButton("read_go", "Regenerate", class = "btn-primary")))
   })
 }
 

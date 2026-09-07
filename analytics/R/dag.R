@@ -92,8 +92,24 @@ path_blocked <- function(g, path, z) {
 #' Returns the smallest valid set, plus everything it deliberately excluded
 #' and why — the exclusions are the interesting part, because they are what an
 #' analyst reaching for "control for everything" would have got wrong.
+# The backdoor search is an exhaustive walk over candidate subsets. It is
+# fast once and slow eleven times, and it is called from every estimator and
+# every panel — so the result is cached against the diagram it came from. The
+# key is the edge list, so editing the contract still invalidates it.
+.adjustment_cache <- new.env(parent = emptyenv())
+
 adjustment_set <- function(edges = grievance_dag(), exposure = NULL,
                            outcome = NULL) {
+  key <- paste(nrow(edges), paste(edges$from, edges$to, collapse = "|"),
+               exposure %||% "", outcome %||% "")
+  hit <- .adjustment_cache[[key]]
+  if (!is.null(hit)) return(hit)
+  out <- .adjustment_set_compute(edges, exposure, outcome)
+  .adjustment_cache[[key]] <- out
+  out
+}
+
+.adjustment_set_compute <- function(edges, exposure = NULL, outcome = NULL) {
   ct <- tryCatch(measurement_contract(), error = function(e) NULL)
   exposure <- exposure %||% (ct$dag$exposure %||% "assisted")
   outcome  <- outcome  %||% (ct$dag$outcome  %||% "hours")
