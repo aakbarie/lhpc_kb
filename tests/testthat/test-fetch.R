@@ -82,3 +82,20 @@ test_that("site policy codes parse and titles clean up", {
   expect_equal(doc_title("Download", "https://x.com/files/UM01_Auth-Review.pdf?v=2"),
                "UM01 Auth Review")
 })
+
+test_that("readily slugs derive from the organisation name", {
+  # The rule that all three live orgs follow.
+  s <- readily_slugs(list(plan_id = "chpiv",
+                          name = "Community Health Plan of Imperial Valley"))
+  expect_equal(s[1], "community-health-plan-of-imperial-valley")
+  expect_true("chpiv" %in% s)
+  s2 <- readily_slugs(list(plan_id = "alliance",
+                           name = "Central California Alliance for Health"))
+  expect_equal(s2[1], "central-california-alliance-for-health")
+  # An explicit registry slug always wins over derivation.
+  expect_equal(readily_slugs(list(plan_id = "x", name = "Whatever",
+                                  readily = list(org = "pinned"))), "pinned")
+  # Punctuation and accents must not leak into a URL path.
+  expect_false(grepl("[^a-z0-9-]", readily_slugs(list(plan_id = "y",
+                     name = "L.A. Care Health Plan"))[1]))
+})
